@@ -42,11 +42,13 @@ body {
   flex-direction: column;
 }
 
-img {
+img,
+svg {
   display: block;
 }
 
 main {
+  margin-top: 100px;
   flex-grow: 1;
 }
 

@@ -1,0 +1,135 @@
+@import "../../Sass/Variables.scss";
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 35px 0;
+  background-color: $white;
+  transition: padding 0.25s ease;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--small {
+    padding: 10px 0;
+  }
+}
+
+.header__link {
+  display: block;
+}
+
+.header__languages {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.header__language {
+  & + & {
+    margin-left: 20px;
+  }
+
+  &--active {
+    .header__language__button {
+      color: $accent;
+      opacity: 1;
+    }
+  }
+}
+
+.header__language__button {
+  padding: 0;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+@media only screen and(max-width: 1000px) {
+  .header {
+    padding: 20px 0;
+  }
+
+  .header__active__lang {
+    margin-left: auto;
+    margin-right: 30px;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin-left: 5px;
+      vertical-align: middle;
+      border-top: 4px dashed;
+      border-top: 4px solid\9;
+      border-right: 4px solid transparent;
+      border-left: 4px solid transparent;
+    }
+  }
+
+  .header__languages {
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+
+    &--open{
+      opacity: 1;
+    }
+  }
+
+  .header__language {
+    padding: 5px 20px;
+
+
+    &--active {
+      display: none;
+      padding: 0;
+    }
+
+    & + & {
+      margin: 0;
+    }
+  }
+
+  .header__burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+@media only screen and(max-width: 550px) {
+  .header {
+    padding: 10px 0;
+  }
+
+  .header__link {
+    svg {
+      width: 150px;
+    }
+  }
+
+  .header__active__lang {
+    margin-right: 20px;
+  }
+}
