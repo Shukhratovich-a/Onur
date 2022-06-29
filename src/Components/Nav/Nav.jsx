@@ -1,10 +1,25 @@
 import { NavLink } from "react-router-dom";
 
+import useWindowDimensions from "../../Hooks/useWindowDimensions";
+import useLocalization from "../../Hooks/useLocalization";
+import useBurger from "../../Hooks/useBurger";
+
 import styles from "./Nav.module.scss";
 
 const Nav = () => {
+  const [lang] = useLocalization();
+  const [isOpen, setIsOpen] = useBurger();
+  const screenWidth = useWindowDimensions();
+
+  const closeNav = (evt) => {
+    if(!evt.target.className.includes('nav__list')) setIsOpen(false)
+  };
+
   return (
-    <nav className={styles.nav}>
+    <nav
+      className={`${styles.nav} ${isOpen && screenWidth <= 1000 ? styles["nav--open"] : ""}`}
+      onClick={closeNav}
+    >
       <ul className={styles.nav__list}>
         <li className={styles.nav__item}>
           <NavLink
@@ -12,9 +27,9 @@ const Nav = () => {
               `${styles.nav__link} ${isActive ? styles["nav__link--active"] : ""}`
             }
             to={"/"}
-            title="Home"
+            title={lang.nav.home}
           >
-            Home
+            {lang.nav.home}
           </NavLink>
         </li>
         <li className={styles.nav__item}>
@@ -23,9 +38,9 @@ const Nav = () => {
               `${styles.nav__link} ${isActive ? styles["nav__link--active"] : ""}`
             }
             to={"/products"}
-            title="Products"
+            title={lang.nav.products}
           >
-            Products
+            {lang.nav.products}
           </NavLink>
         </li>
         <li className={styles.nav__item}>
@@ -34,9 +49,9 @@ const Nav = () => {
               `${styles.nav__link} ${isActive ? styles["nav__link--active"] : ""}`
             }
             to={"/about"}
-            title="About"
+            title={lang.nav.about}
           >
-            About
+            {lang.nav.about}
           </NavLink>
         </li>
         <li className={styles.nav__item}>
@@ -45,9 +60,9 @@ const Nav = () => {
               `${styles.nav__link} ${isActive ? styles["nav__link--active"] : ""}`
             }
             to={"/contacts"}
-            title="Contacts"
+            title={lang.nav.contacts}
           >
-            Contacts
+            {lang.nav.contacts}
           </NavLink>
         </li>
       </ul>
