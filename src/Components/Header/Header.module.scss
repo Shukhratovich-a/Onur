@@ -81,24 +81,38 @@
 
   .header__languages {
     position: absolute;
-    right: 0;
+    top: 50px;
+    right: 68px;
+    z-index: 99;
     flex-direction: column;
     align-items: center;
     opacity: 0;
-    pointer-events: none;
+    box-shadow: rgba($color: $black, $alpha: 0.15) 0px 0px 0px 1px,
+      rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    background-color: $white;
 
-    &--open{
+    &--open {
       opacity: 1;
     }
+  }
+
+  .header__lang__curtain {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
   }
 
   .header__language {
     padding: 5px 20px;
 
-
     &--active {
       display: none;
       padding: 0;
+      border-bottom: none;
     }
 
     & + & {
@@ -132,5 +146,22 @@
 
   .header__active__lang {
     margin-right: 20px;
+  }
+
+  .header__languages {
+    top: 40px;
+    right: 58px;
+  }
+}
+
+@media only screen and(max-width: 425px) {
+  .header__languages {
+    right: 53px;
+  }
+}
+
+@media only screen and(max-width: 425px) {
+  .header__languages {
+    right: 48px;
   }
 }
