@@ -36,6 +36,10 @@ const Header = () => {
     }
   }, []);
 
+  React.useEffect(() => {
+    setLangIsOpen(false);
+  }, [lang]);
+
   const handleSetLanguage = (evt) => {
     setLang(evt.target.value);
   };
