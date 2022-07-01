@@ -1,0 +1,31 @@
+@import "../../Sass/Variables.scss";
+
+.about__inner1{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about__paragraphs{
+  max-width: 100%;
+  overflow-x: auto;
+  font-size: 18px;
+  line-height: 2.0em;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-right: 50px;
+
+  .about__inparagraph{
+    margin-top: 0;
+  }
+}
+
+.about__undertext{
+  max-width: 100%;
+  overflow-x: auto;
+  font-size: 20px;
+  color: rgba(var(--color-i5dqn04sh), 0.6);
+  line-height: 1.7em;
+  margin-bottom: 30px;
+  margin-right: 50px;
+}
