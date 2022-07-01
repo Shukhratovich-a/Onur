@@ -5,10 +5,6 @@ import styles from "./About.module.scss";
 
 const About = () => {
   return (
-<<<<<<< HEAD
-    
-=======
->>>>>>> e30b0900a1a617a55b0a1cbb4e15d979ff7d1187
     <main>
       <section>
         <div className="container">
