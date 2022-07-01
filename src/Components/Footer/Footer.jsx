@@ -8,7 +8,7 @@ import LogoRu from "../Lib/Icons/LogoRu";
 import styles from "./Footer.module.scss";
 
 const Footer = () => {
-  const [lang, setLang] = useLocalization(true);
+  const [lang] = useLocalization(true);
 
   return (
     <footer className={styles.footer}>
