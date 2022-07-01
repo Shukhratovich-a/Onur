@@ -1,9 +1,9 @@
+import Hero from "../../Components/Hero/Hero";
+
 const Home = () => {
   return (
     <main className="main">
-      <div className="container">
-        Home
-      </div>
+      <Hero />
     </main>
   );
 };
