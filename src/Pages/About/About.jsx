@@ -1,51 +1,29 @@
 import React from "react";
 
 import styles from "./About.module.scss";
+import useLocalization from "../../Hooks/useLocalization";
+
 import Aboutuspic from "../../Assets/Images/aboutuspic.webp";
 
 const About = () => {
+  const [lang] = useLocalization();
   return (
     <main>
       <section>
         <div className="container">
-          <h1 className="about__us">О компании</h1>
+          <h1 className="about__us">{lang.about.company}</h1>
 
           <div className={styles.about__inner}>
             <div className={styles.about__inner1}>
               <div className={styles.about__paragraphs}>
-                <p className={styles.about__inparagraph}>
-                  Творческая, опытная, амбициозная и уверенная в себе команда. Залог нашей
-                  уверенности - не только в уровне профессионализма, квалификации и ответственности
-                  наших специалистов, но и в большом и успешном опыте реализации различных
-                  строительных проектов.
-                </p>
-                <p className={styles.about__inparagraph}>
-                  Тринадцать лет работы на рынке — это хороший, объективный показатель стабильности
-                  и успеха, основанного на доверии потребителей.
-                </p>
-                <p className={styles.about__inparagraph}>
-                  Это доверие мы заслужили, во-первых, высоким профессионализмом, а во-вторых,
-                  открытостью и честностью: мы принципиально стоим на той позиции, что взаимная
-                  выгода лучше и надежнее любого обмана. Исходя из интересов Заказчика, наши
-                  проектировщики выполняют все необходимые расчеты с учетом разумной экономии;
-                  любой, даже типовой проект загородного дома подгоняется под потребности и вкусы
-                  его будущего хозяина. Мы идем навстречу всем его пожеланиям, — до тех пор, пока не
-                  страдают качество и надежность. Тогда, если нужно, мы объясняем и убеждаем с
-                  точными цифрами в руках.
-                </p>
+                <p className={styles.about__inparagraph}>{lang.about.text1}</p>
+                <p className={styles.about__inparagraph}>{lang.about.text2}</p>
+                <p className={styles.about__inparagraph}>{lang.about.text3}</p>
               </div>
+              <img src={Aboutuspic} alt="house" width={750} height={500} />
             </div>
 
-            <img src={Aboutuspic} alt="Description" width={750} height={500} />
-
-            <p className={styles.about__undertext}>
-              Компания отвечает за высокое качество своих проектов и построенных нами домов. На
-              фундамент, стены и крышу построенных домов дается гарантия сроком на 10 лет; на
-              отделку и инженерные коммуникации — 3 года. Мы не гонимся за низкой ценой, принося в
-              жертву качество, не участвуем в соревновании: «кто построит хуже, но дешевле». Для нас
-              важнее надежность и долговечность. Построенные нами дома прослужат многие десятилетия,
-              не требуя капитального ремонта.
-            </p>
+            <p className={styles.about__undertext}>{lang.about.text4}</p>
           </div>
         </div>
       </section>
