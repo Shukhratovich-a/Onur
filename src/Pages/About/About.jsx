@@ -9,9 +9,9 @@ const About = () => {
   const [lang] = useLocalization();
   return (
     <main>
-      <section>
-        <div className="container">
-          <h1 className="about__us">{lang.about.company}</h1>
+      <section className={styles.about}>
+        <div className={`container ${styles.container}`}>
+          <h1 className={styles.about__heading}>{lang.about.company}</h1>
 
           <div className={styles.about__inner}>
             <div className={styles.about__inner1}>

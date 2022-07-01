@@ -1,31 +1,38 @@
 @import "../../Sass/Variables.scss";
 
-.about__inner1{
+.about {
+  padding-top: 30px;
+}
+
+.about__heading {
+  margin-top: 0;
+}
+
+.about__inner1 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.about__paragraphs{
+.about__paragraphs {
   max-width: 100%;
   overflow-x: auto;
   font-size: 18px;
-  line-height: 2.0em;
+  line-height: 2em;
   margin-top: 0;
   margin-bottom: 30px;
   margin-right: 50px;
 
-  .about__inparagraph{
+  .about__inparagraph {
     margin-top: 0;
   }
 }
 
-.about__undertext{
+.about__undertext {
   max-width: 100%;
   overflow-x: auto;
-  color: rgba(var(--color-i5dqn04sh), 0.6);
   font-size: 18px;
-  line-height: 2.0em;
+  line-height: 2em;
   margin-bottom: 30px;
   margin-right: 50px;
 }
