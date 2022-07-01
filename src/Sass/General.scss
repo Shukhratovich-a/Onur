@@ -60,10 +60,9 @@ main {
   padding: 0 60px;
 }
 
-
-
 @media only screen and(max-width: 1280px) {
   .container {
+    max-width: 100vw;
     padding: 0 20px;
   }
 }
@@ -82,12 +81,14 @@ main {
 
 @media only screen and(max-width: 425px) {
   .container {
+    max-width: 100vw;
     padding: 0 15px;
   }
 }
 
 @media only screen and(max-width: 375px) {
   .container {
+    max-width: 100vw;
     padding: 0 10px;
   }
 }

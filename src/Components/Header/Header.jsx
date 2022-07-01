@@ -51,7 +51,7 @@ const Header = () => {
       ) : null}
       <div className={`${styles.container} container`}>
         <Link className={styles.header__link} to={"/"}>
-          {lang === "ru" ? <LogoRu /> : <LogoEn />}
+          {lang === "ru" ? <LogoRu color="#fff"/> : <LogoEn color="#fff"/>}
         </Link>
 
         <Nav />
