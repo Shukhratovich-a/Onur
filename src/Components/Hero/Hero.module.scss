@@ -1,7 +1,8 @@
 @import "../../Sass/Variables.scss";
 
 .hero {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 100px + 50px);
+  margin-top: -50px;
   color: $white;
   background-color: $darkBlue;
 }
@@ -75,7 +76,7 @@
 
 @media only screen and(max-width: 1000px) {
   .hero {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 70px + 50px);
   }
 
   .hero__heading {
@@ -104,6 +105,6 @@
 
 @media only screen and(max-width: 550px) {
   .hero {
-    height: calc(100vh - 50px);
+    height: calc(100vh);
   }
 }
