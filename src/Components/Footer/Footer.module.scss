@@ -1,7 +1,46 @@
 @import "../../Sass/Variables.scss";
 
 .footer {
-  margin-top: 200px;
-  padding: 60px 0;
-  background-color: $accent;
+  padding: 100px 0;
+  background-color: $darkBlue;
+}
+
+.footer__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__link {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer__item {
+  padding: 10px 0;
+}
+
+.footer__item__link {
+  display: block;
+  font-size: 18px;
+  line-height: 25px;
+  color: $white;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: color 0.25s ease;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+.footer__item__link--active {
+  font-weight: 700;
+  color: $accent;
 }
