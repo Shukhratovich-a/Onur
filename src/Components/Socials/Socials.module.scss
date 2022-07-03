@@ -1,0 +1,24 @@
+@import "../../Sass/Variables.scss";
+
+.socials {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social {
+  background-color: $white;
+  border-radius: 50%;
+
+  &__link {
+    display: block;
+    padding: 12px;
+    color: $lightBlue;
+  }
+
+  & + & {
+    margin-left: 16px;
+  }
+}
