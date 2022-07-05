@@ -13,7 +13,7 @@
   right: 100px;
 }
 
-.swiper-pagination{
+.swiper-pagination {
   bottom: 30px;
 }
 
@@ -21,16 +21,33 @@
   .swiper-button-prev {
     left: 20px;
   }
-  
+
   .swiper-button-next {
     right: 20px;
   }
 }
+
+@media only screen and(max-width: 550px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 10px;
+    height: 20px;
+
+    &::after {
+      font-size: 20px;
+    }
+  }
+
+  .swiper-pagination {
+    bottom: 16px;
+  }
+}
+
 @media only screen and(max-width: 425px) {
   .swiper-button-prev {
     left: 15px;
   }
-  
+
   .swiper-button-next {
     right: 15px;
   }
@@ -40,7 +57,7 @@
   .swiper-button-prev {
     left: 10px;
   }
-  
+
   .swiper-button-next {
     right: 10px;
   }

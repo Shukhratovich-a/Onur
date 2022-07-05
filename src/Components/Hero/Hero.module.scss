@@ -26,8 +26,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: $black;
-    opacity: 0.5;
+    background-color: $darkBlue;
+    opacity: 0.6;
   }
 
   .container {
@@ -103,8 +103,40 @@
   }
 }
 
+@media only screen and(max-width: 768px) {
+  .hero__heading {
+    max-width: 500px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .hero__description {
+    font-size: 16px;
+    max-width: 400px;
+  }
+}
+
 @media only screen and(max-width: 550px) {
   .hero {
     height: calc(100vh);
+  }
+
+  .hero__heading {
+    max-width: 400px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .hero__description {
+    font-size: 16px;
+    max-width: 400px;
+  }
+
+  .hero__pagination__number {
+    font-size: 24px;
+  }
+
+  .hero__pagination__drop {
+    font-size: 24px;
   }
 }

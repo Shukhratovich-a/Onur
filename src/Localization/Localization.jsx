@@ -6,6 +6,13 @@ const Localization = {
       about: "about us",
       contacts: "contacts",
     },
+
+    footer: {
+      siteMenu: "site menu",
+      partner: "partners",
+      socials: "follow ONUR",
+    },
+
     about: {
       company: "About company",
       text1:
@@ -26,6 +33,13 @@ const Localization = {
       about: "о нас",
       contacts: "контакты",
     },
+
+    footer: {
+      siteMenu: "site menu",
+      partner: "partners",
+      socials: "follow ONUR",
+    },
+
     about: {
       company: "О компании",
       text1:
@@ -46,6 +60,13 @@ const Localization = {
       about: "biz haqimizda",
       contacts: "bog'lanish",
     },
+
+    footer: {
+      siteMenu: "site menu",
+      partner: "partners",
+      socials: "follow ONUR",
+    },
+
     about: {
       company: "Kompaniya haqida",
       text1: `Ijodiy, tajribali, ambitsiyali va o'ziga ishongan jamoa. Bizning ishonchimiz kaliti nafaqat mutaxassislarimizning professionalligi, malakasi va mas'uliyati, balki turli qurilish loyihalarini amalga oshirishda katta va muvaffaqiyatli tajribaga ega.`,
