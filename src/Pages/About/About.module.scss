@@ -5,6 +5,7 @@
 }
 
 .about__heading {
+  font-size: 48px;
   margin-top: 0;
 }
 
@@ -17,7 +18,7 @@
 .about__paragraphs {
   max-width: 100%;
   overflow-x: auto;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 2em;
   margin-top: 0;
   margin-bottom: 30px;
@@ -31,8 +32,35 @@
 .about__undertext {
   max-width: 100%;
   overflow-x: auto;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 2em;
   margin-bottom: 30px;
   margin-right: 50px;
+}
+
+@media only screen and(max-width: 790px){
+
+  .about__heading, .about__inner1{
+    text-align: center;
+
+  }
+
+  .about__paragraphs{
+  font-size: calc(18px + 15 * (100vw - 450px) / 1733);
+  margin: 0 auto;
+  }
+}
+
+@media only screen and(max-width: 450px){
+  .about__paragraphs{
+  font-size: calc(16px + (16 + 16 * 0.7) * (100vw - 320px) / 1733);
+  }
+}
+
+@media only screen and(max-width: 410px){
+
+  .about__paragraphs{
+    text-align: center;
+    font-size: calc(15px + 10 * (100vw - 320px) / 1733);
+  }
 }

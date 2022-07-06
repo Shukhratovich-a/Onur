@@ -37,13 +37,13 @@ const Localization = {
     about: {
       company: "About company",
       text1:
-        "Creative, experienced, ambitious and self-confident team. The key to our confidence is not only in the level of professionalism, qualifications and responsibility of our specialists, but also in a large and successful experience in the implementation of various construction projects.",
+        "This company was founded in 2004, and started with the import of household appliances from the United Arab Emirates.",
       text2:
-        "Thirteen years of work on the market is a good, objective indicator of stability and success based on consumer confidence.",
+        "By 2008, cooperation relations were established with famous companies of the Turkish state, and an agreement was signed between the company 'SPK'.",
       text3:
-        "We have earned this trust, firstly, by high professionalism, and secondly, by openness and honesty: we fundamentally stand on the position that mutual benefit is better and more reliable than any deception. Based on the interests of the Customer, our designers perform all the necessary calculations, taking into account reasonable savings; any, even a typical project of a country house is adjusted to the needs and tastes of its future owner. We meet all his wishes, as long as quality and reliability do not suffer. Then, if necessary, we explain and convince with exact numbers in hand.",
+        "In 2009, he cooperated with famous brands 'KAS' and 'NOVA' in Turkey. In 2010, he signed contracts with 'Candan' and in 2012 with 'Baykara' companies. In 2019, a factory branch of the Turkish company 'Nova' was built in Uzbekistan. In the same year, the logistics department of the company was opened.",
       text4:
-        'The company is responsible for the high quality of its projects and houses built by us. The foundation, walls and roof of the built houses are guaranteed for a period of 10 years; for finishing and engineering communications - 3 years. We do not chase low prices, sacrificing quality, we do not participate in the competition: "who will build worse, but cheaper." Reliability and durability are more important to us. The houses we built will last for many decades without requiring major repairs.',
+        'In 2021, the company was renamed to the new brand "Onur". The main activity of the company is trade in plumbing products and import from Turkey to the market of Uzbekistan.',
     },
   },
 
@@ -85,13 +85,13 @@ const Localization = {
     about: {
       company: "О компании",
       text1:
-        "Творческая, опытная, амбициозная и уверенная в себе команда. Залог нашей уверенности - не только в уровне профессионализма, квалификации и ответственности наших специалистов, но и в большом и успешном опыте реализации различных строительных проектов.",
+        "Эта компания была основана в 2004 году и начинала с импорта бытовой техники из Объединенных Арабских Эмиратов.",
       text2:
-        "Тринадцать лет работы на рынке — это хороший, объективный показатель стабильности и успеха, основанного на доверии потребителей.",
+        "К 2008 году были установлены отношения сотрудничества с известными компаниями Турецкого государства, и было подписано соглашение между компанией «СПК».",
       text3:
-        "Это доверие мы заслужили, во-первых, высоким профессионализмом, а во-вторых, открытостью и честностью: мы принципиально стоим на той позиции, что взаимная выгода лучше и надежнее любого обмана. Исходя из интересов Заказчика, наши проектировщики выполняют все необходимые расчеты с учетом разумной экономии; любой, даже типовой проект загородного дома подгоняется под потребности и вкусы его будущего хозяина. Мы идем навстречу всем его пожеланиям, — до тех пор, пока не страдают качество и надежность. Тогда, если нужно, мы объясняем и убеждаем с точными цифрами в руках.",
+        "В 2009 году он снова сотрудничал с известными брендами «KAS» и «NOVA» в Турции. В 2010 году он подписал контракты с «Candan», а в 2012 году с компаниями «Baykara». В 2019 году в Узбекистане построен завод-филиал турецкой компании «Нова». В том же году был открыт отдел логистики компании.",
       text4:
-        "Компания отвечает за высокое качество своих проектов и построенных нами домов. На фундамент, стены и крышу построенных домов дается гарантия сроком на 10 лет; на отделку и инженерные коммуникации — 3 года. Мы не гонимся за низкой ценой, принося в жертву качество, не участвуем в соревновании: «кто построит хуже, но дешевле». Для нас важнее надежность и долговечность. Построенные нами дома прослужат многие десятилетия, не требуя капитального ремонта.",
+        "В 2021 году компания была переименована в новый бренд «Онур». Основным видом деятельности компании является торговля сантехнической продукцией и импорт из Турции на рынок Узбекистана.",
     },
   },
 
@@ -132,10 +132,13 @@ const Localization = {
 
     about: {
       company: "Kompaniya haqida",
-      text1: `Ijodiy, tajribali, ambitsiyali va o'ziga ishongan jamoa. Bizning ishonchimiz kaliti nafaqat mutaxassislarimizning professionalligi, malakasi va mas'uliyati, balki turli qurilish loyihalarini amalga oshirishda katta va muvaffaqiyatli tajribaga ega.`,
-      text2: `Bozorda o'n uch yillik ish barqarorlik va iste'molchilar ishonchiga asoslangan muvaffaqiyatning yaxshi, ob'ektiv ko'rsatkichidir.`,
-      text3: `Biz bu ishonchga, birinchidan, yuqori professionallik, ikkinchidan, ochiqlik va halollik bilan erishdik: biz tubdan o‘zaro manfaat har qanday yolg‘ondan ko‘ra yaxshiroq va ishonchliroq degan pozitsiyada turibmiz. Buyurtmachining manfaatlaridan kelib chiqqan holda, bizning dizaynerlarimiz oqilona tejashni hisobga olgan holda barcha kerakli hisob-kitoblarni amalga oshiradilar; har qanday, hatto qishloq uyining odatiy loyihasi ham kelajakdagi egasining ehtiyojlari va didiga moslashtirilgan. Biz uning barcha istaklarini qondirish uchun boramiz - sifat va ishonchlilik zarar ko'rmaguncha. Keyin, agar kerak bo'lsa, biz aniq raqamlar bilan tushuntiramiz va ishontiramiz.`,
-      text4: `Kompaniya o'z loyihalari va biz tomonidan qurilgan uylarning yuqori sifati uchun javobgardir. Qurilayotgan uylarning poydevori, devorlari va tomi 10 yil muddatga kafolatlanadi; pardozlash va muhandislik kommunikatsiyalari uchun - 3 yil. Biz sifatni qurbon qilib, past narx ortidan quvmaymiz, raqobatda qatnashmaymiz: “kim yomonroq quradi, lekin arzonroq”. Ishonchlilik va chidamlilik biz uchun muhimroq. Biz qurgan uylar ko'p o'n yillar davomida kapital ta'mirlashni talab qilmasdan xizmat qiladi.`,
+      text1: `Ushbu kompaniya 2004 yilda tashkil etilgan bo‘lib, ilk mahsulotlarni Birlashgan Arab Amirliklari davlatidan maishiy texnikalarni import qilishdan boshladi.`,
+
+      text2: `2008 yilga kelib, Turkiya davlatining mashhur kompaniyalari bilan hamkorlik aloqalari o‘rnatildi va «SPK» kompaniyasi o‘rtasida shartnoma imzolandi.`,
+
+      text3: ` 2009 yilda Turkiyani yana mashhur brendlari «KAS» va «NOVA» kompaniyalari bilan hamkorliklar olib bordi. 2010 yilda esa «Candan», 2012 yilda «Baykara» kompaniyalari bilan shartnomalar imzoladi. 2019 yilda Turkiyaning «Nova» kompaniyasining zavodini filiali Uzbekistonda qurildi. Shu yili kompaniyaning logistika bo‘limi ochildi. `,
+
+      text4: `2021 yilda kompaniya yangi brend «Onur» nomiga o’zgartirildi. Kompaniyaning asosiy faoliyati santexnika mahsulotlari savdosi bilan shug‘ullanish va Turkiya davlatidan O’zbekiston bozoriga import qilish.`,
     },
   },
 };
