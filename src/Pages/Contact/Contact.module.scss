@@ -1,4 +1,4 @@
-
+@import "../../Sass/Variables.scss";
 
 .contact {
   display: flex;
@@ -8,10 +8,12 @@
   height: calc(100vh - 100px);
 }
 .contact__title {
+  color: $darkBlue;
   font-size: 40px;
   line-height: 36px;
 }
 .contact__text {
+  color: $darkBlue;
   font-size: 20px;
   line-height: 25px;
   max-width: 700px;

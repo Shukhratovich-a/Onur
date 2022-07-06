@@ -80,8 +80,7 @@ function Inputs() {
             </svg>
           </div>
           <button className={styles.button}>{lang.contact.button}</button>
-          </div>
-          
+          </div>      
         </div>
       </div>
     </div>
