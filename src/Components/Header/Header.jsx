@@ -38,15 +38,22 @@ const Header = () => {
     }
   }, []);
 
+  React.useEffect(() => {
+    setLangIsOpen(false);
+  }, [lang]);
+
   const handleSetLanguage = (evt) => {
     setLang(evt.target.value);
   };
 
   return (
     <header className={`${styles.header} ${small ? styles["header--small"] : ""}`}>
+      {langIsOpen && screenWidth <= 1000 ? (
+        <div className={styles.header__lang__curtain} onClick={() => setLangIsOpen(false)}></div>
+      ) : null}
       <div className={`${styles.container} container`}>
         <Link className={styles.header__link} to={"/"}>
-          {lang === "ru" ? <LogoRu /> : <LogoEn />}
+          {lang === "ru" ? <LogoRu color="#fff"/> : <LogoEn color="#fff"/>}
         </Link>
 
         <Nav />

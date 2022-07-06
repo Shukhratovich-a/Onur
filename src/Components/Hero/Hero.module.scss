@@ -1,0 +1,142 @@
+@import "../../Sass/Variables.scss";
+
+.hero {
+  height: calc(100vh - 100px + 50px);
+  margin-top: -50px;
+  color: $white;
+  background-color: $darkBlue;
+}
+
+.hero__slider {
+  height: inherit;
+}
+
+.hero__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $darkBlue;
+    opacity: 0.6;
+  }
+
+  .container {
+    position: relative;
+    z-index: 9;
+  }
+}
+
+.hero__pagination__number {
+  font-size: 32px;
+  font-weight: 300;
+
+  &:last-child {
+    opacity: 0.6;
+  }
+}
+
+.hero__pagination__drop {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.hero__heading {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  text-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.hero__description {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+@media only screen and(max-width: 1200px) {
+  .hero__heading {
+    max-width: 900px;
+  }
+}
+
+@media only screen and(max-width: 1000px) {
+  .hero {
+    height: calc(100vh - 70px + 50px);
+  }
+
+  .hero__heading {
+    max-width: 700px;
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  .hero__description {
+    max-width: 700px;
+  }
+}
+
+@media only screen and(max-width: 1000px) {
+  .hero__heading {
+    max-width: 700px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .hero__description {
+    font-size: 16px;
+    max-width: 500px;
+  }
+}
+
+@media only screen and(max-width: 768px) {
+  .hero__heading {
+    max-width: 500px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .hero__description {
+    font-size: 16px;
+    max-width: 400px;
+  }
+}
+
+@media only screen and(max-width: 550px) {
+  .hero {
+    height: calc(100vh);
+  }
+
+  .hero__heading {
+    max-width: 400px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .hero__description {
+    font-size: 16px;
+    max-width: 400px;
+  }
+
+  .hero__pagination__number {
+    font-size: 24px;
+  }
+
+  .hero__pagination__drop {
+    font-size: 24px;
+  }
+}

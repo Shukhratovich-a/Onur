@@ -8,6 +8,7 @@ const Close = () => {
         height="4.76"
         rx=".5"
         transform="rotate(-45 11.63 12.86)"
+        fill="currentColor"
       />
       <rect
         x="-2.37"
@@ -16,6 +17,7 @@ const Close = () => {
         height="4.76"
         rx=".5"
         transform="rotate(45 12.86 11.63)"
+        fill="currentColor"
       />
     </svg>
   );
