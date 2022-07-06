@@ -5,7 +5,7 @@ import useLocalization from "../../Hooks/useLocalization";
 import ContactInfo from "../../Components/ContactInfo/Info";
 import Inputs from "../../Components/Inputs/Inputs";
 
-import Phone from "../../Assets/Images/contact.jpg";
+import Phone from "../../Assets/Images/Contact.png";
 
 import styles from "./Contact.module.scss";
 

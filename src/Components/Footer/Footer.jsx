@@ -139,7 +139,7 @@ const Footer = () => {
             <div className={styles.footer__inner}>
               <span className={styles.footer__inner__heading}>{localization.footer.socials}</span>
 
-              <Socials className={styles.footer__socials} />
+              {/* <Socials className={styles.footer__socials} /> */}
             </div>
           </div>
         </div>
