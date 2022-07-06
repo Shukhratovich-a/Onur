@@ -14,14 +14,6 @@ import "./HeroSlider.scss";
 const Hero = () => {
   const [localization] = useLocalization();
 
-  const [slides, setSlides] = React.useState([]);
-
-  // for (let obj in localization.hero) {
-    // console.log(localization[obj]);
-  // }
-
-  console.log(localization.hero);
-
   return (
     <section className={styles.hero}>
       <Swiper
@@ -62,33 +54,7 @@ const Hero = () => {
           style={{ backgroundImage: `url(${"https://picsum.photos/1920/1080"})` }}
         >
           <div className={`container ${styles.container}`}>
-            <h1 className={styles.hero__heading}>sd</h1>
-            <p className={styles.hero__description}>
-              Мы ориентируемся на функциональность комфорт и эстетику вашей ванной комнаты
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide
-          className={`${styles.hero__slide}`}
-          style={{ backgroundImage: `url(${"https://picsum.photos/1920/1081"})` }}
-        >
-          <div className={`container ${styles.container}`}>
-            <h1 className={styles.hero__heading}>
-              O‘zbekiston va Turkiyani bog‘lovchi yetakchi savdo kompaniyalaridan biri bo‘lish
-            </h1>
-            <p className={styles.hero__description}>
-              Мы ориентируемся на функциональность комфорт и эстетику вашей ванной комнаты
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide
-          className={`${styles.hero__slide}`}
-          style={{ backgroundImage: `url(${"https://picsum.photos/1920/1082"})` }}
-        >
-          <div className={`container ${styles.container}`}>
-            <h1 className={styles.hero__heading}>
-              Nova добавляет элегантности вашей ванной комнате
-            </h1>
+            <h1 className={styles.hero__heading}>{localization.hero.slide1.heading}</h1>
             <p className={styles.hero__description}>
               Мы ориентируемся на функциональность комфорт и эстетику вашей ванной комнаты
             </p>

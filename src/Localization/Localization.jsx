@@ -19,8 +19,12 @@ const Localization = {
     },
 
     hero: {
-      slider1: {
+      slide1: {
         heading: "Ehtiyojlarni sifatli mahsulotlar bilan qondirish",
+      },
+
+      slide2: {
+        heading: "O‘zbekiston va Turkiyani bog‘lovchi yetakchi savdo kompaniyalaridan biri bo‘lish",
       },
     },
 
@@ -52,8 +56,12 @@ const Localization = {
     },
 
     hero: {
-      slider1: {
+      slide1: {
         heading: "Ehtiyojlarni sifatli mahsulotlar bilan qondirish",
+      },
+
+      slide2: {
+        heading: "O‘zbekiston va Turkiyani bog‘lovchi yetakchi savdo kompaniyalaridan biri bo‘lish",
       },
     },
 
@@ -96,8 +104,12 @@ const Localization = {
     },
 
     hero: {
-      slider1: {
+      slide1: {
         heading: "Ehtiyojlarni sifatli mahsulotlar bilan qondirish",
+      },
+
+      slide2: {
+        heading: "O‘zbekiston va Turkiyani bog‘lovchi yetakchi savdo kompaniyalaridan biri bo‘lish",
       },
     },
 
