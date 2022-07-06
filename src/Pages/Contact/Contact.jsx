@@ -2,21 +2,19 @@ import React from "react";
 import ContactInfo from "../../Components/ContactInfo/Info";
 import Inputs from "../../Components/Inputs/Inputs";
 import Phone from "../../Assets/Images/contact.jpg";
-import useLocalization from "../../Hooks/useLocalization"
+import useLocalization from "../../Hooks/useLocalization";
 
 import styles from "./Contact.module.scss";
 
 function Contact() {
-  const [lang]=useLocalization()
+  const [lang] = useLocalization();
   return (
     <main>
       <div className="container">
         <div className={styles.contact}>
           <div className={styles.contact__left}>
             <h1 className={styles.contact__title}>{lang.contact.title}</h1>
-            <p className={styles.contact__text}>
-              {lang.contact.text}
-            </p>
+            <p className={styles.contact__text}>{lang.contact.text}</p>
           </div>
           <div className={styles.contact__right}>
             <img className={styles.contact__img} src={Phone} alt="contact img" />
