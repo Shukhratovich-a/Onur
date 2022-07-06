@@ -5,7 +5,7 @@ import useLocalization from "../../Hooks/useLocalization";
 import LogoEn from "../Lib/Icons/LogoEn";
 import LogoRu from "../Lib/Icons/LogoRu";
 
-import Socials from "../Socials/Socials";
+// import Socials from "../Socials/Socials";
 
 import styles from "./Footer.module.scss";
 
