@@ -3,8 +3,6 @@ import React from "react";
 import styles from "./About.module.scss";
 import useLocalization from "../../Hooks/useLocalization";
 
-import Aboutuspic from "../../Assets/Images/aboutuspic.webp";
-
 const About = () => {
   const [lang] = useLocalization();
   return (
@@ -20,7 +18,6 @@ const About = () => {
                 <p className={styles.about__inparagraph}>{lang.about.text2}</p>
                 <p className={styles.about__inparagraph}>{lang.about.text3}</p>
               </div>
-              <img src={Aboutuspic} alt="house" width={750} height={500} />
             </div>
 
             <p className={styles.about__undertext}>{lang.about.text4}</p>
