@@ -1,10 +1,10 @@
 import React from "react";
-import "../../Sass/General.scss";
 import ContactInfo from "../../Components/ContactInfo/Info";
-import styles from "./Contact.module.scss";
 import Inputs from "../../Components/Inputs/Inputs";
 import Phone from "../../Assets/Images/contact.jpg";
 import useLocalization from "../../Hooks/useLocalization"
+
+import styles from "./Contact.module.scss";
 
 function Contact() {
   const [lang]=useLocalization()

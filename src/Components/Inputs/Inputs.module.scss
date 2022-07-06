@@ -1,20 +1,23 @@
+@import '../../Sass/Variables.scss';
+
 .inputs{
   padding: 30px 0 60px 0;
 
-  background-color: #FFF3F9;
+  background-color: $bgGray;
 }
-.input__flex{
-  
+
+.input__flex{  
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .title{
   text-align: center;
   font-size: 46px;
   font-weight: 700;
-
 }
+
 .inputs__inner{
   padding: 16px 24px;
   margin-bottom: 20px;
@@ -26,7 +29,7 @@
   
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: $white;
 }
 .input{
   border: none;
