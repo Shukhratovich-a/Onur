@@ -1,6 +1,9 @@
-import { Swiper, SwiperSlide } from "swiper/react";
+import React from "react";
 
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay, Mousewheel } from "swiper";
+
+import useLocalization from "../../Hooks/useLocalization";
 
 import "swiper/scss";
 import "swiper/scss/pagination";
@@ -9,6 +12,16 @@ import styles from "./Hero.module.scss";
 import "./HeroSlider.scss";
 
 const Hero = () => {
+  const [localization] = useLocalization();
+
+  const [slides, setSlides] = React.useState([]);
+
+  // for (let obj in localization.hero) {
+    // console.log(localization[obj]);
+  // }
+
+  console.log(localization.hero);
+
   return (
     <section className={styles.hero}>
       <Swiper
@@ -49,9 +62,7 @@ const Hero = () => {
           style={{ backgroundImage: `url(${"https://picsum.photos/1920/1080"})` }}
         >
           <div className={`container ${styles.container}`}>
-            <h1 className={styles.hero__heading}>
-              Nova добавляет элегантности вашей ванной комнате
-            </h1>
+            <h1 className={styles.hero__heading}>sd</h1>
             <p className={styles.hero__description}>
               Мы ориентируемся на функциональность комфорт и эстетику вашей ванной комнаты
             </p>
@@ -63,7 +74,7 @@ const Hero = () => {
         >
           <div className={`container ${styles.container}`}>
             <h1 className={styles.hero__heading}>
-              Nova добавляет элегантности вашей ванной комнате
+              O‘zbekiston va Turkiyani bog‘lovchi yetakchi savdo kompaniyalaridan biri bo‘lish
             </h1>
             <p className={styles.hero__description}>
               Мы ориентируемся на функциональность комфорт и эстетику вашей ванной комнаты

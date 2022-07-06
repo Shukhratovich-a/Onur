@@ -7,6 +7,12 @@ const Localization = {
       contacts: "contacts",
     },
 
+    hero: {
+      slider1: {
+        heading: "Ehtiyojlarni sifatli mahsulotlar bilan qondirish",
+      },
+    },
+
     footer: {
       siteMenu: "site menu",
       partner: "partners",
@@ -34,6 +40,12 @@ const Localization = {
       contacts: "контакты",
     },
 
+    hero: {
+      slider1: {
+        heading: "Ehtiyojlarni sifatli mahsulotlar bilan qondirish",
+      },
+    },
+
     footer: {
       siteMenu: "site menu",
       partner: "partners",
@@ -59,6 +71,12 @@ const Localization = {
       products: "mahsulotlar",
       about: "biz haqimizda",
       contacts: "bog'lanish",
+    },
+
+    hero: {
+      slider1: {
+        heading: "Ehtiyojlarni sifatli mahsulotlar bilan qondirish",
+      },
     },
 
     footer: {
