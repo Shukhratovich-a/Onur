@@ -1,3 +1,4 @@
+@import "../../Sass/Variables.scss";
 
 .contact {
   display: flex;
@@ -6,11 +7,13 @@
   margin: 80px 0;
   height: calc(100vh - 100px);
 }
-.contact__title{
+.contact__title {
+  color: $darkBlue;
   font-size: 40px;
   line-height: 36px;
 }
 .contact__text {
+  color: $darkBlue;
   font-size: 20px;
   line-height: 25px;
   max-width: 700px;
@@ -26,23 +29,22 @@
   .contact {
     height: calc(100vh - 70px);
   }
-  
 }
 
-@media only screen and(max-width:992px){
-  .contact{
+@media only screen and(max-width:992px) {
+  .contact {
     flex-direction: column;
     margin: 0 auto;
     margin-bottom: 200px;
   }
-  .contact__img{
+  .contact__img {
     max-width: 500px;
     width: 100%;
     height: 300px;
     margin-bottom: 100px;
     // display: none;
   }
-  .contact__left{
+  .contact__left {
     text-align: center;
   }
 }
