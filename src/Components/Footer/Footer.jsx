@@ -11,7 +11,7 @@ import styles from "./Footer.module.scss";
 
 const Footer = () => {
   const [lang] = useLocalization(true);
-  const [localization] = useLocalization();
+  const localization = useLocalization();
 
   return (
     <footer className={styles.footer}>
@@ -83,8 +83,6 @@ const Footer = () => {
 
             <div className={styles.footer__inner}>
               <span className={styles.footer__inner__heading}>{localization.footer.partner}</span>
-
-              
             </div>
 
             <div className={styles.footer__inner}>

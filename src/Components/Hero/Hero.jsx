@@ -12,7 +12,7 @@ import styles from "./Hero.module.scss";
 import "./HeroSlider.scss";
 
 const Hero = () => {
-  const [localization] = useLocalization();
+  const localization = useLocalization();
 
   return (
     <section className={styles.hero}>

@@ -10,15 +10,15 @@ import Phone from "../../Assets/Images/Contact.png";
 import styles from "./Contact.module.scss";
 
 function Contact() {
-  const [lang] = useLocalization();
+  const localization = useLocalization();
 
   return (
     <main>
       <div className="container">
         <div className={styles.contact}>
           <div className={styles.contact__left}>
-            <h1 className={styles.contact__title}>{lang.contact.title}</h1>
-            <p className={styles.contact__text}>{lang.contact.text}</p>
+            <h1 className={styles.contact__title}>{localization.contact.title}</h1>
+            <p className={styles.contact__text}>{localization.contact.text}</p>
           </div>
           <div className={styles.contact__right}>
             <img className={styles.contact__img} src={Phone} alt="contact img" />
