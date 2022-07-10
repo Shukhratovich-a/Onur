@@ -2,7 +2,7 @@ const Localization = {
   en: {
     nav: {
       home: "home",
-      products: "products",
+      partners: "products",
       about: "about us",
       contacts: "contacts",
     },
@@ -50,7 +50,7 @@ const Localization = {
   ru: {
     nav: {
       home: "главная",
-      products: "товары",
+      partners: "товары",
       about: "о нас",
       contacts: "контакты",
     },
@@ -98,7 +98,7 @@ const Localization = {
   uz: {
     nav: {
       home: "bosh sahifa",
-      products: "mahsulotlar",
+      partners: "hamkorlar",
       about: "biz haqimizda",
       contacts: "bog'lanish",
     },

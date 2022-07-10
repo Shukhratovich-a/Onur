@@ -37,10 +37,10 @@ const Nav = () => {
             className={({ isActive }) =>
               `${styles.nav__link} ${isActive ? styles["nav__link--active"] : ""}`
             }
-            to={"/products/:nova"}
-            title={lang.nav.products}
+            to={"/partners/nova"}
+            title={lang.nav.partners}
           >
-            {lang.nav.products}
+            {lang.nav.partners}
           </NavLink>
         </li>
         <li className={styles.nav__item}>
