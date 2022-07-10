@@ -2,7 +2,7 @@ const Localization = {
   en: {
     nav: {
       home: "home",
-      partners: "products",
+      partners: "partners",
       about: "about us",
       contacts: "contacts",
     },
