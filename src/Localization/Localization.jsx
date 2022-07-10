@@ -8,7 +8,7 @@ const Localization = {
     },
 
     contact: {
-      title: "Let's talk",
+      title: "let's talk",
       text: "To request a quote or want to meet up for coffee contact us directly or fill out the form and we will  get back to you promptly.if you have any question you can call the our telephone",
       title2: "Contact us",
       inputTitle: "Fill the data",
@@ -33,7 +33,7 @@ const Localization = {
     },
 
     about: {
-      company: "About company",
+      company: "about company",
       text1:
         "This company was founded in 2004, and started with the import of household appliances from the United Arab Emirates.",
       text2:
@@ -74,7 +74,7 @@ const Localization = {
     },
 
     contact: {
-      title: "Давай поговорим",
+      title: "давай поговорим",
       text: "Чтобы запросить цитату или хотите встретиться за чашкой кофе, свяжитесь с нами напрямую или заполните форму, и мы свяжемся с вами в кратчайшие сроки. Если у вас есть какие-либо вопросы, вы можете позвонить по нашему телефону.",
       title2: "Свяжись снами",
       inputTitle: "Заполните данные",
@@ -85,7 +85,7 @@ const Localization = {
     },
 
     about: {
-      company: "О компании",
+      company: "о компании",
       text1:
         "Эта компания была основана в 2004 году и начинала с импорта бытовой техники из Объединенных Арабских Эмиратов.",
       text2:
@@ -126,7 +126,7 @@ const Localization = {
     },
 
     contact: {
-      title: "Keling gaplashamiz",
+      title: "keling gaplashamiz",
       text: "Narx so'rash yoki kofe ichishni xohlash uchun biz bilan bevosita bog'laning yoki shaklni to'ldiring va biz sizga tezda javob beramiz. Agar sizda biron bir savol bo'lsa, bizning telefonimizga qo'ng'iroq qilishingiz mumkin.",
       title2: "Biz bilan bog'laning",
       inputTitle: "Ma'lumotlarni to'ldiring",
@@ -137,7 +137,7 @@ const Localization = {
     },
 
     about: {
-      company: "Kompaniya haqida",
+      company: "kompaniya haqida",
       text1: `Ushbu kompaniya 2004 yilda tashkil etilgan bo‘lib, ilk mahsulotlarni Birlashgan Arab Amirliklari davlatidan maishiy texnikalarni import qilishdan boshladi.`,
 
       text2: `2008 yilga kelib, Turkiya davlatining mashhur kompaniyalari bilan hamkorlik aloqalari o‘rnatildi va «SPK» kompaniyasi o‘rtasida shartnoma imzolandi.`,
