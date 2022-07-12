@@ -29,6 +29,22 @@ const Partners = () => {
               </a>
             </div>
           </li>
+          <li className={styles.partner}>
+            <div className={styles.partner__inner}>
+              <Link className={styles.partner__link} to={"/partners/nova"}>
+                Show products
+              </Link>
+
+              <a
+                className={styles.partner__link}
+                href="https://www.novaplastik.com/ru/"
+                rel="noreferrer noopener"
+                target={"_blank"}
+              >
+                Site
+              </a>
+            </div>
+          </li>
         </ul>
       </div>
     </section>
