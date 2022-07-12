@@ -1,0 +1,236 @@
+const Products = {
+  nova: {
+    product1: {
+      poster:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCKNwQiN_yjQCoQCouP7HFKrtCIfQy5hSxrg&usqp=CAU",
+      title: "Flush Tanks",
+      productCode: "4082",
+      description: "Bella pull type plastic flush tank with 5 pieces pipes.Box packing",
+      boxDimensions: "780x480x410mm",
+      boxVolume: "0,153m3",
+      boxWeight: "15,50kg",
+      quantityOfBox: "5",
+      manufacturer: "Turkey",
+    },
+    product2: {
+      poster:
+        "https://www.lussostone.com/images/senza-concealed-dual-flush-cistern-frame-with-flush-plate-p1636-10079_zoom.jpg",
+      title: "Concealed Cisterns",
+      productCode: "4501",
+      description: "Concelead cistern for hang-wall closets with metal frame",
+      boxDimensions: "1145x525x165mm",
+      boxVolume: "0,010m3",
+      boxWeight: "14,0kg",
+      quantityOfBox: "1",
+      manufacturer: "Turkey",
+    },
+    product3: {
+      poster:
+        "https://gwa-prod-pxm-api.s3-ap-southeast-2.amazonaws.com/category/extra_large/Caroma_categpry_toilet_seat.jpg",
+      title: "Toilet seats",
+      productCode: "2010",
+      description: {
+        material: "Poliproplen",
+        packing: "Polybag",
+        distanceBetweenHinges: "135-160mm",
+        weight: "0,650kg",
+        lengthOfScrew: "90mm",
+        colors: "5 different colour options",
+      },
+      boxDimensions: "455x380x370mm",
+      boxVolume: "0,063m3",
+      boxWeight: "9,00kg",
+      quantityOfBox: "12",
+      manufacturer: "Uzbekistan",
+    },
+    product4: {
+      poster:
+        "https://cdn.shopify.com/s/files/1/1392/6317/products/1_301ce42f-2116-4899-8f71-d70ac17f2eba_1024x1024.jpg?v=1642663806",
+      title: "Toilet seats",
+      productCode: "2022",
+      description: {
+        material: "Poliproplen",
+        packing: "Polybag",
+        distanceBetweenHinges: "140-175mm",
+        weight: "1,13kg",
+        lengthOfScrew: "70mm",
+        colors: "5 different colour options",
+      },
+      boxDimensions: "540x385x470mm",
+      boxVolume: "0,097m3",
+      boxWeight: "18,50kg",
+      quantityOfBox: "12",
+      manufacturer: "Uzbekistan",
+    },
+    product5: {
+      poster:
+        "https://cdn.shopify.com/s/files/1/1392/6317/products/1_301ce42f-2116-4899-8f71-d70ac17f2eba_1024x1024.jpg?v=1642663806",
+      title: "Toilet seats",
+      productCode: "2076",
+      description: {
+        material: "Poliproplen",
+        packing: "Box",
+        distanceBetweenHinges: "155-165mm",
+        weight: "1,25kg",
+        type: "soft close hinges fixing from above",
+        colors: "white",
+      },
+      boxDimensions: "540x385x470mm",
+      boxVolume: "0,097m3",
+      boxWeight: "16,00kg",
+      quantityOfBox: "10",
+      manufacturer: "Turkey",
+    },
+    product6: {
+      poster:
+        "https://media.diy.com/is/image/Kingfisher/goodhome-pilica-blue-bottom-fix-soft-close-toilet-seat~5059340081243_01c?$MOB_PREV$&$width=618&$height=618",
+      title: "Toilet seats",
+      productCode: "2056",
+      description: "Comfort Lux Toilet Seat for Kids(Poly Bag Packing)",
+      boxDimensions: "550x390x505mm",
+      boxVolume: "0,10m3",
+      boxWeight: "6,00kg",
+      quantityOfBox: "12",
+      manufacturer: "Turkey",
+    },
+    product7: {
+      poster: "https://novaplastik.net/wp-content/uploads/2020/02/1015-Render.jpg",
+      title: "Siphons for washbasins and sinks",
+      productCode: "1050",
+      description:
+        'Siphon for washbasin with sigle piece inlet 64mm screw. Flexible outlet 1 1/4" - diameter 40/50mm',
+      boxDimensions: "425x375x610mm",
+      boxVolume: "0,097m3",
+      boxWeight: "10,00kg",
+      quantityOfBox: "40",
+      manufacturer: "Uzbekistan",
+    },
+    product8: {
+      poster: "https://novaplastik.net/wp-content/uploads/2020/02/1015-Render.jpg",
+      title: "Siphons for washbasins and sinks",
+      productCode: "1047",
+      description:
+        'Maxi bottle trap siphon for sinks with 3 1/2" inlet and 25mm brass screw. Overflow and  machine connection. Flexible outlet 1 1/2" - diameter 40/50mm',
+      boxDimensions: "425x375x610mm",
+      boxVolume: "0,097m3",
+      boxWeight: "11,00kg",
+      quantityOfBox: "20",
+      manufacturer: "Uzbekistan",
+    },
+    product9: {
+      poster: "https://novaplastik.net/wp-content/uploads/2020/02/1013-Render-2.jpg",
+      title: "Siphons for washbasins and sinks",
+      productCode: "1521",
+      description:
+        'Siphon for bathtub-V-type with 70mm drain, 50mm screw, pvc plug with plastic chain. Flexible outlet 1 1/2" - diameter 40/50mm. (Height 120mm)',
+      boxDimensions: "425x375x610mm",
+      boxVolume: "0,097m3",
+      boxWeight: "10,00kg",
+      quantityOfBox: "25",
+      manufacturer: "Uzbekistan",
+    },
+    product10: {
+      poster:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt8Ly4K0r1kZ0YbzqTQe5xrm1ntkxYm_h3Mg&usqp=CAU",
+      title: "Siphons for washbasins and sinks",
+      productCode: "1621",
+      description:
+        'Shower siphon-V-type with 70mm drain and 50mm screw. Flexible outlet 1 1/2"- diameter 40/50. (Height 90mm)',
+      boxDimensions: "425x375x610mm",
+      boxVolume: "0,097m3",
+      boxWeight: "11,00kg",
+      quantityOfBox: "50",
+      manufacturer: "Uzbekistan",
+    },
+    product11: {
+      poster:
+        "https://cdn.tragate.com/items/7032-luxury-flexible-siphon-double-flexible-siphon-145cm-127877-295861.jpg",
+      title: "Flexible Siphons",
+      productCode: "1262",
+      description:
+        'Flexible Siphon with 64mm drain and 65mm screw. 1 1/2"-diameter 40/50mm flexible outlet.',
+      boxDimensions: "425x375x610mm",
+      boxVolume: "0,097m3",
+      boxWeight: "14,00kg",
+      quantityOfBox: "75",
+      manufacturer: "Uzbekistan",
+    },
+    product12: {
+      poster: "https://fasoplast.gr/wp-content/uploads/2019/10/53-flex-sip-pvc.jpg",
+      title: "Flexible Siphons",
+      productCode: "1209",
+      description:
+        "Flexible Siphon single piece with 64mm drain and 64mm screw. diameter 40/50mm flexible outlet.",
+      boxDimensions: "425x375x610mm",
+      boxVolume: "0,097m3",
+      boxWeight: "11,00kg",
+      quantityOfBox: "100",
+      manufacturer: "Uzbekistan",
+    },
+    product13: {
+      poster: "https://fasoplast.gr/wp-content/uploads/2019/10/53-flex-sip-pvc.jpg",
+      title: "Flexible Siphons",
+      productCode: "1213",
+      description:
+        "Flexible Siphon single piece with 64mm drain and 64mm screw. diameter 40/50mm flexible outlet (drain and screw are 430 quality).",
+      boxDimensions: "425x375x610mm",
+      boxVolume: "0,097m3",
+      boxWeight: "11,00kg",
+      quantityOfBox: "100",
+      manufacturer: "Uzbekistan",
+    },
+    product14: {
+      poster:
+        "https://ae01.alicdn.com/kf/HTB1u4XsadzvK1RkSnfoq6zMwVXaD/Drains-15-15cm-Outdoor-Square-Stainless-Steel-Floor-Drain-Cover-Strainer-Deodorant-Linear-Drain-Grate-Waste.jpg",
+      title: "Floor drains",
+      productCode: "5057",
+      description:
+        "100x100mm floor drain with stainless steel grid and frame,horizontal outlet diameter 50",
+      boxDimensions: "550x510x200mm",
+      boxVolume: "0,056m3",
+      boxWeight: "8,25kg",
+      quantityOfBox: "50",
+      manufacturer: "Uzbekistan",
+    },
+    product15: {
+      poster: "https://i.pinimg.com/originals/28/23/fc/2823fc306204016c879220e6b43f99db.jpg",
+      title: "Floor drains",
+      productCode: "5067",
+      description:
+        "100x100mm floor drain with stainless steel grid and frame,horizontal outlet diameter 50",
+      boxDimensions: "550x510x200mm",
+      boxVolume: "0,056m3",
+      boxWeight: "7,50kg",
+      quantityOfBox: "50",
+      manufacturer: "Uzbekistan",
+    },
+    product16: {
+      poster: "https://i.pinimg.com/originals/28/23/fc/2823fc306204016c879220e6b43f99db.jpg",
+      title: "Floor drains",
+      productCode: "5037",
+      description:
+        "150x150mm floor drain with stainless steel grid and frame,horizontal outlet diameter 50",
+      boxDimensions: "540x390x470mm",
+      boxVolume: "0,099m3",
+      boxWeight: "16,00kg",
+      quantityOfBox: "60",
+      manufacturer: "Uzbekistan",
+    },
+    product17: {
+      poster:
+        "https://www.ubuy.com.pk/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvODFSYU80NTlaNUwuX0FDX1NMMTUwMF8uanBn.jpghttps://i.pinimg.com/originals/28/23/fc/2823fc306204016c879220e6b43f99db.jpg",
+      title: "Floor drains",
+      productCode: "5300",
+      description:
+        "Ceramic level shower drain 300mm, 360 degree revolving horizontal outlet diameter 50.",
+      boxDimensions: "370x425x360mm",
+      length: "30",
+      boxVolume: "0,056m3",
+      boxWeight: "7,50kg",
+      quantityOfBox: "15",
+      manufacturer: "Turkey",
+    },
+  },
+};
+
+export default Products;
