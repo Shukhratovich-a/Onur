@@ -9,7 +9,7 @@
   padding: 35px 0;
   background-color: $darkBlue;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  transition: padding 0.25s ease, box-shadow 0.25s ease;
+  transition: padding 0.25s ease;
 
   .container {
     display: flex;
@@ -19,7 +19,6 @@
 
   &--small {
     padding: 10px 0;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
 }
 
