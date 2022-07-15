@@ -231,6 +231,196 @@ const Products = {
       manufacturer: "Turkey",
     },
   },
+
+  kas: {
+    product1: {
+      poster:
+        "https://kas.com.tr/wp-content/uploads/2018/04/full-bore-brass-ball-valve-for-water-pn-40.jpg",
+      title: "Full Bore Brass Ball Valve For Water PN 40",
+      dimension: "1/2",
+      quantityOfBox: "2/100",
+    },
+
+    product2: {
+      poster:
+        "https://kas.com.tr/wp-content/uploads/2018/04/Full-Bore-Brass-Ball-Valve-For-N-Gas-Mob-5-F-F.jpg",
+      title: "Вентиль бабочка с разъёмом",
+      dimension: "п/м 3/4",
+      quantityOfBox: "2/50",
+    },
+
+    product3: {
+      poster:
+        "https://files.glotr.uz/company/000/010/272/products/2022/05/24/2022-05-24-14-43-11-901247-a610b793f5dafde0bc1bfb39d5018d23.webp?_=ozbol",
+      title: "Вентиль бабочка М/М PN 25 ЭКО",
+      dimension: "м/м 1",
+      quantityOfBox: "2/40",
+    },
+
+    product4: {
+      poster: "https://devel.prom.uz/upload/products/6e/0f/6e0fd8845a3e420d243e6a3a51d30215.png",
+      title: "Коллектор с краниками для т/п ЭКО",
+      dimension: "2",
+      quantityOfBox: "30",
+    },
+
+    product5: {
+      poster: "https://stroimdom43.ru/thumb/2/vVHmJydkwlSHTxklUkmhYQ/490r490/d/79501111.jpg",
+      title: "коллектор с расходамерами нержовейка для т/п",
+      dimension: "2",
+      quantityOfBox: "комплект",
+    },
+
+    product6: {
+      poster: "https://devel.prom.uz/upload/products/6e/0f/6e0fd8845a3e420d243e6a3a51d30215.png",
+      title: "коллектор с краниками для т/п",
+      dimension: "2",
+      quantityOfBox: "30",
+    },
+
+    product7: {
+      poster: "https://img02.flagma.uz/photo/shlangi-dlya-smesitelya-1863035_big.jpg",
+      title: "шланги для смесителей",
+      dimension: "1/4-3/8",
+    },
+
+    product8: {
+      poster:
+        "https://72.uz/image/cache/catalog/CATALOG/santexnika/Stalnie_FiTingi/Poplavkovie_klapani/Poplavkovie_klapani_KAS/poplavkovij_klapan_urovnya_vodi_evro-600x600.jpg",
+      title: "Поплавок уровня воды",
+      dimension: '1/2"',
+      type: "1/50",
+    },
+
+    product9: {
+      poster: "https://kas.com.tr/wp-content/uploads/2018/04/papatya-taharat-musluk-1018x1024.jpg",
+      title: "Отсекатель",
+      dimension: "полуоборот",
+      type: "1/50",
+    },
+  },
+
+  spk: {
+    product1: {
+      poster: "https://septik.guru/imgs/279/arm-steklovoloknom6.jpg",
+      title: "PP-R FIBER PIPE PN 25 SDR 6",
+      productCode: "1015PF-000020",
+      dimensions: "20x3,4 mm",
+      qtyPerPackageMtr: "100",
+    },
+
+    product2: {
+      poster:
+        "https://progreem.by/upload/resize_cache/webp/upload/iblock/174/polipropilenovaya_truba_armirovannaya_steklovoloknom_valtec_pp_fiber_pn_25_25_mm.webp",
+      title: "PP-R FIBER PIPE PN 20 SDR 7,4",
+      productCode: "1017PF-000020",
+      dimensions: "20x2,8 mm",
+      qtyPerPackageMtr: "100",
+    },
+
+    product3: {
+      poster:
+        "https://kvantum.com.ua/upload/iblock/fd9/50rtbu7meuuok97f94b7xbr9vcqta022/mufta-Ukraina.jpg",
+      title: "PP-R Clamping sleeve",
+      productCode: "2000PF-000020",
+      dimensions: "20 mm",
+      qtyPerPackageMtr: "400",
+    },
+
+    product4: {
+      poster:
+        "https://lzd-img-global.slatic.net/g/p/b4ccc4516b72f616a41da63aaffc8f11.jpg_720x720q80.jpg_.webp",
+      title: "PP-R Double wall connection elbow",
+      productCode: "2085M1-020020",
+      dimensions: '20 x 1/2 " Female',
+      qtyPerPackageMtr: "25",
+    },
+
+    product5: {
+      poster: "http://sc04.alicdn.com/kf/H19b662dfd23240b985a7c09c4388e23bV.jpg",
+      title: "PP-R Ball valve",
+      productCode: "4010V4-000020",
+      dimensions: "20mm",
+      qtyPerPackageMtr: "32",
+    },
+
+    product6: {
+      poster:
+        "https://image.made-in-china.com/202f0j00zmUacDuIHJql/PPR-Concealed-Gate-Stop-Ball-Valve-with-Chrome-Plated.jpg",
+      title: "PP-R Chrome plated valve",
+      productCode: "4025V4-000020",
+      dimensions: "20mm",
+      qtyPerPackageMtr: "20",
+    },
+
+    product7: {
+      poster:
+        "https://image.made-in-china.com/202f0j00VTSUJRPBnbqj/PE-Rt-Floor-Heating-Pipe-with-EVOH-Oxygen-Barrier-Layer.jpg",
+      title: "PE-RT Pipe",
+      productCode: "1025PE-160020",
+      dimensions: "16x2.0mm",
+      qtyPerPackageMtr: "160",
+    },
+  },
+
+  candan: {
+    product1: {
+      poster: "http://www.candanmachine.com/UrunImages/b/CM-03-SET-V-EXTRA-555-3F8L.jpg",
+      title: "CM-03-SET-V/EXTRA VAKUMLU - WITH PLASTIC BASE",
+      productCode: "CM-03-Only",
+      dimensions:
+        "Double heating elements, 1500 watt. After sale and spare part guaranteed for 1 year. Heating elements made of noncorrosive material. Classical. Yoke foot. All apparatus required for PP welding are available in the toolbox set (20-40mm). Thermostat is provided. diameter 60mm.",
+    },
+
+    product2: {
+      poster: "https://z.nooncdn.com/products/tr:n-t_200/v1574336797/N32182763A_1.jpg",
+      title: "CM-03-SET-WV/EXTRA VAKUMSUZ - WITHOUT PLASTIC BASE",
+      productCode: "CM-03-Only",
+      dimensions:
+        "Double heating elements, 1500 watt. After sale and spare part guaranteed for 1 year. Heating elements made of noncorrosive material. Classical. Yoke foot. All apparatus required for PP welding are available in the toolbox set (20-40mm). Thermostat is provided. diameter 60mm.",
+    },
+
+    product3: {
+      poster: "https://z.nooncdn.com/products/tr:n-t_200/v1574336797/N32182763A_1.jpg",
+      title: "CM-05-ONLY/BIGGEST WITH METAL BOX DIAMETER 200mm",
+      productCode: "CM-05-Only",
+      dimensions:
+        "Safety sensor against overheat. Surface of heater coated by telfon. Double heating elements. Heating elements made of noncorrosive material. 2400 watt. Possible to work with welding socket up to 200 mm. Heat resistant cable; up to 200 degree is used. Special stand that enables working an any location. On/Off switches have special illumunations to ensure ease working. Thermostat is provided. After sale and spare part guaranteed for 1 year.",
+    },
+
+    product4: {
+      poster: "https://imgusr.tradekey.com/p-112580-20130426095130/test-pressure-pump-cm-60.jpg",
+      title: "CM 60 TEST PRESSURE PUMP WITH PLASTIC PISTON",
+      productCode: "CM 60",
+      dimensions:
+        "60 bar, 820 psi. Double shut-off valve system,to ease test pressure adjusment full tightness. Distrotion proof plastic piston. Steel tank protected with epoxy coating. Pressure gauges with readily available calibration certificates.",
+    },
+
+    product5: {
+      poster: "https://4.imimg.com/data4/FX/PU/ANDROID-8376288/product-500x500.jpeg",
+      title: "AUTOMATIC PIPE CUTTER 16-40mm",
+      productCode: "CM OTC-42",
+      dimensions:
+        "16-40mm, First quality stainless steel blade. Handle coated by special paint. After sale support and unlimited spare part quarente for 1 year. Cutting quarantee in world standarts.",
+    },
+
+    product6: {
+      poster: "https://5.imimg.com/data5/DC/HT/ZD/SELLER-98404369/pipe-cutter-500x500.jpg",
+      title: "PIPE CUTTER 16-40mm",
+      productCode: "PPC 42/16-40 mm",
+      dimensions:
+        "16-40mm, First quality stainless steel blade. Handle coated by special paint. After sale support and unlimited spare part quarente for 1 year. Cutting quarantee in world standarts.",
+    },
+
+    product7: {
+      poster:
+        "https://sc01.alicdn.com/kf/HTB1WNc8HpXXXXb.aXXXq6xXFXXXr/128963/HTB1WNc8HpXXXXb.aXXXq6xXFXXXr.jpg",
+      title: "PLASTIC PIPE WELDING SOCKET",
+      productCode: "CM WS-16-160mm",
+      dimensions:
+        "Available for all dimensions between 16-160mm. All of our welding socket are manufactured by injection press. Steel bolt and nut are used. Outer surfaces of the welding socket are coated with first class telfon. Telfon is the one of the most important points of fusion welding.",
+    },
+  },
 };
 
-export default Products;
+export default Products
