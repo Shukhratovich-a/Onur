@@ -31,7 +31,7 @@ function Contact() {
         width="100%"
         height="575"
         title="map"
-        frameborder="0"
+        frameBorder="0"
       ></iframe>
 
       <ContactInfo />
