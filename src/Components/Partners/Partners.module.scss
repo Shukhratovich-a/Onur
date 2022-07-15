@@ -1,3 +1,5 @@
+@import '../../Sass/Variables.scss';
+
 .partners {
   padding: 30px 0;
 }
@@ -11,4 +13,19 @@
   &::first-letter {
     text-transform: uppercase;
   }
+}
+
+.partners__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.partner {
+  padding: 30px;
+  box-shadow: rgba($color: $darkBlue, $alpha: 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
 }
