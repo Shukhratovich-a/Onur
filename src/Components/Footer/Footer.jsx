@@ -5,7 +5,7 @@ import useLocalization from "../../Hooks/useLocalization";
 import LogoEn from "../Lib/Icons/LogoEn";
 import LogoRu from "../Lib/Icons/LogoRu";
 
-// import Socials from "../Socials/Socials";
+import Socials from "../Socials/Socials";
 
 import styles from "./Footer.module.scss";
 
@@ -88,11 +88,12 @@ const Footer = () => {
             <div className={styles.footer__inner}>
               <span className={styles.footer__inner__heading}>{localization.footer.socials}</span>
 
-              {/* <Socials className={styles.footer__socials} /> */}
+              <Socials className={styles.footer__socials} />
             </div>
           </div>
         </div>
       </div>
+
       <div className={styles.footer__bottom}>
         <div className={`${styles.container} container`}>&copy; ONUR</div>
       </div>

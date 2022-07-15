@@ -22,3 +22,16 @@
     margin-left: 16px;
   }
 }
+
+@media only screen and(max-width: 375px) {
+  .social {
+    &__link {
+      padding: 10px;
+      color: $lightBlue;
+    }
+
+    & + & {
+      margin-left: 12px;
+    }
+  }
+}
