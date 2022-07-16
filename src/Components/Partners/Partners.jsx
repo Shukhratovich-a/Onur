@@ -16,24 +16,10 @@ const Partners = () => {
 
         <ul className={styles.partners__list}>
           <li className={styles.partner}>
-            <div className={styles.partner__inner}>
+            <div className={styles.partner__wrapper}>
               <Kas />
-
-              <Link className={styles.partner__link} to={"/partners/nova"}>
-                Show products
-              </Link>
-
-              <a
-                className={styles.partner__link}
-                href="https://www.novaplastik.com/ru/"
-                rel="noreferrer noopener"
-                target={"_blank"}
-              >
-                Site
-              </a>
             </div>
-          </li>
-          <li className={styles.partner}>
+
             <div className={styles.partner__inner}>
               <Link className={styles.partner__link} to={"/partners/nova"}>
                 Show products
@@ -50,6 +36,10 @@ const Partners = () => {
             </div>
           </li>
           <li className={styles.partner}>
+            <div className={styles.partner__wrapper}>
+              <Kas />
+            </div>
+
             <div className={styles.partner__inner}>
               <Link className={styles.partner__link} to={"/partners/nova"}>
                 Show products
@@ -66,6 +56,10 @@ const Partners = () => {
             </div>
           </li>
           <li className={styles.partner}>
+            <div className={styles.partner__wrapper}>
+              <Kas />
+            </div>
+
             <div className={styles.partner__inner}>
               <Link className={styles.partner__link} to={"/partners/nova"}>
                 Show products
@@ -82,6 +76,30 @@ const Partners = () => {
             </div>
           </li>
           <li className={styles.partner}>
+            <div className={styles.partner__wrapper}>
+              <Kas />
+            </div>
+
+            <div className={styles.partner__inner}>
+              <Link className={styles.partner__link} to={"/partners/nova"}>
+                Show products
+              </Link>
+
+              <a
+                className={styles.partner__link}
+                href="https://www.novaplastik.com/ru/"
+                rel="noreferrer noopener"
+                target={"_blank"}
+              >
+                Site
+              </a>
+            </div>
+          </li>
+          <li className={styles.partner}>
+            <div className={styles.partner__wrapper}>
+              <Kas />
+            </div>
+
             <div className={styles.partner__inner}>
               <Link className={styles.partner__link} to={"/partners/nova"}>
                 Show products
