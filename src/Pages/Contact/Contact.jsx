@@ -31,6 +31,7 @@ function Contact() {
         width="100%"
         height="575"
         title="map"
+        scrolling="no"
         frameBorder="0"
       ></iframe>
 
