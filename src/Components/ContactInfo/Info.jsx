@@ -1,18 +1,21 @@
 import React from "react";
-import styles from "./Info.module.scss";
-import useLocalization from "../../Hooks/useLocalization"
+
+import useLocalization from "../../Hooks/useLocalization";
+
 import Telegram from "../../Assets/Images/telegram.png";
 import Facebook from "../../Assets/Images/facebook.png";
 import Instagram from "../../Assets/Images/instagram.png";
 import Gmail from "../../Assets/Images/gmail.png";
 import Telephone from "../../Assets/Images/telephone.png";
 
+import styles from "./Info.module.scss";
+
 function Info() {
-  const [lang]=useLocalization()
+  const localization = useLocalization();
   return (
     <div className={styles.info}>
       <div className={styles.container}>
-        <h2 className={styles.info__title}>{lang.contact.title2}</h2>
+        <h2 className={styles.info__title}>{localization.contact.title2}</h2>
         <div className={styles.info__inner}>
           <div className={styles.info__flex}>
             <div className={styles.flex__inner}>

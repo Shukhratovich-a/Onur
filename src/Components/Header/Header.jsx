@@ -8,8 +8,6 @@ import useBurger from "../../Hooks/useBurger";
 
 import Nav from "../Nav/Nav";
 
-
-
 import LogoEn from "../Lib/Icons/LogoEn";
 import LogoRu from "../Lib/Icons/LogoRu";
 import Burger from "../Lib/Icons/Burger";
@@ -53,7 +51,7 @@ const Header = () => {
       ) : null}
       <div className={`${styles.container} container`}>
         <Link className={styles.header__link} to={"/"}>
-          {lang === "ru" ? <LogoRu color="#fff"/> : <LogoEn color="#fff"/>}
+          {lang === "ru" ? <LogoRu color="#fff" /> : <LogoEn color="#fff" />}
         </Link>
 
         <Nav />

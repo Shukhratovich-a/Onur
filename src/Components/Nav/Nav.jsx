@@ -7,12 +7,12 @@ import useBurger from "../../Hooks/useBurger";
 import styles from "./Nav.module.scss";
 
 const Nav = () => {
-  const [lang] = useLocalization();
+  const localization = useLocalization();
   const [isOpen, setIsOpen] = useBurger();
   const screenWidth = useWindowDimensions();
 
   const closeNav = (evt) => {
-    if(!evt.target.className.includes('nav__list')) setIsOpen(false)
+    if (!evt.target.className.includes("nav__list")) setIsOpen(false);
   };
 
   return (
@@ -27,9 +27,9 @@ const Nav = () => {
               `${styles.nav__link} ${isActive ? styles["nav__link--active"] : ""}`
             }
             to={"/"}
-            title={lang.nav.home}
+            title={localization.nav.home}
           >
-            {lang.nav.home}
+            {localization.nav.home}
           </NavLink>
         </li>
         <li className={styles.nav__item}>
@@ -37,10 +37,15 @@ const Nav = () => {
             className={({ isActive }) =>
               `${styles.nav__link} ${isActive ? styles["nav__link--active"] : ""}`
             }
+<<<<<<< HEAD
             to={"/products/"}
             title={lang.nav.products}
+=======
+            to={"/partners/nova"}
+            title={localization.nav.partners}
+>>>>>>> 69c5dda9dbae11a6424ffc967be4e862591e90db
           >
-            {lang.nav.products}
+            {localization.nav.partners}
           </NavLink>
         </li>
         <li className={styles.nav__item}>
@@ -49,9 +54,9 @@ const Nav = () => {
               `${styles.nav__link} ${isActive ? styles["nav__link--active"] : ""}`
             }
             to={"/about"}
-            title={lang.nav.about}
+            title={localization.nav.about}
           >
-            {lang.nav.about}
+            {localization.nav.about}
           </NavLink>
         </li>
         <li className={styles.nav__item}>
@@ -60,9 +65,9 @@ const Nav = () => {
               `${styles.nav__link} ${isActive ? styles["nav__link--active"] : ""}`
             }
             to={"/contacts"}
-            title={lang.nav.contacts}
+            title={localization.nav.contacts}
           >
-            {lang.nav.contacts}
+            {localization.nav.contacts}
           </NavLink>
         </li>
       </ul>
