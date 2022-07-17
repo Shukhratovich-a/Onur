@@ -9,7 +9,6 @@ import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import Home from "./Pages/Home/Home";
 import Products from "./Pages/Products/Products";
 import About from "./Pages/About/About";
-
 import "./App.scss";
 
 function App() {
