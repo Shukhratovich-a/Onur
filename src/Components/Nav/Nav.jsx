@@ -37,13 +37,8 @@ const Nav = () => {
             className={({ isActive }) =>
               `${styles.nav__link} ${isActive ? styles["nav__link--active"] : ""}`
             }
-<<<<<<< HEAD
-            to={"/products/"}
-            title={lang.nav.products}
-=======
             to={"/partners/nova"}
             title={localization.nav.partners}
->>>>>>> 69c5dda9dbae11a6424ffc967be4e862591e90db
           >
             {localization.nav.partners}
           </NavLink>
