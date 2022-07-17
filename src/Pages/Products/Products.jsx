@@ -3,13 +3,6 @@ import Datas from "../../Data/Products";
 console.log(Datas);
 
 const Products = () => {
-  const objects=[
-    {
-      id:1,
-      text:"bnma",
-      title:"title1"
-    }
-  ]
   const {companyName}=useParams()
   return (
   <main className="main">
