@@ -63,7 +63,7 @@ const Partners = () => {
 
               <a
                 className={styles.partner__link}
-                href="https://www.novaplastik.com/ru/"
+                href="https://kas.com.tr/"
                 rel="noreferrer noopener"
                 target={"_blank"}
               >
@@ -89,7 +89,7 @@ const Partners = () => {
 
               <a
                 className={styles.partner__link}
-                href="https://www.novaplastik.com/ru/"
+                href="https://spk.com.tr/"
                 rel="noreferrer noopener"
                 target={"_blank"}
               >
@@ -115,7 +115,7 @@ const Partners = () => {
 
               <a
                 className={styles.partner__link}
-                href="https://www.novaplastik.com/ru/"
+                href="http://candanmakina.com/"
                 rel="noreferrer noopener"
                 target={"_blank"}
               >

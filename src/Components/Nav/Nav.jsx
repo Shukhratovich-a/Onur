@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 import useWindowDimensions from "../../Hooks/useWindowDimensions";
 import useLocalization from "../../Hooks/useLocalization";
@@ -11,9 +11,13 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useBurger();
   const screenWidth = useWindowDimensions();
 
+  const location = useLocation().pathname.split("/")[2];
+
   const closeNav = (evt) => {
     if (!evt.target.className.includes("nav__list")) setIsOpen(false);
   };
+
+  console.log(["kas", "nova", "spk", "candan", "baykara"].includes(location));
 
   return (
     <nav
@@ -37,7 +41,10 @@ const Nav = () => {
             className={({ isActive }) =>
               `${styles.nav__link} ${isActive ? styles["nav__link--active"] : ""}`
             }
-            to={"/partners/nova"}
+            to={
+              "/partners/" +
+              (["kas", "nova", "spk", "candan", "baykara"].includes(location) ? location : "")
+            }
             title={localization.nav.partners}
           >
             {localization.nav.partners}
