@@ -17,8 +17,6 @@ const Nav = () => {
     if (!evt.target.className.includes("nav__list")) setIsOpen(false);
   };
 
-  console.log(["kas", "nova", "spk", "candan", "baykara"].includes(location));
-
   return (
     <nav
       className={`${styles.nav} ${isOpen && screenWidth <= 1000 ? styles["nav--open"] : ""}`}
