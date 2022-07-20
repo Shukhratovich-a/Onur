@@ -71,6 +71,69 @@ const Footer = () => {
 
             <div className={styles.footer__inner}>
               <span className={styles.footer__inner__heading}>{localization.footer.partner}</span>
+
+              <ul className={styles.footer__list}>
+                <li className={styles.footer__item}>
+                  <NavLink
+                    className={({ isActive }) =>
+                      `${styles.footer__item__link} ${
+                        isActive ? styles["footer__item__link--active"] : ""
+                      }`
+                    }
+                    to={"/partners/nova"}
+                  >
+                    NOVA
+                  </NavLink>
+                </li>
+                <li className={styles.footer__item}>
+                  <NavLink
+                    className={({ isActive }) =>
+                      `${styles.footer__item__link} ${
+                        isActive ? styles["footer__item__link--active"] : ""
+                      }`
+                    }
+                    to={"/partners/kas"}
+                  >
+                    KAS
+                  </NavLink>
+                </li>
+                <li className={styles.footer__item}>
+                  <NavLink
+                    className={({ isActive }) =>
+                      `${styles.footer__item__link} ${
+                        isActive ? styles["footer__item__link--active"] : ""
+                      }`
+                    }
+                    to={"/partners/spk"}
+                  >
+                    SPK
+                  </NavLink>
+                </li>
+                <li className={styles.footer__item}>
+                  <NavLink
+                    className={({ isActive }) =>
+                      `${styles.footer__item__link} ${
+                        isActive ? styles["footer__item__link--active"] : ""
+                      }`
+                    }
+                    to={"/partners/candan"}
+                  >
+                    CANDAN
+                  </NavLink>
+                </li>
+                <li className={styles.footer__item}>
+                  <NavLink
+                    className={({ isActive }) =>
+                      `${styles.footer__item__link} ${
+                        isActive ? styles["footer__item__link--active"] : ""
+                      }`
+                    }
+                    to={"/partners/baykara"}
+                  >
+                    BAYKARA
+                  </NavLink>
+                </li>
+              </ul>
             </div>
 
             <div className={styles.footer__inner}>
