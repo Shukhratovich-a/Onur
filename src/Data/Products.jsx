@@ -421,6 +421,40 @@ const Products = {
         "Available for all dimensions between 16-160mm. All of our welding socket are manufactured by injection press. Steel bolt and nut are used. Outer surfaces of the welding socket are coated with first class telfon. Telfon is the one of the most important points of fusion welding.",
     },
   ],
+
+  baykara: [
+    {
+      poster: "https://1001krep.ru/d/homut_tyazhelyh_nagruzok_frsm_a4_fischer_1001krep.png",
+      title: "Гайка нержавеющий хомутд (Шиной)",
+      productCode: "250",
+      dimensions:
+        "используется в процессе фиксации труб горизонтально, вертикально, смонтированными на стене, потолке или полу. процесс фиксации зажима с гайкой производится с использованием стержня и стального дюбеля. благодаря комбинированным винтам со звездообразной головкой можно легко и безопасно подключить. шина епдм используемая на ней, частично поглощает тепловое расшире. Обеспечивает преобразование звука до 15 дБ. Нержавеюший материал Дин 1.4301 304 A2 .",
+    },
+
+    {
+      poster: "https://www.solidacz.ru/files/thumbs/mod_eshop/produkty/528-1.217084881.jpg",
+      title: "Одиночный хомут",
+      productCode: "293",
+      dimensions:
+        "используется в процессе свободного  подвешивания труб по горизонтали на поверхности. используется в тяжелых трубчатых установках. 15-20 микрон изготовлен из цинкового покрытия для защищен от ржавчины.",
+    },
+
+    {
+      poster:
+        "https://files.glotr.uz/company/000/007/270/products/2018/08/29/15355360849929-1e629ff1ade0ee14e29f19b2967b730a.jpg?_=ozbol",
+      title: "Стандартный трифонный без шина хомут",
+      productCode: "330",
+      dimensions:
+        "используeтся для фиксования труб при монтаж к стeнe потолку и полу. Производится с использованиeм стального дюбeля. Трифонный хомут монтаж мıо, используeтся пластик дюбeля. устойчив к коррозии с цинковым покрытием в диапозоне 15 до 20 микрон. с специальной ревиновой, шиной дин 53509 выдерживает условия.",
+    },
+
+    {
+      poster: "https://goskrep.ru/upload/medialibrary/07b/foto_zabivn_stal.jpg",
+      title: "ПРИЦЕПНОЙ ДЮБЕЛЬ",
+      productCode: "214",
+      dimensions: "M6x45",
+    },
+  ],
 };
 
 export default Products;
