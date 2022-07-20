@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay, Mousewheel } from "swiper";
+import { Navigation, Pagination, Autoplay } from "swiper";
 
 // import useLocalization from "../../Hooks/useLocalization";
 
@@ -42,20 +42,19 @@ const Hero = () => {
           },
         }}
         navigation={true}
-        autoplay={{
-          delay: 8000,
-          disableOnInteraction: false,
-        }}
-        loop="true"
-        mousewheel={{
-          forceToAxis: true,
-        }}
-        modules={[Navigation, Pagination, Autoplay, Mousewheel]}
+        // autoplay={{
+        //   delay: 8000,
+        //   disableOnInteraction: false,
+        // }}
+        // loop="true"
+        modules={[Navigation, Pagination, Autoplay]}
       >
         <SwiperSlide className={`${styles.hero__slide}`}>
-          <video className={styles.hero__slide__video} muted loop autoPlay>
-            <source src={SliderVideo1} type="video/mp4" />
-          </video>
+          <div>
+            <video className={styles.hero__slide__video} muted loop autoPlay>
+              <source src={SliderVideo1} type="video/mp4" />
+            </video>
+          </div>
           {/* <div className={`container ${styles.container}`}>
             <h1 className={styles.hero__heading}>{localization.hero.slide1.heading}</h1>
             <p className={styles.hero__description}>
@@ -64,9 +63,11 @@ const Hero = () => {
           </div> */}
         </SwiperSlide>
         <SwiperSlide className={`${styles.hero__slide}`}>
-          <video className={styles.hero__slide__video} muted loop autoPlay>
-            <source src={SliderVideo2} type="video/mp4" />
-          </video>
+          <div>
+            <video className={styles.hero__slide__video} muted loop autoPlay>
+              <source src={SliderVideo2} type="video/mp4" />
+            </video>
+          </div>
           {/* <div className={`container ${styles.container}`}>
             <h1 className={styles.hero__heading}>{localization.hero.slide1.heading}</h1>
             <p className={styles.hero__description}>

@@ -1,8 +1,11 @@
 @import "../../Sass/Variables.scss";
 
 .hero {
-  height: calc(100vh - 100px + 50px);
+  box-sizing: content-box;
+  position: relative;
+  height: calc(100vh - 100px);
   margin-top: -50px;
+  padding-top: 50px;
   color: $white;
   background-color: $darkBlue;
 }
@@ -15,27 +18,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: $darkBlue;
-    opacity: 0.6;
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   background-color: $darkBlue;
+  //   opacity: 0.6;
+  // }
 
-  &__video{
+  &__video {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     overflow: hidden;
-    height: 100%;
-    width: auto;
+    width: 100%;
   }
 
   .container {
@@ -83,7 +85,7 @@
 
 @media only screen and(max-width: 1000px) {
   .hero {
-    height: calc(100vh - 70px + 50px);
+    height: calc(100vh - 70px);
   }
 
   .hero__heading {
@@ -94,6 +96,15 @@
 
   .hero__description {
     max-width: 700px;
+  }
+}
+
+@media only screen and(max-width: 930px) {
+  .hero__slide {
+    &__video {
+      width: auto;
+      height: 100%;
+    }
   }
 }
 
@@ -125,7 +136,7 @@
 
 @media only screen and(max-width: 550px) {
   .hero {
-    height: calc(100vh);
+    height: calc(100vh - 50px);
   }
 
   .hero__heading {

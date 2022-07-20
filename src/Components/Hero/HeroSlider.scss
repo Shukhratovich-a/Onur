@@ -31,10 +31,10 @@
   .swiper-button-prev,
   .swiper-button-next {
     width: 10px;
-    height: 20px;
 
     &::after {
       font-size: 20px;
+      line-height: 20px;
     }
   }
 

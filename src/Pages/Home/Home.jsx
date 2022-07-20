@@ -1,11 +1,11 @@
 import Hero from "../../Components/Hero/Hero";
-import Partners from "../../Components/Partners/Partners";
+// import Partners from "../../Components/Partners/Partners";
 
 const Home = () => {
   return (
     <main className="main">
       <Hero />
-      <Partners />
+      {/* <Partners /> */}
     </main>
   );
 };
