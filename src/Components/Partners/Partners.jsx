@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
 import useLocaliztion from "../../Hooks/useLocalization";
@@ -13,142 +14,69 @@ import styles from "./Partners.module.scss";
 const Partners = () => {
   const localiztion = useLocaliztion();
 
+  const [partners, setPartners] = React.useState([
+    { name: "nova", image: Nova, site: "https://novaplastik.com/", isHover: false },
+    { name: "kas", image: Kas, site: "https://kas.com/", isHover: false },
+    { name: "spk", image: Spk, site: "https://spk.com/", isHover: false },
+    { name: "candan", image: Candan, site: "http://candanmakina.com/", isHover: false },
+    { name: "baykara", image: Baykara, site: "https://baykara.com/", isHover: false },
+  ]);
+
+  const cardHoverEnter = (index) => {
+    const array = [...partners];
+    setTimeout(() => {
+      array[index].isHover = true;
+      setPartners(array);
+    }, 250);
+  };
+
+  const cardHoverLeave = (index) => {
+    const array = [...partners];
+    array[index].isHover = false;
+    setPartners(array);
+  };
+
   return (
     <section className={styles.partners}>
       <div className={`container`}>
         <h2 className={styles.partners__heading}>{localiztion.partners.heading}</h2>
 
         <ul className={styles.partners__list}>
-          <li className={styles.partner}>
-            <div className={styles.partner__wrapper}>
-              <img
-                className={styles.partner__image}
-                src={Nova}
-                alt="Nova's logo"
-                width={100}
-                height={100}
-              />
-            </div>
-
-            <div className={styles.partner__inner}>
-              <Link className={styles.partner__link} to={"/partners/nova"}>
-                Show products
-              </Link>
-
-              <a
-                className={styles.partner__link}
-                href="https://www.novaplastik.com/ru/"
-                rel="noreferrer noopener"
-                target={"_blank"}
+          {partners.map((partner, index) => {
+            return (
+              <li
+                className={`${styles.partner} ${partner.isHover ? styles["partner--hover"] : ""}`}
+                key={index}
+                onMouseEnter={() => cardHoverEnter(index)}
+                onMouseLeave={() => cardHoverLeave(index)}
               >
-                Site
-              </a>
-            </div>
-          </li>
-          <li className={styles.partner}>
-            <div className={styles.partner__wrapper}>
-              <img
-                className={styles.partner__image}
-                src={Kas}
-                alt="Nova's logo"
-                width={100}
-                height={100}
-              />
-            </div>
+                <div className={styles.partner__wrapper}>
+                  <img
+                    className={styles.partner__image}
+                    src={partner.image}
+                    alt={partner.name + "'s logo"}
+                    width={100}
+                    height={100}
+                  />
+                </div>
 
-            <div className={styles.partner__inner}>
-              <Link className={styles.partner__link} to={"/partners/kas"}>
-                Show products
-              </Link>
+                <div className={styles.partner__inner}>
+                  <Link className={styles.partner__link} to={"/partners/" + partner.name}>
+                    Show products
+                  </Link>
 
-              <a
-                className={styles.partner__link}
-                href="https://kas.com.tr/"
-                rel="noreferrer noopener"
-                target={"_blank"}
-              >
-                Site
-              </a>
-            </div>
-          </li>
-          <li className={styles.partner}>
-            <div className={styles.partner__wrapper}>
-              <img
-                className={styles.partner__image}
-                src={Spk}
-                alt="Nova's logo"
-                width={100}
-                height={100}
-              />
-            </div>
-
-            <div className={styles.partner__inner}>
-              <Link className={styles.partner__link} to={"/partners/spk"}>
-                Show products
-              </Link>
-
-              <a
-                className={styles.partner__link}
-                href="https://spk.com.tr/"
-                rel="noreferrer noopener"
-                target={"_blank"}
-              >
-                Site
-              </a>
-            </div>
-          </li>
-          <li className={styles.partner}>
-            <div className={styles.partner__wrapper}>
-              <img
-                className={styles.partner__image}
-                src={Candan}
-                alt="Nova's logo"
-                width={100}
-                height={100}
-              />
-            </div>
-
-            <div className={styles.partner__inner}>
-              <Link className={styles.partner__link} to={"/partners/candan"}>
-                Show products
-              </Link>
-
-              <a
-                className={styles.partner__link}
-                href="http://candanmakina.com/"
-                rel="noreferrer noopener"
-                target={"_blank"}
-              >
-                Site
-              </a>
-            </div>
-          </li>
-          <li className={styles.partner}>
-            <div className={styles.partner__wrapper}>
-              <img
-                className={styles.partner__image}
-                src={Baykara}
-                alt="Nova's logo"
-                width={100}
-                height={100}
-              />
-            </div>
-
-            <div className={styles.partner__inner}>
-              <Link className={styles.partner__link} to={"/partners/baykara"}>
-                Show products
-              </Link>
-
-              <a
-                className={styles.partner__link}
-                href="https://www.novaplastik.com/ru/"
-                rel="noreferrer noopener"
-                target={"_blank"}
-              >
-                Site
-              </a>
-            </div>
-          </li>
+                  <a
+                    className={styles.partner__link}
+                    href={partner.site}
+                    rel="noreferrer noopener"
+                    target={"_blank"}
+                  >
+                    Site
+                  </a>
+                </div>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </section>
