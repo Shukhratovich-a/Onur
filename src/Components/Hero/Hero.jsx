@@ -3,7 +3,10 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay, Mousewheel } from "swiper";
 
-import useLocalization from "../../Hooks/useLocalization";
+// import useLocalization from "../../Hooks/useLocalization";
+
+import SliderVideo1 from "../../Assets/Videos/SliderVideo1.mp4";
+import SliderVideo2 from "../../Assets/Videos/SliderVideo2.mp4";
 
 import "swiper/scss";
 import "swiper/scss/pagination";
@@ -12,7 +15,7 @@ import styles from "./Hero.module.scss";
 import "./HeroSlider.scss";
 
 const Hero = () => {
-  const localization = useLocalization();
+  // const localization = useLocalization();
 
   return (
     <section className={styles.hero}>
@@ -40,7 +43,7 @@ const Hero = () => {
         }}
         navigation={true}
         autoplay={{
-          delay: 6000,
+          delay: 8000,
           disableOnInteraction: false,
         }}
         loop="true"
@@ -49,16 +52,27 @@ const Hero = () => {
         }}
         modules={[Navigation, Pagination, Autoplay, Mousewheel]}
       >
-        <SwiperSlide
-          className={`${styles.hero__slide}`}
-          style={{ backgroundImage: `url(${"https://picsum.photos/1920/1080"})` }}
-        >
-          <div className={`container ${styles.container}`}>
+        <SwiperSlide className={`${styles.hero__slide}`}>
+          <video className={styles.hero__slide__video} muted loop autoPlay>
+            <source src={SliderVideo1} type="video/mp4" />
+          </video>
+          {/* <div className={`container ${styles.container}`}>
             <h1 className={styles.hero__heading}>{localization.hero.slide1.heading}</h1>
             <p className={styles.hero__description}>
               Мы ориентируемся на функциональность комфорт и эстетику вашей ванной комнаты
             </p>
-          </div>
+          </div> */}
+        </SwiperSlide>
+        <SwiperSlide className={`${styles.hero__slide}`}>
+          <video className={styles.hero__slide__video} muted loop autoPlay>
+            <source src={SliderVideo2} type="video/mp4" />
+          </video>
+          {/* <div className={`container ${styles.container}`}>
+            <h1 className={styles.hero__heading}>{localization.hero.slide1.heading}</h1>
+            <p className={styles.hero__description}>
+              Мы ориентируемся на функциональность комфорт и эстетику вашей ванной комнаты
+            </p>
+          </div> */}
         </SwiperSlide>
       </Swiper>
     </section>

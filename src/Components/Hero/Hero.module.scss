@@ -15,9 +15,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 
   &::before {
     content: "";
@@ -28,6 +25,17 @@
     left: 0;
     background-color: $darkBlue;
     opacity: 0.6;
+  }
+
+  &__video{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    height: 100%;
+    width: auto;
   }
 
   .container {
