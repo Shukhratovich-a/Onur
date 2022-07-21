@@ -253,6 +253,7 @@ const Products = {
       poster:
         "https://kas.com.tr/wp-content/uploads/2018/04/full-bore-brass-ball-valve-for-water-pn-40.jpg",
       title: "Full Bore Brass Ball Valve For Water PN 40",
+      productCode: "kas-1",
       dimension: "1/2",
       quantityOfBox: "2/100",
     },
@@ -261,6 +262,7 @@ const Products = {
       poster:
         "https://kas.com.tr/wp-content/uploads/2018/04/Full-Bore-Brass-Ball-Valve-For-N-Gas-Mob-5-F-F.jpg",
       title: "Вентиль бабочка с разъёмом",
+      productCode: "kas-2",
       dimension: "п/м 3/4",
       quantityOfBox: "2/50",
     },
@@ -269,6 +271,7 @@ const Products = {
       poster:
         "https://files.glotr.uz/company/000/010/272/products/2022/05/24/2022-05-24-14-43-11-901247-a610b793f5dafde0bc1bfb39d5018d23.webp?_=ozbol",
       title: "Вентиль бабочка М/М PN 25 ЭКО",
+      productCode: "kas-3",
       dimension: "м/м 1",
       quantityOfBox: "2/40",
     },
@@ -276,6 +279,7 @@ const Products = {
     {
       poster: "https://devel.prom.uz/upload/products/6e/0f/6e0fd8845a3e420d243e6a3a51d30215.png",
       title: "Коллектор с краниками для т/п ЭКО",
+      productCode: "kas-4",
       dimension: "2",
       quantityOfBox: "30",
     },
@@ -283,6 +287,7 @@ const Products = {
     {
       poster: "https://stroimdom43.ru/thumb/2/vVHmJydkwlSHTxklUkmhYQ/490r490/d/79501111.jpg",
       title: "коллектор с расходамерами нержовейка для т/п",
+      productCode: "kas-5",
       dimension: "2",
       quantityOfBox: "комплект",
     },
@@ -290,6 +295,7 @@ const Products = {
     {
       poster: "https://devel.prom.uz/upload/products/6e/0f/6e0fd8845a3e420d243e6a3a51d30215.png",
       title: "коллектор с краниками для т/п",
+      productCode: "kas-6",
       dimension: "2",
       quantityOfBox: "30",
     },
@@ -297,6 +303,7 @@ const Products = {
     {
       poster: "https://img02.flagma.uz/photo/shlangi-dlya-smesitelya-1863035_big.jpg",
       title: "шланги для смесителей",
+      productCode: "kas-7",
       dimension: "1/4-3/8",
     },
 
@@ -304,6 +311,7 @@ const Products = {
       poster:
         "https://72.uz/image/cache/catalog/CATALOG/santexnika/Stalnie_FiTingi/Poplavkovie_klapani/Poplavkovie_klapani_KAS/poplavkovij_klapan_urovnya_vodi_evro-600x600.jpg",
       title: "Поплавок уровня воды",
+      productCode: "kas-8",
       dimension: '1/2"',
       type: "1/50",
     },
@@ -311,6 +319,7 @@ const Products = {
     {
       poster: "https://kas.com.tr/wp-content/uploads/2018/04/papatya-taharat-musluk-1018x1024.jpg",
       title: "Отсекатель",
+      productCode: "kas-9",
       dimension: "полуоборот",
       type: "1/50",
     },
@@ -383,7 +392,7 @@ const Products = {
     {
       poster: "http://www.candanmachine.com/UrunImages/b/CM-03-SET-V-EXTRA-555-3F8L.jpg",
       title: "CM-03-SET-V/EXTRA VAKUMLU - WITH PLASTIC BASE",
-      productCode: "CM-03-Only",
+      productCode: "CM-02-Only",
       dimensions:
         "Double heating elements, 1500 watt. After sale and spare part guaranteed for 1 year. Heating elements made of noncorrosive material. Classical. Yoke foot. All apparatus required for PP welding are available in the toolbox set (20-40mm). Thermostat is provided. diameter 60mm.",
     },
