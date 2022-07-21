@@ -1,0 +1,29 @@
+.product__list{
+  margin-bottom: 50px;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+
+  list-style-type: none;
+}
+.product__item{ 
+  max-width: 400px;
+  max-height: 450px;
+  background-color: #fff;
+  border-radius:20px ;
+
+}
+.product__image{
+  padding-top: 30px;
+  margin: 0 auto;
+  max-width: 350px;
+  height: 350px;
+}
+.product__title{
+  font-size: 22px;
+  line-height: 24px;
+  padding: 30px 0;
+  margin: 0 auto;
+  max-width: 350px;
+  text-align: center;
+}
