@@ -2,7 +2,7 @@ const Localization = {
   en: {
     nav: {
       home: "home",
-      partners: "partners",
+      partners: "products",
       about: "about us",
       contacts: "contacts",
     },
@@ -46,7 +46,7 @@ const Localization = {
 
     footer: {
       siteMenu: "site menu",
-      partner: "partners",
+      partner: "products",
       socials: "follow ONUR",
     },
   },
@@ -98,7 +98,7 @@ const Localization = {
 
     footer: {
       siteMenu: "site menu",
-      partner: "partners",
+      partner: "products",
       socials: "follow ONUR",
     },
   },
@@ -106,7 +106,7 @@ const Localization = {
   uz: {
     nav: {
       home: "bosh sahifa",
-      partners: "hamkorlar",
+      partners: "mahsulotlar",
       about: "biz haqimizda",
       contacts: "bog'lanish",
     },
@@ -149,7 +149,7 @@ const Localization = {
 
     footer: {
       siteMenu: "site menu",
-      partner: "partners",
+      partner: "mahsulotlar",
       socials: "follow ONUR",
     },
   },
