@@ -1,6 +1,5 @@
 import {useParams} from "react-router-dom"
 import Datas from "../../Data/Products";
-console.log(Datas);
 
 const Products = () => {
   const {companyName}=useParams()
