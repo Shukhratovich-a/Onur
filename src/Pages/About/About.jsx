@@ -2,8 +2,6 @@ import React from "react";
 
 import useLocalization from "../../Hooks/useLocalization";
 
-import Partners from "../../Components/Partners/Partners";
-
 import styles from "./About.module.scss";
 
 const About = () => {
@@ -22,8 +20,6 @@ const About = () => {
           </div>
         </div>
       </section>
-
-      <Partners />
     </main>
   );
 };
