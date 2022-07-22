@@ -175,6 +175,10 @@
   .partners__list {
     gap: 15px;
   }
+
+  .partner{
+    max-width: 100%;
+  }
 }
 
 @media only screen and(max-width: 375px) {
