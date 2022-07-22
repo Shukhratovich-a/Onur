@@ -12,6 +12,12 @@
 .footer__bottom {
   padding: 16px 0;
   background-color: $lightBlue;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-content: inherit;
+  }
 }
 
 .footer__wrapper {
@@ -157,7 +163,7 @@
     justify-content: space-around;
   }
 
-  .footer__inner__heading{
+  .footer__inner__heading {
     text-align: center;
   }
 }
