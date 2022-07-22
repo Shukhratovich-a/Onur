@@ -30,7 +30,7 @@
     display: inline-block;
     width: 0;
     height: 0;
-    border-bottom: 7.5px solid $accent;
+    border-bottom: 7px solid $accent;
     border-right: 7px solid transparent;
     border-left: 7px solid transparent;
   }
@@ -61,5 +61,19 @@
 
   &:hover {
     color: $accent;
+  }
+}
+
+@media only screen and(max-width: 1000px) {
+  .dropdown__inner {
+    border: none;
+
+    &::after {
+      content: none;
+    }
+
+    &::before {
+      content: none;
+    }
   }
 }

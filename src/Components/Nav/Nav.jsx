@@ -66,13 +66,15 @@ const Nav = () => {
               {localization.nav.partners}
             </button>
 
-            <DropDown
-              className={`${styles.nav__dropdown} ${
-                dropdownState ? styles["nav__dropdown--open"] : ""
-              }`}
-              style={styles["nav__dropdown--open"]}
-              location={location}
-            />
+            {screenWidth > 1000 ? (
+              <DropDown
+                className={`${styles.nav__dropdown} ${
+                  dropdownState ? styles["nav__dropdown--open"] : ""
+                }`}
+                style={styles["nav__dropdown--open"]}
+                location={location}
+              />
+            ) : null}
           </li>
           <li className={styles.nav__item}>
             <NavLink

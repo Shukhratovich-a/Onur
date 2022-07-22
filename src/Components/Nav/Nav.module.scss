@@ -10,6 +10,7 @@
 
 .nav__item {
   position: relative;
+  padding: 10px 0;
 
   &:nth-child(2) {
     &::after {
@@ -35,7 +36,7 @@
   text-align: center;
   font-size: 18px;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 30px;
   color: $gray;
   text-decoration: none;
   text-transform: capitalize;
@@ -68,7 +69,7 @@
 
 .nav__dropdown {
   position: absolute;
-  bottom: -10px;
+  bottom: 5px;
   right: 50%;
   transform: translate(50%, 100%);
   opacity: 0;
@@ -104,11 +105,14 @@
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.4s ease;
+    overflow: auto;
   }
 
   .nav__inner {
     padding-bottom: 10px;
     background-color: $lightBlue;
+    overflow: auto;
+
   }
 
   .nav--open {
@@ -152,6 +156,7 @@
     transform: unset;
     opacity: 1;
     pointer-events: none;
+    // display: none;
   }
 
   .nav__socials {
