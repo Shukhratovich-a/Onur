@@ -9,6 +9,21 @@
 }
 
 .nav__item {
+  position: relative;
+
+  &:nth-child(2) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 90%;
+      right: 50%;
+      transform: translate(50%);
+      display: block;
+      width: 120px;
+      height: 20px;
+    }
+  }
+
   & + & {
     margin-left: 60px;
   }
@@ -16,14 +31,19 @@
 
 .nav__link {
   display: inline-block;
+  padding: 0;
   text-align: center;
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
   color: $gray;
   text-decoration: none;
-  transition: opacity 0.25s ease, color 0.2s ease;
   text-transform: capitalize;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: opacity 0.25s ease, color 0.2s ease;
 
   &:hover {
     opacity: 1;
@@ -43,6 +63,21 @@
     opacity: 1;
     color: $accent;
     font-weight: 700;
+  }
+}
+
+.nav__dropdown {
+  position: absolute;
+  bottom: -10px;
+  right: 50%;
+  transform: translate(50%, 100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+
+  &--open {
+    opacity: 1;
+    pointer-events: all;
   }
 }
 
@@ -110,6 +145,15 @@
     }
   }
 
+  .nav__dropdown {
+    position: static;
+    bottom: unset;
+    right: unset;
+    transform: unset;
+    opacity: 1;
+    pointer-events: none;
+  }
+
   .nav__socials {
     justify-content: center;
   }
@@ -126,7 +170,7 @@
     padding: 10px 15px;
   }
 
-  .nav__link{
+  .nav__link {
     text-align: center;
   }
 }
