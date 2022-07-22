@@ -62,7 +62,7 @@ const Partners = () => {
 
                 <div className={styles.partner__inner}>
                   <Link className={styles.partner__link} to={"/partners/" + partner.name}>
-                    Show products
+                    {localiztion.partners.showProducts}
                   </Link>
 
                   <a
@@ -71,7 +71,7 @@ const Partners = () => {
                     rel="noreferrer noopener"
                     target={"_blank"}
                   >
-                    Site
+                    {localiztion.partners.officialSite}
                   </a>
                 </div>
               </li>

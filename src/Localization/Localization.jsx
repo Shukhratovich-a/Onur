@@ -30,6 +30,8 @@ const Localization = {
 
     partners: {
       heading: "our partners",
+      showProducts: "show products",
+      officialSite: "official site",
     },
 
     about: {
@@ -46,7 +48,7 @@ const Localization = {
 
     footer: {
       siteMenu: "site menu",
-      partner: "products",
+      partner: "partners",
       socials: "follow ONUR",
     },
   },
@@ -70,7 +72,9 @@ const Localization = {
     },
 
     partners: {
-      heading: "our partners",
+      heading: "наши партнеры",
+      showProducts: "показать продукты",
+      officialSite: "официальный сайт",
     },
 
     contact: {
@@ -98,7 +102,7 @@ const Localization = {
 
     footer: {
       siteMenu: "site menu",
-      partner: "products",
+      partner: "партнеры",
       socials: "follow ONUR",
     },
   },
@@ -122,7 +126,9 @@ const Localization = {
     },
 
     partners: {
-      heading: "our partners",
+      heading: "bizning hamkorlar",
+      showProducts: "mahsulotlar",
+      officialSite: "rasmiy sahifa",
     },
 
     contact: {
@@ -149,7 +155,7 @@ const Localization = {
 
     footer: {
       siteMenu: "site menu",
-      partner: "mahsulotlar",
+      partner: "hamkorlar",
       socials: "follow ONUR",
     },
   },
