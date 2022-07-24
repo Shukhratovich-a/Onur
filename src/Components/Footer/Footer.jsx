@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 
 import useLocalization from "../../Hooks/useLocalization";
 
-import LogoEn from "../Lib/Icons/LogoEn";
+import Logo from "../Lib/Icons/Logo";
 
 import Socials from "../Socials/Socials";
 
@@ -16,7 +16,7 @@ const Footer = () => {
       <div className={styles.footer__top}>
         <div className={`${styles.container} container`}>
           <Link className={styles.footer__link} to={"/"}>
-            <LogoEn gradientDark={"#ffffff"} gradientLight={"#ffffff"} color={"#ffffff"} />
+            <Logo gradientDark={"#ffffff"} gradientLight={"#ffffff"} color={"#ffffff"} />
           </Link>
 
           <div className={styles.footer__wrapper}>
