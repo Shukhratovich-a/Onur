@@ -1,6 +1,17 @@
-const LogoEn = ({ gradientDark = "#157a15", gradientLight = "#0cba00", color = "#000000" }) => {
+const LogoEn = ({
+  gradientDark = "#157a15",
+  gradientLight = "#0cba00",
+  color = "#000000",
+  width = 180,
+  height = 40,
+}) => {
   return (
-    <svg width={180} height={40} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.6 96.674">
+    <svg
+      width={width}
+      height={height}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 500.6 96.674"
+    >
       <defs>
         <linearGradient
           id="b"
