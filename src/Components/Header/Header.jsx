@@ -8,8 +8,7 @@ import useBurger from "../../Hooks/useBurger";
 
 import Nav from "../Nav/Nav";
 
-import LogoEn from "../Lib/Icons/LogoEn";
-// import LogoRu from "../Lib/Icons/LogoRu";
+import Logo from "../Lib/Icons/Logo";
 import Burger from "../Lib/Icons/Burger";
 import Close from "../Lib/Icons/Close";
 
@@ -51,7 +50,7 @@ const Header = () => {
       ) : null}
       <div className={`${styles.container} container`}>
         <Link className={styles.header__link} to={"/"}>
-          <LogoEn color="#fff" />
+          <Logo color="#fff" />
         </Link>
 
         <Nav />
