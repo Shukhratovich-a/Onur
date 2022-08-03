@@ -5,14 +5,20 @@ import { Navigation, Pagination, Autoplay } from "swiper";
 
 // import useLocalization from "../../Hooks/useLocalization";
 
-import SliderVideo1 from "../../Assets/Videos/SliderVideo1.mp4";
-import SliderVideo2 from "../../Assets/Videos/SliderVideo2.mp4";
+// import SliderVideo1 from "../../Assets/Videos/SliderVideo1.mp4";
+// import SliderVideo2 from "../../Assets/Videos/SliderVideo2.mp4";
+
+import It from "../../Assets/Images/Hero/It.jpg";
+import Logistic from "../../Assets/Images/Hero/Logistic.jpg";
+import Plumbing from "../../Assets/Images/Hero/Plumbing.jpg";
+import Accounting from "../../Assets/Images/Hero/Accounting.jpg";
+import Distribution from "../../Assets/Images/Hero/Distribution.jpg";
 
 import "swiper/scss";
 import "swiper/scss/pagination";
 import "swiper/scss/navigation";
-import styles from "./Hero.module.scss";
 import "./HeroSlider.scss";
+import styles from "./Hero.module.scss";
 
 const Hero = () => {
   // const localization = useLocalization();
@@ -42,38 +48,49 @@ const Hero = () => {
           },
         }}
         navigation={true}
-        // autoplay={{
-        //   delay: 8000,
-        //   disableOnInteraction: false,
-        // }}
-        // loop="true"
+        autoplay={{
+          delay: 8000,
+          disableOnInteraction: false,
+        }}
+        loop="true"
         modules={[Navigation, Pagination, Autoplay]}
       >
-        <SwiperSlide className={`${styles.hero__slide}`}>
-          <div>
-            <video className={styles.hero__slide__video} muted loop autoPlay>
-              <source src={SliderVideo1} type="video/mp4" />
-            </video>
+        <SwiperSlide className={`${styles.hero__slide}`} style={{ backgroundImage: `url(${It})` }}>
+          <div className={`container ${styles.container}`}>
+            <h1 className={`${styles.hero__heading} visually-hidden`}>It - Platforma bolimi</h1>
           </div>
-          {/* <div className={`container ${styles.container}`}>
-            <h1 className={styles.hero__heading}>{localization.hero.slide1.heading}</h1>
-            <p className={styles.hero__description}>
-              Мы ориентируемся на функциональность комфорт и эстетику вашей ванной комнаты
-            </p>
-          </div> */}
         </SwiperSlide>
-        <SwiperSlide className={`${styles.hero__slide}`}>
-          <div>
-            <video className={styles.hero__slide__video} muted loop autoPlay>
-              <source src={SliderVideo2} type="video/mp4" />
-            </video>
+        <SwiperSlide
+          className={`${styles.hero__slide}`}
+          style={{ backgroundImage: `url(${Logistic})` }}
+        >
+          <div className={`container ${styles.container}`}>
+            <h1 className={`${styles.hero__heading} visually-hidden`}>Logistika bo'limi</h1>
           </div>
-          {/* <div className={`container ${styles.container}`}>
-            <h1 className={styles.hero__heading}>{localization.hero.slide1.heading}</h1>
-            <p className={styles.hero__description}>
-              Мы ориентируемся на функциональность комфорт и эстетику вашей ванной комнаты
-            </p>
-          </div> */}
+        </SwiperSlide>
+        <SwiperSlide
+          className={`${styles.hero__slide}`}
+          style={{ backgroundImage: `url(${Plumbing})` }}
+        >
+          <div className={`container ${styles.container}`}>
+            <h1 className={`${styles.hero__heading} visually-hidden`}>Santexnika bo'limi</h1>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide
+          className={`${styles.hero__slide}`}
+          style={{ backgroundImage: `url(${Accounting})` }}
+        >
+          <div className={`container ${styles.container}`}>
+            <h1 className={`${styles.hero__heading} visually-hidden`}>Buxgalteriya bo'limi</h1>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide
+          className={`${styles.hero__slide}`}
+          style={{ backgroundImage: `url(${Distribution})` }}
+        >
+          <div className={`container ${styles.container}`}>
+            <h1 className={`${styles.hero__heading} visually-hidden`}>Distribyutorlik bo'limi</h1>
+          </div>
         </SwiperSlide>
       </Swiper>
     </section>

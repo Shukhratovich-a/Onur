@@ -19,6 +19,8 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
 
   // &::before {
   //   content: "";
@@ -31,14 +33,14 @@
   //   opacity: 0.6;
   // }
 
-  &__video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    width: 100%;
-  }
+  // &__video {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   overflow: hidden;
+  //   width: 100%;
+  // }
 
   .container {
     position: relative;
@@ -137,6 +139,10 @@
 @media only screen and(max-width: 550px) {
   .hero {
     height: calc(100vh - 50px);
+  }
+
+  .hero__slide{
+    background-size: 780px;
   }
 
   .hero__heading {
