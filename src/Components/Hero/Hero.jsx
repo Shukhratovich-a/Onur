@@ -57,7 +57,7 @@ const Hero = () => {
       >
         <SwiperSlide className={`${styles.hero__slide}`} style={{ backgroundImage: `url(${It})` }}>
           <div className={`container ${styles.container}`}>
-            <h1 className={`${styles.hero__heading} visually-hidden`}>It - Platforma bolimi</h1>
+            <h1 className={`${styles.hero__heading}`}>It - Platforma bolimi</h1>
           </div>
         </SwiperSlide>
         <SwiperSlide
@@ -65,7 +65,7 @@ const Hero = () => {
           style={{ backgroundImage: `url(${Logistic})` }}
         >
           <div className={`container ${styles.container}`}>
-            <h1 className={`${styles.hero__heading} visually-hidden`}>Logistika bo'limi</h1>
+            <h1 className={`${styles.hero__heading}`}>Logistika bo'limi</h1>
           </div>
         </SwiperSlide>
         <SwiperSlide
@@ -73,7 +73,7 @@ const Hero = () => {
           style={{ backgroundImage: `url(${Plumbing})` }}
         >
           <div className={`container ${styles.container}`}>
-            <h1 className={`${styles.hero__heading} visually-hidden`}>Santexnika bo'limi</h1>
+            <h1 className={`${styles.hero__heading}`}>Santexnika bo'limi</h1>
           </div>
         </SwiperSlide>
         <SwiperSlide
@@ -81,7 +81,7 @@ const Hero = () => {
           style={{ backgroundImage: `url(${Accounting})` }}
         >
           <div className={`container ${styles.container}`}>
-            <h1 className={`${styles.hero__heading} visually-hidden`}>Buxgalteriya bo'limi</h1>
+            <h1 className={`${styles.hero__heading}`}>Buxgalteriya bo'limi</h1>
           </div>
         </SwiperSlide>
         <SwiperSlide
@@ -89,7 +89,7 @@ const Hero = () => {
           style={{ backgroundImage: `url(${Distribution})` }}
         >
           <div className={`container ${styles.container}`}>
-            <h1 className={`${styles.hero__heading} visually-hidden`}>Distribyutorlik bo'limi</h1>
+            <h1 className={`${styles.hero__heading}`}>Distribyutorlik bo'limi</h1>
           </div>
         </SwiperSlide>
       </Swiper>
