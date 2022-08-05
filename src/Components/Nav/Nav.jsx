@@ -15,7 +15,6 @@ const Nav = () => {
   const screenWidth = useWindowDimensions();
 
   const location = useLocation().pathname.split("/")[2];
-
   const closeNav = (evt) => {
     if (!evt.target.className.includes("nav__list")) setIsOpen(false);
   };
@@ -41,13 +40,7 @@ const Nav = () => {
           <li className={styles.nav__item}>
             <button
               className={`${styles.nav__link} ${
-                [
-                  "services/it",
-                  "services/logistic",
-                  "services/plumbing",
-                  "services/accounting",
-                  "services/distribution",
-                ].includes(location)
+                ["it", "logistic", "plumbing", "accounting", "distribution"].includes(location)
                   ? styles["nav__link--active"]
                   : ""
               }`}
