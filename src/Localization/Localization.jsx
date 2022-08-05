@@ -2,7 +2,7 @@ const Localization = {
   en: {
     nav: {
       home: "home",
-      partners: "products",
+      services: "serivces",
       about: "about us",
       contacts: "contacts",
     },
@@ -19,17 +19,22 @@ const Localization = {
     },
 
     hero: {
-      slide1: {
-        heading: "Ehtiyojlarni sifatli mahsulotlar bilan qondirish",
-      },
-
-      slide2: {
-        heading: "O‘zbekiston va Turkiyani bog‘lovchi yetakchi savdo kompaniyalaridan biri bo‘lish",
-      },
+      it: "It - Platforma bo'limi",
+      logistic: "Logistika bo'limi",
+      plumbing: "Santexnika bo'limi",
+      accounting: "Buxgalteriya bo'limi",
+      distribution: "Distribyutorlik bo'limi",
     },
 
     services: {
       heading: "our services",
+      showService: "show service",
+
+      it: "it",
+      logistic: "logistic",
+      plumbing: "plumbing",
+      accounting: "accounting",
+      distribution: "distribution",
     },
 
     partners: {
@@ -60,23 +65,28 @@ const Localization = {
   ru: {
     nav: {
       home: "главная",
-      partners: "товары",
+      services: "serivces",
       about: "о нас",
       contacts: "контакты",
     },
 
     hero: {
-      slide1: {
-        heading: "Ehtiyojlarni sifatli mahsulotlar bilan qondirish",
-      },
-
-      slide2: {
-        heading: "O‘zbekiston va Turkiyani bog‘lovchi yetakchi savdo kompaniyalaridan biri bo‘lish",
-      },
+      it: "It - Platforma bo'limi",
+      logistic: "Logistika bo'limi",
+      plumbing: "Santexnika bo'limi",
+      accounting: "Buxgalteriya bo'limi",
+      distribution: "Distribyutorlik bo'limi",
     },
 
     services: {
       heading: "our services",
+      showService: "show service",
+
+      it: "it",
+      logistic: "logistic",
+      plumbing: "plumbing",
+      accounting: "accounting",
+      distribution: "distribution",
     },
 
     partners: {
@@ -118,23 +128,28 @@ const Localization = {
   uz: {
     nav: {
       home: "bosh sahifa",
-      partners: "mahsulotlar",
+      services: "serivces",
       about: "biz haqimizda",
       contacts: "bog'lanish",
     },
 
     hero: {
-      slide1: {
-        heading: "Ehtiyojlarni sifatli mahsulotlar bilan qondirish",
-      },
-
-      slide2: {
-        heading: "O‘zbekiston va Turkiyani bog‘lovchi yetakchi savdo kompaniyalaridan biri bo‘lish",
-      },
+      it: "It - Platforma bo'limi",
+      logistic: "Logistika bo'limi",
+      plumbing: "Santexnika bo'limi",
+      accounting: "Buxgalteriya bo'limi",
+      distribution: "Distribyutorlik bo'limi",
     },
 
     services: {
       heading: "our services",
+      showService: "show service",
+
+      it: "it",
+      logistic: "logistic",
+      plumbing: "plumbing",
+      accounting: "accounting",
+      distribution: "distribution",
     },
 
     partners: {

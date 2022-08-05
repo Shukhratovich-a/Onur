@@ -41,13 +41,19 @@ const Nav = () => {
           <li className={styles.nav__item}>
             <button
               className={`${styles.nav__link} ${
-                ["kas", "nova", "spk", "candan", "baykara"].includes(location)
+                [
+                  "services/it",
+                  "services/logistic",
+                  "services/plumbing",
+                  "services/accounting",
+                  "services/distribution",
+                ].includes(location)
                   ? styles["nav__link--active"]
                   : ""
               }`}
-              title={localization.nav.partners}
+              title={localization.nav.services}
             >
-              {localization.nav.partners}
+              {localization.nav.services}
             </button>
           </li>
           <li className={styles.nav__item}>

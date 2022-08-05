@@ -9,6 +9,8 @@ import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import Home from "./Pages/Home/Home";
 import Products from "./Pages/Products/Products";
 import About from "./Pages/About/About";
+import Services from "./Pages/Services/Services";
+
 import "./App.scss";
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contacts" element={<Contact />} />
           <Route path="/partners/:companyName" element={<Products />} />
+          <Route path="/services/:serviceName" element={<Services />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </ScrollToTop>

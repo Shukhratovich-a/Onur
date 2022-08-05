@@ -3,7 +3,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper";
 
-// import useLocalization from "../../Hooks/useLocalization";
+import useLocalization from "../../Hooks/useLocalization";
 
 // import SliderVideo1 from "../../Assets/Videos/SliderVideo1.mp4";
 // import SliderVideo2 from "../../Assets/Videos/SliderVideo2.mp4";
@@ -21,7 +21,15 @@ import "./HeroSlider.scss";
 import styles from "./Hero.module.scss";
 
 const Hero = () => {
-  // const localization = useLocalization();
+  const localization = useLocalization();
+
+  const services = [
+    { name: "it", image: It },
+    { name: "logistic", image: Logistic },
+    { name: "plumbing", image: Plumbing },
+    { name: "accounting", image: Accounting },
+    { name: "distribution", image: Distribution },
+  ];
 
   return (
     <section className={styles.hero}>
@@ -55,43 +63,18 @@ const Hero = () => {
         loop="true"
         modules={[Navigation, Pagination, Autoplay]}
       >
-        <SwiperSlide className={`${styles.hero__slide}`} style={{ backgroundImage: `url(${It})` }}>
-          <div className={`container ${styles.container}`}>
-            <h1 className={`${styles.hero__heading}`}>It - Platforma bolimi</h1>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide
-          className={`${styles.hero__slide}`}
-          style={{ backgroundImage: `url(${Logistic})` }}
-        >
-          <div className={`container ${styles.container}`}>
-            <h1 className={`${styles.hero__heading}`}>Logistika bo'limi</h1>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide
-          className={`${styles.hero__slide}`}
-          style={{ backgroundImage: `url(${Plumbing})` }}
-        >
-          <div className={`container ${styles.container}`}>
-            <h1 className={`${styles.hero__heading}`}>Santexnika bo'limi</h1>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide
-          className={`${styles.hero__slide}`}
-          style={{ backgroundImage: `url(${Accounting})` }}
-        >
-          <div className={`container ${styles.container}`}>
-            <h1 className={`${styles.hero__heading}`}>Buxgalteriya bo'limi</h1>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide
-          className={`${styles.hero__slide}`}
-          style={{ backgroundImage: `url(${Distribution})` }}
-        >
-          <div className={`container ${styles.container}`}>
-            <h1 className={`${styles.hero__heading}`}>Distribyutorlik bo'limi</h1>
-          </div>
-        </SwiperSlide>
+        {services.length &&
+          services.map((service, index) => (
+            <SwiperSlide
+              className={`${styles.hero__slide}`}
+              style={{ backgroundImage: `url(${service.image})` }}
+              key={index}
+            >
+              <div className={`container ${styles.container}`}>
+                <h1 className={`${styles.hero__heading}`}>{localization.hero[service.name]}</h1>
+              </div>
+            </SwiperSlide>
+          ))}
       </Swiper>
     </section>
   );

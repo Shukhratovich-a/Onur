@@ -11,11 +11,11 @@ const Services = () => {
   const localiztion = useLocalization();
 
   const [services, setServices] = React.useState([
-    { name: "It", site: "https://novaplastik.com/", isHover: false },
-    { name: "Logistika", site: "https://kas.com/", isHover: false },
-    { name: "Santexnika", site: "https://spk.com/", isHover: false },
-    { name: "Buxgalteriya", site: "http://candanmakina.com/", isHover: false },
-    { name: "Distribyutorlik", site: "https://baykara.com/", isHover: false },
+    { name: "it", isHover: false },
+    { name: "logistic", isHover: false },
+    { name: "plumbing", isHover: false },
+    { name: "accounting", isHover: false },
+    { name: "distribution", isHover: false },
   ]);
 
   const cardHoverEnter = (index) => {
@@ -53,7 +53,7 @@ const Services = () => {
 
               <div className={styles.service__inner}>
                 <Link className={styles.service__link} to={"/services/" + service.name}>
-                  {/* {localiztion.services.showProducts} */}
+                  {localiztion.services.showService}
                 </Link>
               </div>
             </li>
