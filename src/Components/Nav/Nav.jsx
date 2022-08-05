@@ -5,7 +5,6 @@ import useWindowDimensions from "../../Hooks/useWindowDimensions";
 import useLocalization from "../../Hooks/useLocalization";
 import useBurger from "../../Hooks/useBurger";
 
-import DropDown from "../DropDown/DropDown";
 import Socials from "../Socials/Socials";
 
 import styles from "./Nav.module.scss";
@@ -14,23 +13,12 @@ const Nav = () => {
   const localization = useLocalization();
   const [isOpen, setIsOpen] = useBurger();
   const screenWidth = useWindowDimensions();
-  const [dropdownState, setDropdownState] = React.useState(false);
 
   const location = useLocation().pathname.split("/")[2];
 
   const closeNav = (evt) => {
     if (!evt.target.className.includes("nav__list")) setIsOpen(false);
   };
-
-  const dropdownClose = () => {
-    setTimeout(() => {
-      setDropdownState(false);
-    }, 1500);
-  };
-
-  React.useEffect(() => {
-    setDropdownState(false);
-  }, [location]);
 
   return (
     <nav
@@ -50,11 +38,7 @@ const Nav = () => {
               {localization.nav.home}
             </NavLink>
           </li>
-          <li
-            className={styles.nav__item}
-            onMouseEnter={() => setDropdownState(true)}
-            onMouseLeave={dropdownClose}
-          >
+          <li className={styles.nav__item}>
             <button
               className={`${styles.nav__link} ${
                 ["kas", "nova", "spk", "candan", "baykara"].includes(location)
@@ -65,16 +49,6 @@ const Nav = () => {
             >
               {localization.nav.partners}
             </button>
-
-            {screenWidth > 1000 ? (
-              <DropDown
-                className={`${styles.nav__dropdown} ${
-                  dropdownState ? styles["nav__dropdown--open"] : ""
-                }`}
-                style={styles["nav__dropdown--open"]}
-                location={location}
-              />
-            ) : null}
           </li>
           <li className={styles.nav__item}>
             <NavLink
