@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import useLocaliztion from "../../Hooks/useLocalization";
+import useLocalization from "../../Hooks/useLocalization";
 
 import Nova from "../../Assets/Partners/Nova.svg";
 import Kas from "../../Assets/Partners/Kas.svg";
@@ -12,7 +12,7 @@ import Candan from "../../Assets/Partners/Candan.svg";
 import styles from "./Partners.module.scss";
 
 const Partners = () => {
-  const localiztion = useLocaliztion();
+  const localization = useLocalization();
 
   const [partners, setPartners] = React.useState([
     { name: "nova", image: Nova, site: "https://novaplastik.com/", isHover: false },
@@ -39,7 +39,7 @@ const Partners = () => {
   return (
     <section className={styles.partners}>
       <div className={`container`}>
-        <h2 className={styles.partners__heading}>{localiztion.partners.heading}</h2>
+        <h2 className={styles.partners__heading}>{localization.partners.heading}</h2>
 
         <ul className={styles.partners__list}>
           {partners.map((partner, index) => {
@@ -62,7 +62,7 @@ const Partners = () => {
 
                 <div className={styles.partner__inner}>
                   <Link className={styles.partner__link} to={"/partners/" + partner.name}>
-                    {localiztion.partners.showProducts}
+                    {localization.partners.showProducts}
                   </Link>
 
                   <a
@@ -71,7 +71,7 @@ const Partners = () => {
                     rel="noreferrer noopener"
                     target={"_blank"}
                   >
-                    {localiztion.partners.officialSite}
+                    {localization.partners.officialSite}
                   </a>
                 </div>
               </li>
