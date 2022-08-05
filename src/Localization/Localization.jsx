@@ -28,6 +28,10 @@ const Localization = {
       },
     },
 
+    services: {
+      heading: "our services",
+    },
+
     partners: {
       heading: "our partners",
       showProducts: "show products",
@@ -69,6 +73,10 @@ const Localization = {
       slide2: {
         heading: "O‘zbekiston va Turkiyani bog‘lovchi yetakchi savdo kompaniyalaridan biri bo‘lish",
       },
+    },
+
+    services: {
+      heading: "our services",
     },
 
     partners: {
@@ -123,6 +131,10 @@ const Localization = {
       slide2: {
         heading: "O‘zbekiston va Turkiyani bog‘lovchi yetakchi savdo kompaniyalaridan biri bo‘lish",
       },
+    },
+
+    services: {
+      heading: "our services",
     },
 
     partners: {
