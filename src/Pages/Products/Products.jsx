@@ -12,7 +12,27 @@ const Products = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    setProducts(Datas[companyName]);
+    const array = [];
+
+    for (let product of Datas[companyName]) {
+      const obj = {
+        title: product.title,
+        poster: product.poster,
+        code: product.productCode,
+      };
+
+      const options = [];
+      for (let option in product) {
+        if (option !== "title" && option !== "poster" && option !== "productCode") {
+          options.push([option, product[option]]);
+        }
+      }
+      obj.options = options;
+
+      array.push(obj);
+    }
+
+    setProducts(array);
   }, [companyName]);
 
   return (
@@ -26,7 +46,7 @@ const Products = () => {
 
           <ul className={styles.product__list}>
             {products.map((product) => (
-              <li className={styles.product__item} key={product.productCode}>
+              <li className={styles.product__item} key={product.code}>
                 <div className={styles.product__inner}>
                   <div className={styles.product__wrapper}>
                     <img
@@ -37,8 +57,15 @@ const Products = () => {
                       height={320}
                     />
                   </div>
-
                   <h3 className={styles.product__title}>{product.title}</h3>
+                </div>
+
+                <div className={styles.product__options}>
+                  {product.options.map((option, index) => (
+                    <p className={styles.product__option} key={index}>
+                      {option[0] + ": " + option[1]}
+                    </p>
+                  ))}
                 </div>
               </li>
             ))}
