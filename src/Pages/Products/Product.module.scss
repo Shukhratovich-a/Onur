@@ -27,6 +27,7 @@
 .product__item {
   position: relative;
   max-width: 100%;
+  min-height: 460px;
   background-color: $white;
   border-radius: 5px;
   box-shadow: rgba($color: $darkBlue, $alpha: 0.2) 0px 2px 8px 0px;
@@ -61,7 +62,7 @@
 .product__wrapper {
   flex-grow: 1;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 }
 
@@ -70,8 +71,6 @@
   width: 100%;
   height: auto;
   margin: 0 auto;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 
 .product__title {

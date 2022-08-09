@@ -1,21 +1,34 @@
+import image4501 from "../Assets/Images/Products/Nova/4501.png";
+import image2010 from "../Assets/Images/Products/Nova/2010.png";
+import image2076 from "../Assets/Images/Products/Nova/2076.png";
+import image1050 from "../Assets/Images/Products/Nova/1050.png";
+import image1047 from "../Assets/Images/Products/Nova/1047.png";
+import image1521 from "../Assets/Images/Products/Nova/1521.png";
+import image1621 from "../Assets/Images/Products/Nova/1621.png";
+import image1262 from "../Assets/Images/Products/Nova/1262.png";
+import image1209 from "../Assets/Images/Products/Nova/1209.png";
+import image1213 from "../Assets/Images/Products/Nova/1213.png";
+import image5057 from "../Assets/Images/Products/Nova/5057.png";
+import image5067 from "../Assets/Images/Products/Nova/5067.png";
+import image5037 from "../Assets/Images/Products/Nova/5037.png";
+import image5300 from "../Assets/Images/Products/Nova/5300.png";
+
 const Products = {
   nova: [
-    {
-      poster:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCKNwQiN_yjQCoQCouP7HFKrtCIfQy5hSxrg&usqp=CAU",
-      title: "Flush Tanks",
-      productCode: "4082",
-      description: "Bella pull type plastic flush tank with 5 pieces pipes.Box packing",
-      boxDimensions: "780x480x410mm",
-      boxVolume: "0,153m3",
-      boxWeight: "15,50kg",
-      quantityOfBox: "5",
-      manufacturer: "Turkey",
-    },
+    // {
+    //   poster: "",
+    //   title: "Flush Tanks",
+    //   productCode: "4082",
+    //   description: "Bella pull type plastic flush tank with 5 pieces pipes.Box packing",
+    //   boxDimensions: "780x480x410mm",
+    //   boxVolume: "0,153m3",
+    //   boxWeight: "15,50kg",
+    //   quantityOfBox: "5",
+    //   manufacturer: "Turkey",
+    // },
 
     {
-      poster:
-        "https://www.lussostone.com/images/senza-concealed-dual-flush-cistern-frame-with-flush-plate-p1636-10079_zoom.jpg",
+      poster: image4501,
       title: "Concealed Cisterns",
       productCode: "4501",
       description: "Concelead cistern for hang-wall closets with metal frame",
@@ -27,8 +40,7 @@ const Products = {
     },
 
     {
-      poster:
-        "https://gwa-prod-pxm-api.s3-ap-southeast-2.amazonaws.com/category/extra_large/Caroma_categpry_toilet_seat.jpg",
+      poster: image2010,
       title: "Toilet seats",
       productCode: "2010",
       material: "Poliproplen",
@@ -44,27 +56,25 @@ const Products = {
       manufacturer: "Uzbekistan",
     },
 
-    {
-      poster:
-        "https://cdn.shopify.com/s/files/1/1392/6317/products/1_301ce42f-2116-4899-8f71-d70ac17f2eba_1024x1024.jpg?v=1642663806",
-      title: "Toilet seats",
-      productCode: "2022",
-      material: "Poliproplen",
-      packing: "Polybag",
-      distanceBetweenHinges: "140-175mm",
-      weight: "1,13kg",
-      lengthOfScrew: "70mm",
-      colors: "5 different colour options",
-      boxDimensions: "540x385x470mm",
-      boxVolume: "0,097m3",
-      boxWeight: "18,50kg",
-      quantityOfBox: "12",
-      manufacturer: "Uzbekistan",
-    },
+    // {
+    //   poster: "",
+    //   title: "Toilet seats",
+    //   productCode: "2022",
+    //   material: "Poliproplen",
+    //   packing: "Polybag",
+    //   distanceBetweenHinges: "140-175mm",
+    //   weight: "1,13kg",
+    //   lengthOfScrew: "70mm",
+    //   colors: "5 different colour options",
+    //   boxDimensions: "540x385x470mm",
+    //   boxVolume: "0,097m3",
+    //   boxWeight: "18,50kg",
+    //   quantityOfBox: "12",
+    //   manufacturer: "Uzbekistan",
+    // },
 
     {
-      poster:
-        "https://cdn.shopify.com/s/files/1/1392/6317/products/1_301ce42f-2116-4899-8f71-d70ac17f2eba_1024x1024.jpg?v=1642663806",
+      poster: image2076,
       title: "Toilet seats",
       productCode: "2076",
       material: "Poliproplen",
@@ -80,21 +90,20 @@ const Products = {
       manufacturer: "Turkey",
     },
 
-    {
-      poster:
-        "https://media.diy.com/is/image/Kingfisher/goodhome-pilica-blue-bottom-fix-soft-close-toilet-seat~5059340081243_01c?$MOB_PREV$&$width=618&$height=618",
-      title: "Toilet seats",
-      productCode: "2056",
-      description: "Comfort Lux Toilet Seat for Kids(Poly Bag Packing)",
-      boxDimensions: "550x390x505mm",
-      boxVolume: "0,10m3",
-      boxWeight: "6,00kg",
-      quantityOfBox: "12",
-      manufacturer: "Turkey",
-    },
+    // {
+    //   poster: "",
+    //   title: "Toilet seats",
+    //   productCode: "2056",
+    //   description: "Comfort Lux Toilet Seat for Kids(Poly Bag Packing)",
+    //   boxDimensions: "550x390x505mm",
+    //   boxVolume: "0,10m3",
+    //   boxWeight: "6,00kg",
+    //   quantityOfBox: "12",
+    //   manufacturer: "Turkey",
+    // },
 
     {
-      poster: "https://novaplastik.net/wp-content/uploads/2020/02/1015-Render.jpg",
+      poster: image1050,
       title: "Siphons for washbasins and sinks",
       productCode: "1050",
       description:
@@ -107,7 +116,7 @@ const Products = {
     },
 
     {
-      poster: "https://novaplastik.net/wp-content/uploads/2020/02/1015-Render.jpg",
+      poster: image1047,
       title: "Siphons for washbasins and sinks",
       productCode: "1047",
       description:
@@ -120,7 +129,7 @@ const Products = {
     },
 
     {
-      poster: "https://novaplastik.net/wp-content/uploads/2020/02/1013-Render-2.jpg",
+      poster: image1521,
       title: "Siphons for washbasins and sinks",
       productCode: "1521",
       description:
@@ -133,8 +142,7 @@ const Products = {
     },
 
     {
-      poster:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt8Ly4K0r1kZ0YbzqTQe5xrm1ntkxYm_h3Mg&usqp=CAU",
+      poster: image1621,
       title: "Siphons for washbasins and sinks",
       productCode: "1621",
       description:
@@ -147,8 +155,7 @@ const Products = {
     },
 
     {
-      poster:
-        "https://cdn.tragate.com/items/7032-luxury-flexible-siphon-double-flexible-siphon-145cm-127877-295861.jpg",
+      poster: image1262,
       title: "Flexible Siphons",
       productCode: "1262",
       description:
@@ -161,7 +168,7 @@ const Products = {
     },
 
     {
-      poster: "https://fasoplast.gr/wp-content/uploads/2019/10/53-flex-sip-pvc.jpg",
+      poster: image1209,
       title: "Flexible Siphons",
       productCode: "1209",
       description:
@@ -174,7 +181,7 @@ const Products = {
     },
 
     {
-      poster: "https://fasoplast.gr/wp-content/uploads/2019/10/53-flex-sip-pvc.jpg",
+      poster: image1213,
       title: "Flexible Siphons",
       productCode: "1213",
       description:
@@ -187,8 +194,7 @@ const Products = {
     },
 
     {
-      poster:
-        "https://ae01.alicdn.com/kf/HTB1u4XsadzvK1RkSnfoq6zMwVXaD/Drains-15-15cm-Outdoor-Square-Stainless-Steel-Floor-Drain-Cover-Strainer-Deodorant-Linear-Drain-Grate-Waste.jpg",
+      poster: image5057,
       title: "Floor drains",
       productCode: "5057",
       description:
@@ -201,7 +207,7 @@ const Products = {
     },
 
     {
-      poster: "https://i.pinimg.com/originals/28/23/fc/2823fc306204016c879220e6b43f99db.jpg",
+      poster: image5067,
       title: "Floor drains",
       productCode: "5067",
       description:
@@ -214,7 +220,7 @@ const Products = {
     },
 
     {
-      poster: "https://i.pinimg.com/originals/28/23/fc/2823fc306204016c879220e6b43f99db.jpg",
+      poster: image5037,
       title: "Floor drains",
       productCode: "5037",
       description:
@@ -227,8 +233,7 @@ const Products = {
     },
 
     {
-      poster:
-        "https://www.ubuy.com.pk/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvODFSYU80NTlaNUwuX0FDX1NMMTUwMF8uanBn.jpghttps://i.pinimg.com/originals/28/23/fc/2823fc306204016c879220e6b43f99db.jpg",
+      poster: image5300,
       title: "Floor drains",
       productCode: "5300",
       description:

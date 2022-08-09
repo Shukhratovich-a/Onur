@@ -57,6 +57,7 @@ const Products = () => {
                       height={320}
                     />
                   </div>
+                  
                   <h3 className={styles.product__title}>{product.title}</h3>
                 </div>
 
