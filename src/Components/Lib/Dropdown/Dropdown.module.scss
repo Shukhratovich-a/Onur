@@ -1,0 +1,67 @@
+@import "../../../Sass/Variables.scss";
+
+.dropdown {
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  transform: translate(50%, 100%);
+  padding: 16px 20px;
+  background-color: $lightBlue;
+  border: 1px solid $accent;
+  border-radius: 5px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    text-align: center;
+  }
+
+  li + li {
+    margin-top: 16px;
+  }
+
+  a {
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+    color: $gray;
+    text-decoration: none;
+    transition: color 0.25s ease;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, -100%);
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-bottom: 8.5px solid $lightBlue;
+    border-right: 8.5px solid transparent;
+    border-left: 8.5px solid transparent;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, -100%);
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid $accent;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+  }
+}

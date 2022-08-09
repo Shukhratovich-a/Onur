@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 
 import useWindowDimensions from "../../Hooks/useWindowDimensions";
 import useLocalization from "../../Hooks/useLocalization";
@@ -8,6 +8,7 @@ import useBurger from "../../Hooks/useBurger";
 import Socials from "../Socials/Socials";
 
 import styles from "./Nav.module.scss";
+import Dropdown from "../Lib/Dropdown/Dropdown";
 
 const Nav = () => {
   const localization = useLocalization();
@@ -37,6 +38,7 @@ const Nav = () => {
               {localization.nav.home}
             </NavLink>
           </li>
+
           <li className={styles.nav__item}>
             <button
               className={`${styles.nav__link} ${
@@ -48,7 +50,28 @@ const Nav = () => {
             >
               {localization.nav.services}
             </button>
+
+            <Dropdown className={styles.nav__dropdown}>
+              <ul>
+                <li>
+                  <Link to={"/services/it"}>It</Link>
+                </li>
+                <li>
+                  <Link to={"/services/logistic"}>Logistic</Link>
+                </li>
+                <li>
+                  <Link to={"/services/plumbing"}>Plumbing</Link>
+                </li>
+                <li>
+                  <Link to={"/services/accounting"}>Accounting</Link>
+                </li>
+                <li>
+                  <Link to={"/services/distribution"}>Distribution</Link>
+                </li>
+              </ul>
+            </Dropdown>
           </li>
+
           <li className={styles.nav__item}>
             <NavLink
               className={({ isActive }) =>
@@ -60,6 +83,7 @@ const Nav = () => {
               {localization.nav.about}
             </NavLink>
           </li>
+
           <li className={styles.nav__item}>
             <NavLink
               className={({ isActive }) =>
