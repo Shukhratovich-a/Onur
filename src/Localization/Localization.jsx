@@ -57,7 +57,7 @@ const Localization = {
 
     footer: {
       siteMenu: "site menu",
-      partner: "partners",
+      services: "services",
       socials: "follow ONUR",
     },
   },
@@ -120,7 +120,7 @@ const Localization = {
 
     footer: {
       siteMenu: "site menu",
-      partner: "партнеры",
+      services: "services",
       socials: "follow ONUR",
     },
   },
@@ -182,7 +182,7 @@ const Localization = {
 
     footer: {
       siteMenu: "site menu",
-      partner: "hamkorlar",
+      services: "services",
       socials: "follow ONUR",
     },
   },

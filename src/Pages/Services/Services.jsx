@@ -7,8 +7,6 @@ import ServicesList from "../../Components/Services/Services";
 import styles from "./Services.module.scss";
 
 const Services = () => {
-  
-
   return (
     <main>
       <section className={styles.services}>

@@ -64,7 +64,7 @@ const Footer = () => {
             </div>
 
             <div className={styles.footer__inner}>
-              <span className={styles.footer__inner__heading}>{localization.footer.partner}</span>
+              <span className={styles.footer__inner__heading}>{localization.footer.services}</span>
 
               <ul className={styles.footer__list}>
                 <li className={styles.footer__item}>
@@ -74,9 +74,9 @@ const Footer = () => {
                         isActive ? styles["footer__item__link--active"] : ""
                       }`
                     }
-                    to={"/partners/nova"}
+                    to={"/services/it"}
                   >
-                    NOVA
+                    {localization.services.it}
                   </NavLink>
                 </li>
                 <li className={styles.footer__item}>
@@ -86,9 +86,9 @@ const Footer = () => {
                         isActive ? styles["footer__item__link--active"] : ""
                       }`
                     }
-                    to={"/partners/kas"}
+                    to={"/services/logistic"}
                   >
-                    KAS
+                    {localization.services.logistic}
                   </NavLink>
                 </li>
                 <li className={styles.footer__item}>
@@ -98,9 +98,9 @@ const Footer = () => {
                         isActive ? styles["footer__item__link--active"] : ""
                       }`
                     }
-                    to={"/partners/spk"}
+                    to={"/services/plumbing"}
                   >
-                    SPK
+                    {localization.services.plumbing}
                   </NavLink>
                 </li>
                 <li className={styles.footer__item}>
@@ -110,9 +110,9 @@ const Footer = () => {
                         isActive ? styles["footer__item__link--active"] : ""
                       }`
                     }
-                    to={"/partners/candan"}
+                    to={"/services/accounting"}
                   >
-                    CANDAN
+                    {localization.services.accounting}
                   </NavLink>
                 </li>
                 <li className={styles.footer__item}>
@@ -122,9 +122,9 @@ const Footer = () => {
                         isActive ? styles["footer__item__link--active"] : ""
                       }`
                     }
-                    to={"/partners/baykara"}
+                    to={"/services/distribution"}
                   >
-                    BAYKARA
+                    {localization.services.distribution}
                   </NavLink>
                 </li>
               </ul>

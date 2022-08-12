@@ -66,3 +66,51 @@
     border-left: 10px solid transparent;
   }
 }
+
+@media only screen and(max-width: 1000px) {
+  .dropdown {
+    position: unset;
+    right: unset;
+    bottom: unset;
+    transform: unset;
+    padding: unset;
+    background-color: unset;
+    border: unset;
+    border-radius: unset;
+    box-shadow: unset;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    li {
+      margin-left: 16px;
+      text-align: unset;
+
+      &:last-child {
+        a {
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    li + li {
+      margin-top: unset;
+    }
+
+    a {
+      padding: 8px 0;
+      line-height: 20px;
+    }
+
+    &::after {
+      content: none;
+    }
+
+    &::before {
+      content: none;
+    }
+  }
+}
