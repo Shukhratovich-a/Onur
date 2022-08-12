@@ -7,7 +7,7 @@ import ServicesList from "../../Components/Services/Services";
 import styles from "./Services.module.scss";
 
 const Services = () => {
-  // const localization = useLocalization();
+  
 
   return (
     <main>
