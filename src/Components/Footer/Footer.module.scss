@@ -44,6 +44,10 @@
   }
 
   &:nth-child(2) {
+    margin-right: 300px;
+  }
+
+  &:nth-child(3) {
     margin-right: auto;
   }
 }
@@ -56,12 +60,14 @@
 
 .footer__item {
   padding: 10px 0;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .footer__item__link {
   display: block;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: inherit;
+  line-height: inherit;
   color: inherit;
   text-decoration: none;
   text-transform: capitalize;

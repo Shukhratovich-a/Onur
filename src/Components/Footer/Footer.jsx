@@ -131,6 +131,48 @@ const Footer = () => {
             </div>
 
             <div className={styles.footer__inner}>
+              <span className={styles.footer__inner__heading}>{localization.footer.workTime}</span>
+
+              <ul className={styles.footer__list}>
+                <li className={styles.footer__item}>
+                  <span>
+                    9 <sup>00</sup> - 18 <sup>00</sup>
+                  </span>
+                </li>
+                <li className={styles.footer__item}>
+                  <span>
+                    9 <sup>00</sup> - 18 <sup>00</sup>
+                  </span>
+                </li>
+                <li className={styles.footer__item}>
+                  <span>
+                    9 <sup>00</sup> - 18 <sup>00</sup>
+                  </span>
+                </li>
+                <li className={styles.footer__item}>
+                  <span>
+                    9 <sup>00</sup> - 18 <sup>00</sup>
+                  </span>
+                </li>
+                <li className={styles.footer__item}>
+                  <span>
+                    9 <sup>00</sup> - 18 <sup>00</sup>
+                  </span>
+                </li>
+                <li className={styles.footer__item}>
+                  <span>
+                    9 <sup>00</sup> - 18 <sup>00</sup>
+                  </span>
+                </li>
+                <li className={styles.footer__item}>
+                  <span>
+                    9 <sup>00</sup> - 18 <sup>00</sup>
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div className={styles.footer__inner}>
               <span className={styles.footer__inner__heading}>{localization.footer.socials}</span>
 
               <Socials className={styles.footer__socials} />

@@ -59,6 +59,7 @@ const Localization = {
       siteMenu: "site menu",
       services: "services",
       socials: "follow ONUR",
+      workTime: "work time",
     },
   },
 
@@ -122,6 +123,7 @@ const Localization = {
       siteMenu: "site menu",
       services: "services",
       socials: "follow ONUR",
+      workTime: "work time",
     },
   },
 
@@ -184,6 +186,7 @@ const Localization = {
       siteMenu: "site menu",
       services: "services",
       socials: "follow ONUR",
+      workTime: "work time",
     },
   },
 };
