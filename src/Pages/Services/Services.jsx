@@ -11,8 +11,10 @@ import styles from "./Services.module.scss";
 import servicesProducts from "../../Data/ServiseProducts";
 
 const Services = () => {
+
   const { serviceName } = useParams();
   const [serviceProducts, setServerProducts] = useState(ServiceProducts[serviceName]);
+
 
   return (
     <main>

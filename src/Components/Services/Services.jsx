@@ -11,11 +11,11 @@ const Services = () => {
   const localiztion = useLocalization();
 
   const [services, setServices] = React.useState([
-    { name: "it", isHover: false },
-    { name: "logistic", isHover: false },
-    { name: "plumbing", isHover: false },
-    { name: "accounting", isHover: false },
-    { name: "distribution", isHover: false },
+    { name: localiztion.services.it, isHover: false },
+    { name: localiztion.services.logistic, isHover: false },
+    { name: localiztion.services.plumbing, isHover: false },
+    { name: localiztion.services.accounting, isHover: false },
+    { name: localiztion.services.distribution, isHover: false },
   ]);
 
   const cardHoverEnter = (index) => {

@@ -134,12 +134,12 @@
   }
 
   .nav__dropdown {
-    position: static;
+    position: unset;
     bottom: unset;
     right: unset;
     transform: unset;
     opacity: 1;
-    pointer-events: none;
+    pointer-events: all;
   }
 
   .nav__socials {
@@ -156,10 +156,6 @@
 @media only screen and(max-width: 425px) {
   .nav__list {
     padding: 10px 15px;
-  }
-
-  .nav__link {
-    text-align: center;
   }
 }
 

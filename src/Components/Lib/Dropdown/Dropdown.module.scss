@@ -9,6 +9,7 @@
   background-color: $lightBlue;
   border: 1px solid $accent;
   border-radius: 5px;
+  box-shadow: rgba($color: $darkBlue, $alpha: 0.2) 0px 2px 8px 0px;
 
   ul {
     margin: 0;
@@ -63,5 +64,53 @@
     border-bottom: 10px solid $accent;
     border-right: 10px solid transparent;
     border-left: 10px solid transparent;
+  }
+}
+
+@media only screen and(max-width: 1000px) {
+  .dropdown {
+    position: unset;
+    right: unset;
+    bottom: unset;
+    transform: unset;
+    padding: unset;
+    background-color: unset;
+    border: unset;
+    border-radius: unset;
+    box-shadow: unset;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    li {
+      margin-left: 16px;
+      text-align: unset;
+
+      &:last-child {
+        a {
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    li + li {
+      margin-top: unset;
+    }
+
+    a {
+      padding: 8px 0;
+      line-height: 20px;
+    }
+
+    &::after {
+      content: none;
+    }
+
+    &::before {
+      content: none;
+    }
   }
 }
