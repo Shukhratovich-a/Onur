@@ -21,10 +21,15 @@ const Services = () => {
     <main>
       <section className={styles.services}>
         <div className={`container ${styles.container}`}>
-          {service && <img src={service.poster} alt="" />}
+          {service && (
+            <div>
+              <img src={service.poster} alt="" />
+              <p>{service.text}</p>
+            </div>
+          )}
         </div>
       </section>
-      
+
       <ServicesList />
     </main>
   );
