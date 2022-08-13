@@ -23,14 +23,17 @@ function Inputs() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          username: firstname.value.trim() + " " + lastname.value.trim(),
+          firstname: firstname.value.trim(),
+          lastname: lastname.value.trim(),
           contact: contact.value.trim(),
         }),
       });
 
       const data = await responce.json();
 
-      console.log(data);
+      if (data.status === 200) {
+        evt.target.reset();
+      }
     })();
   };
 

@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
+import parse from "html-react-parser";
 
 import useLocalization from "../../Hooks/useLocalization";
 
@@ -134,41 +135,61 @@ const Footer = () => {
               <span className={styles.footer__inner__heading}>{localization.footer.workTime}</span>
 
               <ul className={styles.footer__list}>
-                <li className={styles.footer__item}>
+                {localization.workTime.length &&
+                  localization.workTime.map((time) => (
+                    <li
+                      className={`${styles.footer__item} ${styles["footer__work-time"]}`}
+                      key={time.short}
+                    >
+                      <span className={styles["footer__work-time__short"]}>
+                        {parse(time.short)}
+                      </span>
+                      <span className={`${styles["footer__work-time__circle"]}`}></span>
+                      <span className={styles["footer__work-time__time"]}>{parse(time.time)}</span>
+                    </li>
+                  ))}
+                {/* <li className={`${styles.footer__item} ${styles["footer__work-time"]}`}>
+                  <span className={`${styles["footer__work-time__circle"]}`}></span>
                   <span>
                     9 <sup>00</sup> - 18 <sup>00</sup>
                   </span>
                 </li>
-                <li className={styles.footer__item}>
+                <li className={`${styles.footer__item} ${styles["footer__work-time"]}`}>
+                  <span className={`${styles["footer__work-time__circle"]}`}></span>
                   <span>
                     9 <sup>00</sup> - 18 <sup>00</sup>
                   </span>
                 </li>
-                <li className={styles.footer__item}>
+                <li className={`${styles.footer__item} ${styles["footer__work-time"]}`}>
+                  <span className={`${styles["footer__work-time__circle"]}`}></span>
                   <span>
                     9 <sup>00</sup> - 18 <sup>00</sup>
                   </span>
                 </li>
-                <li className={styles.footer__item}>
+                <li className={`${styles.footer__item} ${styles["footer__work-time"]}`}>
+                  <span className={`${styles["footer__work-time__circle"]}`}></span>
                   <span>
                     9 <sup>00</sup> - 18 <sup>00</sup>
                   </span>
                 </li>
-                <li className={styles.footer__item}>
+                <li className={`${styles.footer__item} ${styles["footer__work-time"]}`}>
+                  <span className={`${styles["footer__work-time__circle"]}`}></span>
                   <span>
                     9 <sup>00</sup> - 18 <sup>00</sup>
                   </span>
                 </li>
-                <li className={styles.footer__item}>
+                <li className={`${styles.footer__item} ${styles["footer__work-time"]}`}>
+                  <span className={`${styles["footer__work-time__circle"]}`}></span>
+                  <span>
+                    10 <sup>00</sup> - 17 <sup>00</sup>
+                  </span>
+                </li>
+                <li className={`${styles.footer__item} ${styles["footer__work-time"]}`}>
+                  <span className={`${styles["footer__work-time__circle"]}`}></span>
                   <span>
                     9 <sup>00</sup> - 18 <sup>00</sup>
                   </span>
-                </li>
-                <li className={styles.footer__item}>
-                  <span>
-                    9 <sup>00</sup> - 18 <sup>00</sup>
-                  </span>
-                </li>
+                </li> */}
               </ul>
             </div>
 

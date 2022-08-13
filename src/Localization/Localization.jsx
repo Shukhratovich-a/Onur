@@ -55,6 +55,44 @@ const Localization = {
         'In 2021, the company was renamed to the new brand "Onur". The main activity of the company is trade in plumbing products and import from Turkey to the market of Uzbekistan.',
     },
 
+    workTime: [
+      {
+        title: "monday",
+        time: "9 <sup>00</sup> - 18 <sup>00</sup>",
+        short: "mo",
+      },
+      {
+        title: "tuesday",
+        time: "9 <sup>00</sup> - 18 <sup>00</sup>",
+        short: "tu",
+      },
+      {
+        title: "wednesday",
+        time: "9 <sup>00</sup> - 18 <sup>00</sup>",
+        short: "we",
+      },
+      {
+        title: "thursday",
+        time: "9 <sup>00</sup> - 18 <sup>00</sup>",
+        short: "th",
+      },
+      {
+        title: "friday",
+        time: "9 <sup>00</sup> - 18 <sup>00</sup>",
+        short: "fr",
+      },
+      {
+        title: "saturday",
+        time: "10 <sup>00</sup> - 17 <sup>00</sup>",
+        short: "sa",
+      },
+      {
+        title: "sunday",
+        time: "day off",
+        short: "su",
+      },
+    ],
+
     footer: {
       siteMenu: "site menu",
       services: "services",
@@ -119,6 +157,44 @@ const Localization = {
         "В 2021 году компания была переименована в новый бренд «Онур». Основным видом деятельности компании является торговля сантехнической продукцией и импорт из Турции на рынок Узбекистана.",
     },
 
+    workTime: [
+      {
+        title: "понедельник",
+        time: "9 <sup>00</sup> - 18 <sup>00</sup>",
+        short: "по",
+      },
+      {
+        title: "вторник",
+        time: "9 <sup>00</sup> - 18 <sup>00</sup>",
+        short: "вт",
+      },
+      {
+        title: "среда",
+        time: "9 <sup>00</sup> - 18 <sup>00</sup>",
+        short: "ср",
+      },
+      {
+        title: "четверг",
+        time: "9 <sup>00</sup> - 18 <sup>00</sup>",
+        short: "че",
+      },
+      {
+        title: "пятница",
+        time: "9 <sup>00</sup> - 18 <sup>00</sup>",
+        short: "пя",
+      },
+      {
+        title: "суббота",
+        time: "10 <sup>00</sup> - 17 <sup>00</sup>",
+        short: "су",
+      },
+      {
+        title: "воскресенье",
+        time: "выходной",
+        short: "во",
+      },
+    ],
+
     footer: {
       siteMenu: "site menu",
       services: "services",
@@ -181,6 +257,44 @@ const Localization = {
 
       text4: `2021 yilda kompaniya yangi brend «Onur» nomiga o’zgartirildi. Kompaniyaning asosiy faoliyati santexnika mahsulotlari savdosi bilan shug‘ullanish va Turkiya davlatidan O’zbekiston bozoriga import qilish.`,
     },
+
+    workTime: [
+      {
+        title: "dushanba",
+        time: "9 <sup>00</sup> - 18 <sup>00</sup>",
+        short: "du",
+      },
+      {
+        title: "seshanba",
+        time: "9 <sup>00</sup> - 18 <sup>00</sup>",
+        short: "se",
+      },
+      {
+        title: "chorshanba",
+        time: "9 <sup>00</sup> - 18 <sup>00</sup>",
+        short: "cho",
+      },
+      {
+        title: "payshanba",
+        time: "9 <sup>00</sup> - 18 <sup>00</sup>",
+        short: "pa",
+      },
+      {
+        title: "juma",
+        time: "9 <sup>00</sup> - 18 <sup>00</sup>",
+        short: "ju",
+      },
+      {
+        title: "shanba",
+        time: "10 <sup>00</sup> - 17 <sup>00</sup>",
+        short: "sha",
+      },
+      {
+        title: "yakshanba",
+        time: "dam olish",
+        short: "ya",
+      },
+    ],
 
     footer: {
       siteMenu: "site menu",
