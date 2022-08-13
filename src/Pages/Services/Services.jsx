@@ -1,35 +1,30 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 // import useLocalization from "../../Hooks/useLocalization";
 
+import Service from "../../Data/Services";
+
 import ServicesList from "../../Components/Services/Services";
-import ServiceProducts from "../../Data/Products";
-import { useParams } from "react-router-dom";
-import { useState } from "react";
 
 import styles from "./Services.module.scss";
-import servicesProducts from "../../Data/ServiseProducts";
 
 const Services = () => {
-
   const { serviceName } = useParams();
-  const [serviceProducts, setServerProducts] = useState(ServiceProducts[serviceName]);
+  const [service, setService] = React.useState({});
 
+  React.useEffect(() => {
+    setService(Service[serviceName]);
+  }, [serviceName]);
 
   return (
     <main>
       <section className={styles.services}>
         <div className={`container ${styles.container}`}>
-          <ul>
-            {
-              serviceProducts &&
-              <li>
-                <p>{servicesProducts.poster}</p>
-              </li>
-            }
-          </ul>
+          {service && <img src={service.poster} alt="" />}
         </div>
       </section>
+      
       <ServicesList />
     </main>
   );
