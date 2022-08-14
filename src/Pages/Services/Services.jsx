@@ -22,9 +22,9 @@ const Services = () => {
       <section className={styles.services}>
         <div className={`container ${styles.container}`}>
           {service && (
-            <div>
-              <img src={service.poster} alt="" />
-              <p>{service.text}</p>
+            <div className={styles.servise__inner}>
+              <img className={styles.servise__poster} src={service.poster} alt={service.text} />
+              <p className={styles.servise__text}>{service.text}</p>
             </div>
           )}
         </div>
