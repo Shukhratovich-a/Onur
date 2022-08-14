@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 
 import useLocalization from "../../Hooks/useLocalization";
 
-import Logo from "../Lib/Icons/Logo";
+import It from "../../Assets/Images/Hero/It.jpg";
+import Logistic from "../../Assets/Images/Hero/Logistic.jpg";
+import Plumbing from "../../Assets/Images/Hero/Plumbing.jpg";
+import Accounting from "../../Assets/Images/Hero/Accounting.jpg";
+import Distribution from "../../Assets/Images/Hero/Distribution.jpg";
 
 import styles from "./Services.module.scss";
 
@@ -11,11 +15,11 @@ const Services = () => {
   const localiztion = useLocalization();
 
   const [services, setServices] = React.useState([
-    { name: localiztion.services.it, isHover: false },
-    { name: localiztion.services.logistic, isHover: false },
-    { name: localiztion.services.plumbing, isHover: false },
-    { name: localiztion.services.accounting, isHover: false },
-    { name: localiztion.services.distribution, isHover: false },
+    { name: localiztion.services.it, isHover: false, poster: It },
+    { name: localiztion.services.logistic, isHover: false, poster: Logistic },
+    { name: localiztion.services.plumbing, isHover: false, poster: Plumbing },
+    { name: localiztion.services.accounting, isHover: false, poster: Accounting },
+    { name: localiztion.services.distribution, isHover: false, poster: Distribution },
   ]);
 
   const cardHoverEnter = (index) => {
@@ -44,18 +48,11 @@ const Services = () => {
               key={index}
               onMouseEnter={() => cardHoverEnter(index)}
               onMouseLeave={() => cardHoverLeave(index)}
+              style={{ backgroundImage: `url('${service.poster}')` }}
             >
-              <div className={styles.service__wrapper}>
-                <Logo />
-
+              <Link className={styles.service__link} to={"/services/" + service.name}>
                 <h3 className={styles.service__heading}>{service.name}</h3>
-              </div>
-
-              <div className={styles.service__inner}>
-                <Link className={styles.service__link} to={"/services/" + service.name}>
-                  {localiztion.services.showService}
-                </Link>
-              </div>
+              </Link>
             </li>
           ))}
         </ul>
