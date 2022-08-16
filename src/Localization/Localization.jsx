@@ -19,22 +19,22 @@ const Localization = {
     },
 
     hero: {
-      it: "It - Platforma bo'limi",
-      logistic: "Logistika bo'limi",
-      plumbing: "Santexnika bo'limi",
-      accounting: "Buxgalteriya bo'limi",
-      distribution: "Distribyutorlik bo'limi",
+      it: "Department of IT-Platform",
+      logistic: "Department of Logistics",
+      plumbing: "Department of Plumbing",
+      accounting: "Department of Accounting",
+      distribution: "Distribution Department",
     },
 
     services: {
       heading: "our services",
       showService: "show service",
 
-      it: "it",
-      logistic: "logistic",
-      plumbing: "plumbing",
-      accounting: "accounting",
-      distribution: "distribution",
+      it: "IT",
+      logistic: "Logistic",
+      plumbing: "Plumbing",
+      accounting: "Accounting",
+      distribution: "Distribution",
     },
 
     partners: {
@@ -104,28 +104,28 @@ const Localization = {
   ru: {
     nav: {
       home: "главная",
-      services: "serivces",
+      services: "услуги",
       about: "о нас",
       contacts: "контакты",
     },
 
     hero: {
-      it: "It - Platforma bo'limi",
-      logistic: "Logistika bo'limi",
-      plumbing: "Santexnika bo'limi",
-      accounting: "Buxgalteriya bo'limi",
-      distribution: "Distribyutorlik bo'limi",
+      it: "Департамент ИТ-Платформ",
+      logistic: "Департамент Логистики",
+      plumbing: "Департамент Сантехники",
+      accounting: "Департамент Бухгалтерского учета",
+      distribution: "Отдел Дистрибуции",
     },
 
     services: {
-      heading: "our services",
-      showService: "show service",
+      heading: "наши услуги",
+      showService: "показать услугу",
 
-      it: "it",
-      logistic: "logistic",
-      plumbing: "plumbing",
-      accounting: "accounting",
-      distribution: "distribution",
+      it: "ит",
+      logistic: "логистика",
+      plumbing: "сантехника",
+      accounting: "бухгалтерия",
+      distribution: "дистрибуция",
     },
 
     partners: {
@@ -196,23 +196,23 @@ const Localization = {
     ],
 
     footer: {
-      siteMenu: "site menu",
-      services: "services",
-      socials: "follow ONUR",
-      workTime: "work time",
+      siteMenu: "меню сайта",
+      services: "услуги",
+      socials: "следуйте за ONUR",
+      workTime: "рабочее время",
     },
   },
 
   uz: {
     nav: {
       home: "bosh sahifa",
-      services: "serivces",
+      services: "xizmatlar",
       about: "biz haqimizda",
       contacts: "bog'lanish",
     },
 
     hero: {
-      it: "It - Platforma bo'limi",
+      it: "IT - Platforma bo'limi",
       logistic: "Logistika bo'limi",
       plumbing: "Santexnika bo'limi",
       accounting: "Buxgalteriya bo'limi",
@@ -220,14 +220,14 @@ const Localization = {
     },
 
     services: {
-      heading: "our services",
-      showService: "show service",
+      heading: "Bizning xizmatlar",
+      showService: "xizmat ko'rsatish",
 
-      it: "it",
-      logistic: "logistic",
-      plumbing: "plumbing",
-      accounting: "accounting",
-      distribution: "distribution",
+      it: "IT",
+      logistic: "logistika",
+      plumbing: "santexnika",
+      accounting: "buxgalteriya hisobi",
+      distribution: "tarqatish",
     },
 
     partners: {
@@ -297,10 +297,10 @@ const Localization = {
     ],
 
     footer: {
-      siteMenu: "site menu",
-      services: "services",
-      socials: "follow ONUR",
-      workTime: "work time",
+      siteMenu: "sayt menyusi",
+      services: "xizmatlar",
+      socials: "ONURni kuzatib boring",
+      workTime: "ish vaqti",
     },
   },
 };
