@@ -5,18 +5,18 @@ import { HOST } from "../../config";
 
 import Partners from "../../Components/Partners/Partners";
 
+import Loading from "../../Components/Lib/Loading/Loading";
+import Refresh from "../../Components/Lib/Refresh/Refresh";
+
 import styles from "./Product.module.scss";
 
 const Products = () => {
   const { partnerId } = useParams();
   const [partner, setPartner] = React.useState({});
-  const [, setLoading] = React.useState(true);
-  const [, setButtonLoading] = React.useState(false);
+  const [loading, setLoading] = React.useState(true);
+  const [buttonLoading, setButtonLoading] = React.useState(false);
 
-  // loading
-  // buttonLoading
-
-  const getPartners = async (partnerId) => {
+  const getPartner = async (partnerId) => {
     setLoading(true);
     setButtonLoading(false);
 
@@ -41,7 +41,7 @@ const Products = () => {
   };
 
   React.useEffect(() => {
-    getPartners(partnerId);
+    getPartner(partnerId);
   }, [partnerId]);
 
   return (
@@ -84,6 +84,27 @@ const Products = () => {
                     </li>
                   ))}
               </ul>
+            </div>
+          )}
+
+          {loading && (
+            <div className={styles.products__loading}>
+              <div className={styles.products__loading__load}>
+                <Loading />
+              </div>
+            </div>
+          )}
+
+          {buttonLoading && (
+            <div className={styles.products__loading}>
+              <button
+                className={styles.products__loading__refresh}
+                onClick={() => {
+                  getPartner(partnerId);
+                }}
+              >
+                <Refresh />
+              </button>
             </div>
           )}
         </div>

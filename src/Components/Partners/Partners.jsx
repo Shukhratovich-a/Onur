@@ -22,11 +22,9 @@ const Partners = () => {
     setButtonLoading(false);
 
     try {
-      console.log("dfsd");
       const response = await fetch(HOST + "/partners");
 
       const data = await response.json();
-
 
       if (data.status === 200 && data.data && data.data.length > 0) {
         setPartners(
