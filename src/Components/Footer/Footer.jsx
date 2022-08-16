@@ -140,6 +140,7 @@ const Footer = () => {
                     <li
                       className={`${styles.footer__item} ${styles["footer__work-time"]}`}
                       key={time.short}
+                      title={time.title}
                     >
                       <span className={styles["footer__work-time__short"]}>
                         {parse(time.short)}

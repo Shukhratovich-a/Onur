@@ -44,7 +44,7 @@
     opacity: 0.8;
   }
 
-  &:hover{
+  &:hover {
     background-size: 140%;
   }
 }
@@ -67,7 +67,7 @@
 }
 
 @media only screen and(max-width: 1550px) {
-  .service {
+  .service__link {
     padding: 30px;
   }
 }
@@ -75,10 +75,6 @@
 @media only screen and(max-width: 1300px) {
   .services__list {
     gap: 20px;
-  }
-
-  .service {
-    padding: 30px 10px;
   }
 }
 
@@ -95,6 +91,10 @@
 }
 
 @media only screen and(max-width: 1060px) {
+  .services__heading {
+    text-align: center;
+  }
+
   .services__list {
     display: flex;
     flex-wrap: wrap;

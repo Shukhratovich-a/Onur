@@ -64,12 +64,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 400px;
 }
 
 .product__image {
   max-width: 100%;
   width: 100%;
   height: auto;
+  object-fit: contain;
   margin: 0 auto;
 }
 
@@ -95,6 +97,9 @@
   z-index: 9;
   max-width: 300px;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   color: $white;
   opacity: 0;
   pointer-events: none;

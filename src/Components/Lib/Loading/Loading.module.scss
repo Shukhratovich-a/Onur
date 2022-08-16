@@ -1,0 +1,22 @@
+@import "../../../Sass/Variables.scss";
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-icon {
+  transform: rotate(0deg);
+  animation: spline 0.8s linear infinite;
+  color: $lightBlue;
+}
+
+@keyframes spline {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
