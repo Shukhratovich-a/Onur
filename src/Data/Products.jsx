@@ -12,6 +12,15 @@ import image5057 from "../Assets/Images/Products/NOVA/5057.png";
 import image5067 from "../Assets/Images/Products/NOVA/5067.png";
 import image5037 from "../Assets/Images/Products/NOVA/5037.png";
 import image5300 from "../Assets/Images/Products/NOVA/5300.png";
+
+import kas1 from "../Assets/Images/Products/KAS/KAS1.jpg";
+import kas2 from "../Assets/Images/Products/KAS/KAS2.jpg";
+import kas3 from "../Assets/Images/Products/KAS/KAS3.jpg";
+import kas4 from "../Assets/Images/Products/KAS/KAS4.jpg";
+import kas5 from "../Assets/Images/Products/KAS/KAS5.jpg";
+import kas6 from "../Assets/Images/Products/KAS/KAS6.jpg";
+import kas7 from "../Assets/Images/Products/KAS/KAS7.jpg";
+
 import spk1 from "../Assets/Images/Products/SPK/SPK1.jpg";
 import spk2 from "../Assets/Images/Products/SPK/SPK2.jpg";
 import spk3 from "../Assets/Images/Products/SPK/SPK3.jpg";
@@ -20,17 +29,12 @@ import spk5 from "../Assets/Images/Products/SPK/SPK5.jpg";
 import spk6 from "../Assets/Images/Products/SPK/SPK6.jpg";
 import spk7 from "../Assets/Images/Products/SPK/SPK7.jpg";
 import spk8 from "../Assets/Images/Products/SPK/SPK8.jpg";
-import kas1 from "../Assets/Images/Products/KAS/KAS1.jpg";
-import kas2 from "../Assets/Images/Products/KAS/KAS2.jpg";
-import kas3 from "../Assets/Images/Products/KAS/KAS3.jpg";
-import kas4 from "../Assets/Images/Products/KAS/KAS4.jpg";
-import kas5 from "../Assets/Images/Products/KAS/KAS5.jpg";
-import kas6 from "../Assets/Images/Products/KAS/KAS6.jpg";
-import kas7 from "../Assets/Images/Products/KAS/KAS7.jpg";
+
 import candan1 from "../Assets/Images/Products/CANDAN/CANDAN1.jpg";
 import candan2 from "../Assets/Images/Products/CANDAN/CANDAN2.JPG";
 import candan3 from "../Assets/Images/Products/CANDAN/CANDAN3.JPG";
 import candan4 from "../Assets/Images/Products/CANDAN/CANDAN4.jpg";
+
 import baykara1 from "../Assets/Images/Products/BAYKARA/BAYKARA1.jpg";
 import baykara2 from "../Assets/Images/Products/BAYKARA/BAYKARA2.jpg";
 
@@ -47,7 +51,7 @@ const Products = {
     //   quantityOfBox: "5",
     //   manufacturer: "Turkey",
     // },
-    
+
     {
       poster: image4501,
       title: "Concealed Cisterns",
@@ -59,7 +63,7 @@ const Products = {
       quantityOfBox: "1",
       manufacturer: "Turkey",
     },
-    
+
     {
       poster: image2010,
       title: "Toilet seats",
@@ -76,7 +80,7 @@ const Products = {
       quantityOfBox: "12",
       manufacturer: "Uzbekistan",
     },
-    
+
     // {
     //   poster: "",
     //   title: "Toilet seats",
@@ -93,7 +97,7 @@ const Products = {
     //   quantityOfBox: "12",
     //   manufacturer: "Uzbekistan",
     // },
-    
+
     {
       poster: image2076,
       title: "Toilet seats",
@@ -110,7 +114,7 @@ const Products = {
       quantityOfBox: "10",
       manufacturer: "Turkey",
     },
-    
+
     // {
     //   poster: "",
     //   title: "Toilet seats",
@@ -122,143 +126,143 @@ const Products = {
     //   quantityOfBox: "12",
     //   manufacturer: "Turkey",
     // },
-    
+
     {
       poster: image1050,
       title: "Siphons for washbasins and sinks",
       productCode: "1050",
       description:
-      'Siphon for washbasin with sigle piece inlet 64mm screw. Flexible outlet 1 1/4" - diameter 40/50mm',
+        'Siphon for washbasin with sigle piece inlet 64mm screw. Flexible outlet 1 1/4" - diameter 40/50mm',
       boxDimensions: "425x375x610mm",
       boxVolume: "0,097m3",
       boxWeight: "10,00kg",
       quantityOfBox: "40",
       manufacturer: "Uzbekistan",
     },
-    
+
     {
       poster: image1047,
       title: "Siphons for washbasins and sinks",
       productCode: "1047",
       description:
-      'Maxi bottle trap siphon for sinks with 3 1/2" inlet and 25mm brass screw. Overflow and  machine connection. Flexible outlet 1 1/2" - diameter 40/50mm',
+        'Maxi bottle trap siphon for sinks with 3 1/2" inlet and 25mm brass screw. Overflow and  machine connection. Flexible outlet 1 1/2" - diameter 40/50mm',
       boxDimensions: "425x375x610mm",
       boxVolume: "0,097m3",
       boxWeight: "11,00kg",
       quantityOfBox: "20",
       manufacturer: "Uzbekistan",
     },
-    
+
     {
       poster: image1521,
       title: "Siphons for washbasins and sinks",
       productCode: "1521",
       description:
-      'Siphon for bathtub-V-type with 70mm drain, 50mm screw, pvc plug with plastic chain. Flexible outlet 1 1/2" - diameter 40/50mm. (Height 120mm)',
+        'Siphon for bathtub-V-type with 70mm drain, 50mm screw, pvc plug with plastic chain. Flexible outlet 1 1/2" - diameter 40/50mm. (Height 120mm)',
       boxDimensions: "425x375x610mm",
       boxVolume: "0,097m3",
       boxWeight: "10,00kg",
       quantityOfBox: "25",
       manufacturer: "Uzbekistan",
     },
-    
+
     {
       poster: image1621,
       title: "Siphons for washbasins and sinks",
       productCode: "1621",
       description:
-      'Shower siphon-V-type with 70mm drain and 50mm screw. Flexible outlet 1 1/2"- diameter 40/50. (Height 90mm)',
+        'Shower siphon-V-type with 70mm drain and 50mm screw. Flexible outlet 1 1/2"- diameter 40/50. (Height 90mm)',
       boxDimensions: "425x375x610mm",
       boxVolume: "0,097m3",
       boxWeight: "11,00kg",
       quantityOfBox: "50",
       manufacturer: "Uzbekistan",
     },
-    
+
     {
       poster: image1262,
       title: "Flexible Siphons",
       productCode: "1262",
       description:
-      'Flexible Siphon with 64mm drain and 65mm screw. 1 1/2"-diameter 40/50mm flexible outlet.',
+        'Flexible Siphon with 64mm drain and 65mm screw. 1 1/2"-diameter 40/50mm flexible outlet.',
       boxDimensions: "425x375x610mm",
       boxVolume: "0,097m3",
       boxWeight: "14,00kg",
       quantityOfBox: "75",
       manufacturer: "Uzbekistan",
     },
-    
+
     {
       poster: image1209,
       title: "Flexible Siphons",
       productCode: "1209",
       description:
-      "Flexible Siphon single piece with 64mm drain and 64mm screw. diameter 40/50mm flexible outlet.",
+        "Flexible Siphon single piece with 64mm drain and 64mm screw. diameter 40/50mm flexible outlet.",
       boxDimensions: "425x375x610mm",
       boxVolume: "0,097m3",
       boxWeight: "11,00kg",
       quantityOfBox: "100",
       manufacturer: "Uzbekistan",
     },
-    
+
     {
       poster: image1213,
       title: "Flexible Siphons",
       productCode: "1213",
       description:
-      "Flexible Siphon single piece with 64mm drain and 64mm screw. diameter 40/50mm flexible outlet (drain and screw are 430 quality).",
+        "Flexible Siphon single piece with 64mm drain and 64mm screw. diameter 40/50mm flexible outlet (drain and screw are 430 quality).",
       boxDimensions: "425x375x610mm",
       boxVolume: "0,097m3",
       boxWeight: "11,00kg",
       quantityOfBox: "100",
       manufacturer: "Uzbekistan",
     },
-    
+
     {
       poster: image5057,
       title: "Floor drains",
       productCode: "5057",
       description:
-      "100x100mm floor drain with stainless steel grid and frame,horizontal outlet diameter 50",
+        "100x100mm floor drain with stainless steel grid and frame,horizontal outlet diameter 50",
       boxDimensions: "550x510x200mm",
       boxVolume: "0,056m3",
       boxWeight: "8,25kg",
       quantityOfBox: "50",
       manufacturer: "Uzbekistan",
     },
-    
+
     {
       poster: image5067,
       title: "Floor drains",
       productCode: "5067",
       description:
-      "100x100mm floor drain with stainless steel grid and frame,horizontal outlet diameter 50",
+        "100x100mm floor drain with stainless steel grid and frame,horizontal outlet diameter 50",
       boxDimensions: "550x510x200mm",
       boxVolume: "0,056m3",
       boxWeight: "7,50kg",
       quantityOfBox: "50",
       manufacturer: "Uzbekistan",
     },
-    
+
     {
       poster: image5037,
       title: "Floor drains",
       productCode: "5037",
       description:
-      "150x150mm floor drain with stainless steel grid and frame,horizontal outlet diameter 50",
+        "150x150mm floor drain with stainless steel grid and frame,horizontal outlet diameter 50",
       boxDimensions: "540x390x470mm",
       boxVolume: "0,099m3",
       boxWeight: "16,00kg",
       quantityOfBox: "60",
       manufacturer: "Uzbekistan",
     },
-    
+
     {
       poster: image5300,
       title: "Floor drains",
       productCode: "5300",
       description:
-      "Ceramic level shower drain 300mm, 360 degree revolving horizontal outlet diameter 50.",
+        "Ceramic level shower drain 300mm, 360 degree revolving horizontal outlet diameter 50.",
       boxDimensions: "370x425x360mm",
       length: "30",
       boxVolume: "0,056m3",
@@ -267,7 +271,7 @@ const Products = {
       manufacturer: "Turkey",
     },
   ],
-  
+
   kas: [
     {
       poster: kas1,
@@ -284,7 +288,7 @@ const Products = {
       dimension: "м/м 1",
       quantityOfBox: "2/40",
     },
-    
+
     {
       poster: kas3,
       title: "Коллектор с краниками для т/п ЭКО",
@@ -292,7 +296,7 @@ const Products = {
       dimension: "2",
       quantityOfBox: "30",
     },
-    
+
     {
       poster: kas4,
       title: "коллектор с расходамерами нержовейка для т/п",
@@ -300,7 +304,7 @@ const Products = {
       dimension: "2",
       quantityOfBox: "комплект",
     },
-    
+
     {
       poster: kas5,
       title: "коллектор с краниками для т/п",
@@ -308,15 +312,14 @@ const Products = {
       dimension: "2",
       quantityOfBox: "30",
     },
-    
+
     {
       poster: kas6,
       title: "шланги для смесителей",
       productCode: "kas-6",
       dimension: "1/4-3/8",
     },
-    
-    
+
     {
       poster: kas7,
       title: "Отсекатель",
@@ -334,7 +337,7 @@ const Products = {
       type: "1/50",
     }, */
   ],
-  
+
   spk: [
     {
       poster: spk1,
@@ -343,7 +346,7 @@ const Products = {
       dimensions: "20x3,4 mm",
       qtyPerPackageMtr: "100",
     },
-    
+
     {
       poster: spk2,
       title: "PP-R FIBER PIPE PN 20 SDR 7,4",
@@ -351,7 +354,7 @@ const Products = {
       dimensions: "20x2,8 mm",
       qtyPerPackageMtr: "100",
     },
-    
+
     {
       poster: spk3,
       title: "PP-R Chrome plated valve",
@@ -359,7 +362,7 @@ const Products = {
       dimensions: "20mm",
       qtyPerPackageMtr: "20",
     },
-    
+
     {
       poster: spk4,
       title: "PE-RT Pipe",
@@ -367,7 +370,7 @@ const Products = {
       dimensions: "16x2.0mm",
       qtyPerPackageMtr: "160",
     },
-    
+
     {
       poster: spk5,
       title: "PE-RT with spiral conduit",
@@ -375,7 +378,7 @@ const Products = {
       dimensions: "16 x 2.0 mm",
       qtyPerPackageMtr: "100",
     },
-    
+
     {
       poster: spk6,
       title: "PP-R Hexagonal Joint",
@@ -383,7 +386,7 @@ const Products = {
       dimensions: '30 x 1" Male',
       qtyPerPackageMtr: "50",
     },
-    
+
     {
       poster: spk7,
       title: "PP-R Separable Joint",
@@ -399,40 +402,39 @@ const Products = {
       dimensions: '20 x 1/2 " Female',
       qtyPerPackageMtr: "130",
     },
-    
   ],
-  
+
   candan: [
     {
       poster: candan1,
       title: "CM 60 TEST PRESSURE PUMP WITH PLASTIC PISTON",
       productCode: "CM 60",
       dimensions:
-      "60 bar, 820 psi. Double shut-off valve system,to ease test pressure adjusment full tightness. Distrotion proof plastic piston. Steel tank protected with epoxy coating. Pressure gauges with readily available calibration certificates.",
+        "60 bar, 820 psi. Double shut-off valve system,to ease test pressure adjusment full tightness. Distrotion proof plastic piston. Steel tank protected with epoxy coating. Pressure gauges with readily available calibration certificates.",
     },
-    
+
     {
       poster: candan2,
       title: "AUTOMATIC PIPE CUTTER 16-40mm",
       productCode: "CM OTC-42",
       dimensions:
-      "16-40mm, First quality stainless steel blade. Handle coated by special paint. After sale support and unlimited spare part quarente for 1 year. Cutting quarantee in world standarts.",
+        "16-40mm, First quality stainless steel blade. Handle coated by special paint. After sale support and unlimited spare part quarente for 1 year. Cutting quarantee in world standarts.",
     },
-    
+
     {
       poster: candan3,
       title: "PIPE CUTTER 16-40mm",
       productCode: "PPC 42/16-40 mm",
       dimensions:
-      "16-40mm, First quality stainless steel blade. Handle coated by special paint. After sale support and unlimited spare part quarente for 1 year. Cutting quarantee in world standarts.",
+        "16-40mm, First quality stainless steel blade. Handle coated by special paint. After sale support and unlimited spare part quarente for 1 year. Cutting quarantee in world standarts.",
     },
-    
+
     {
       poster: candan4,
       title: "PLASTIC PIPE WELDING SOCKET",
       productCode: "CM WS-16-160mm",
       dimensions:
-      "Available for all dimensions between 16-160mm. All of our welding socket are manufactured by injection press. Steel bolt and nut are used. Outer surfaces of the welding socket are coated with first class telfon. Telfon is the one of the most important points of fusion welding.",
+        "Available for all dimensions between 16-160mm. All of our welding socket are manufactured by injection press. Steel bolt and nut are used. Outer surfaces of the welding socket are coated with first class telfon. Telfon is the one of the most important points of fusion welding.",
     },
 
     /* {
@@ -460,14 +462,14 @@ const Products = {
     },
      */
   ],
-  
+
   baykara: [
     {
       poster: baykara1,
       title: "Гайка нержавеющий хомутд (Шиной)",
       productCode: "250",
       dimensions:
-      "используется в процессе фиксации труб горизонтально, вертикально, смонтированными на стене, потолке или полу. процесс фиксации зажима с гайкой производится с использованием стержня и стального дюбеля. благодаря комбинированным винтам со звездообразной головкой можно легко и безопасно подключить. шина епдм используемая на ней, частично поглощает тепловое расшире. Обеспечивает преобразование звука до 15 дБ. Нержавеюший материал Дин 1.4301 304 A2 .",
+        "используется в процессе фиксации труб горизонтально, вертикально, смонтированными на стене, потолке или полу. процесс фиксации зажима с гайкой производится с использованием стержня и стального дюбеля. благодаря комбинированным винтам со звездообразной головкой можно легко и безопасно подключить. шина епдм используемая на ней, частично поглощает тепловое расшире. Обеспечивает преобразование звука до 15 дБ. Нержавеюший материал Дин 1.4301 304 A2 .",
     },
 
     {
@@ -484,7 +486,7 @@ const Products = {
       dimensions:
       "используется в процессе свободного  подвешивания труб по горизонтали на поверхности. используется в тяжелых трубчатых установках. 15-20 микрон изготовлен из цинкового покрытия для защищен от ржавчины.",
     }, */
-    
+
     /* {
       poster:
       "https://files.glotr.uz/company/000/007/270/products/2018/08/29/15355360849929-1e629ff1ade0ee14e29f19b2967b730a.jpg?_=ozbol",
