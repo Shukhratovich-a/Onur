@@ -1,76 +1,112 @@
-import { useState, useEffect } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
+
+import { HOST } from "../../config";
 
 import Partners from "../../Components/Partners/Partners";
 
-import Datas from "../../Data/Products";
+import Loading from "../../Components/Lib/Loading/Loading";
+import Refresh from "../../Components/Lib/Refresh/Refresh";
 
 import styles from "./Product.module.scss";
 
 const Products = () => {
-  const { companyName } = useParams();
-  const [products, setProducts] = useState([]);
+  const { partnerId } = useParams();
+  const [partner, setPartner] = React.useState({});
+  const [loading, setLoading] = React.useState(true);
+  const [buttonLoading, setButtonLoading] = React.useState(false);
 
-  useEffect(() => {
-    const array = [];
+  const getPartner = async (partnerId) => {
+    setLoading(true);
+    setButtonLoading(false);
 
-    for (let product of Datas[companyName]) {
-      const obj = {
-        title: product.title,
-        poster: product.poster,
-        code: product.productCode,
-      };
+    try {
+      const response = await fetch(HOST + "/partners/" + partnerId);
 
-      const options = [];
-      for (let option in product) {
-        if (option !== "title" && option !== "poster" && option !== "productCode") {
-          options.push([option, product[option]]);
-        }
+      const data = await response.json();
+
+      if (data?.status === 200 && data?.data) {
+        setPartner(data.data);
+
+        setLoading(false);
+        setButtonLoading(false);
+      } else {
+        setLoading(false);
+        setButtonLoading(true);
       }
-      obj.options = options;
-
-      array.push(obj);
+    } catch (error) {
+      setLoading(false);
+      setButtonLoading(true);
     }
+  };
 
-    setProducts(array);
-  }, [companyName]);
+  React.useEffect(() => {
+    getPartner(partnerId);
+  }, [partnerId]);
 
   return (
     <main className="main">
       <section className={styles.products}>
         <div className={`container`}>
-          <h2 className={styles.products__heading}>
-            <span>{companyName}</span>
-            's products
-          </h2>
+          {Number(partner?.partnerId) === Number(partnerId) && (
+            <div className={styles.products__inner}>
+              <h2 className={styles.products__heading}>
+                <span>{partner.partnerName}</span>
+                's products
+              </h2>
 
-          <ul className={styles.product__list}>
-            {products.map((product) => (
-              <li className={styles.product__item} key={product.code}>
-                <div className={styles.product__inner}>
-                  <div className={styles.product__wrapper}>
-                    <img
-                      className={styles.product__image}
-                      src={product.poster}
-                      alt={product.title}
-                      width={320}
-                      height={320}
-                    />
-                  </div>
-                  
-                  <h3 className={styles.product__title}>{product.title}</h3>
-                </div>
+              <ul className={styles.product__list}>
+                {partner?.products &&
+                  partner?.products?.map((product) => (
+                    <li className={styles.product__item} key={product.productId}>
+                      <div className={styles.product__inner}>
+                        <div className={styles.product__wrapper}>
+                          <img
+                            className={styles.product__image}
+                            src={product.productImage}
+                            alt={product.productName}
+                            width={320}
+                            height={320}
+                          />
+                        </div>
 
-                <div className={styles.product__options}>
-                  {product.options.map((option, index) => (
-                    <p className={styles.product__option} key={index}>
-                      {option[0] + ": " + option[1]}
-                    </p>
+                        <h3 className={styles.product__title}>{product.productName}</h3>
+                      </div>
+
+                      <ul className={styles.product__options}>
+                        {product.productParams.length > 0 &&
+                          product.productParams.map((param) => (
+                            <li className={styles.product__option} key={param.productParamId}>
+                              {param.productParamName + ": " + param.productParamText}
+                            </li>
+                          ))}
+                      </ul>
+                    </li>
                   ))}
-                </div>
-              </li>
-            ))}
-          </ul>
+              </ul>
+            </div>
+          )}
+
+          {loading && (
+            <div className={styles.products__loading}>
+              <div className={styles.products__loading__load}>
+                <Loading />
+              </div>
+            </div>
+          )}
+
+          {buttonLoading && (
+            <div className={styles.products__loading}>
+              <button
+                className={styles.products__loading__refresh}
+                onClick={() => {
+                  getPartner(partnerId);
+                }}
+              >
+                <Refresh />
+              </button>
+            </div>
+          )}
         </div>
       </section>
 

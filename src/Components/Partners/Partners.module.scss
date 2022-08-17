@@ -97,6 +97,32 @@
   }
 }
 
+.partner__loading {
+  padding: 30px 0;
+}
+
+.partner__loading__load {
+  padding: 10px 0;
+}
+
+.partner__loading__refresh {
+  display: flex;
+  justify-content: center;
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: $lightBlue;
+  color: $white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $darkBlue;
+  }
+}
+
 @media only screen and(max-width: 1550px) {
   .partner {
     padding: 30px;
@@ -126,6 +152,10 @@
 }
 
 @media only screen and(max-width: 1060px) {
+  .partners__heading {
+    text-align: center;
+  }
+
   .partners__list {
     display: flex;
     flex-wrap: wrap;
@@ -178,7 +208,7 @@
     gap: 15px;
   }
 
-  .partner{
+  .partner {
     max-width: 100%;
   }
 }

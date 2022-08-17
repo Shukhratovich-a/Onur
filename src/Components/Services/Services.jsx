@@ -14,6 +14,7 @@ import styles from "./Services.module.scss";
 const Services = () => {
   const localiztion = useLocalization();
 
+<<<<<<< HEAD
   const [services, setServices] = React.useState([
     { name: localiztion.services.it, isHover: false, poster: It, link: "it" },
     { name: localiztion.services.logistic, isHover: false, poster: Logistic, link: "logistic" },
@@ -21,6 +22,20 @@ const Services = () => {
     { name: localiztion.services.accounting, isHover: false, poster: Accounting, link: "accounting"},
     { name: localiztion.services.distribution, isHover: false, poster: Distribution, link: "distribution" },
   ]);
+=======
+  const [services, setServices] = React.useState([]);
+
+  React.useEffect(() => {
+    setServices([
+      { name: localiztion.services.it, isHover: false, poster: It },
+      { name: localiztion.services.logistic, isHover: false, poster: Logistic },
+      { name: localiztion.services.plumbing, isHover: false, poster: Plumbing },
+      { name: localiztion.services.accounting, isHover: false, poster: Accounting },
+      { name: localiztion.services.distribution, isHover: false, poster: Distribution },
+    ]);
+
+  }, [localiztion]);
+>>>>>>> 2570edc0f7dc08834e01bfcd90ee7cc986fb9ca0
 
   const cardHoverEnter = (index) => {
     const array = [...services];
