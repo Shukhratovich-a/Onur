@@ -226,7 +226,7 @@ const Localization = {
       it: "IT",
       logistic: "logistika",
       plumbing: "santexnika",
-      accounting: "buxgalteriya hisobi",
+      accounting: "buxgalteriya",
       distribution: "tarqatish",
     },
 

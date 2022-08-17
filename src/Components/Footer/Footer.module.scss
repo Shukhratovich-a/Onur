@@ -30,7 +30,10 @@
   margin-bottom: 12px;
   font-size: 20px;
   line-height: 26px;
-  text-transform: capitalize;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
 }
 
 .footer__link {
@@ -70,11 +73,14 @@
   line-height: inherit;
   color: inherit;
   text-decoration: none;
-  text-transform: capitalize;
   transition: color 0.25s ease;
 
   &:hover {
     color: $accent;
+  }
+
+  &::first-letter {
+    text-transform: uppercase;
   }
 }
 

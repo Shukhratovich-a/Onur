@@ -54,19 +54,19 @@ const Nav = () => {
             <Dropdown className={styles.nav__dropdown}>
               <ul>
                 <li>
-                  <Link to={"/services/it"}>It</Link>
+                  <Link to={"/services/it"}>{localization.services.it}</Link>
                 </li>
                 <li>
-                  <Link to={"/services/logistic"}>Logistic</Link>
+                  <Link to={"/services/logistic"}>{localization.services.logistic}</Link>
                 </li>
                 <li>
-                  <Link to={"/services/plumbing"}>Plumbing</Link>
+                  <Link to={"/services/plumbing"}>{localization.services.plumbing}</Link>
                 </li>
                 <li>
-                  <Link to={"/services/accounting"}>Accounting</Link>
+                  <Link to={"/services/accounting"}>{localization.services.accounting}</Link>
                 </li>
                 <li>
-                  <Link to={"/services/distribution"}>Distribution</Link>
+                  <Link to={"/services/distribution"}>{localization.services.distribution}</Link>
                 </li>
               </ul>
             </Dropdown>

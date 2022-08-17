@@ -149,48 +149,6 @@ const Footer = () => {
                       <span className={styles["footer__work-time__time"]}>{parse(time.time)}</span>
                     </li>
                   ))}
-                {/* <li className={`${styles.footer__item} ${styles["footer__work-time"]}`}>
-                  <span className={`${styles["footer__work-time__circle"]}`}></span>
-                  <span>
-                    9 <sup>00</sup> - 18 <sup>00</sup>
-                  </span>
-                </li>
-                <li className={`${styles.footer__item} ${styles["footer__work-time"]}`}>
-                  <span className={`${styles["footer__work-time__circle"]}`}></span>
-                  <span>
-                    9 <sup>00</sup> - 18 <sup>00</sup>
-                  </span>
-                </li>
-                <li className={`${styles.footer__item} ${styles["footer__work-time"]}`}>
-                  <span className={`${styles["footer__work-time__circle"]}`}></span>
-                  <span>
-                    9 <sup>00</sup> - 18 <sup>00</sup>
-                  </span>
-                </li>
-                <li className={`${styles.footer__item} ${styles["footer__work-time"]}`}>
-                  <span className={`${styles["footer__work-time__circle"]}`}></span>
-                  <span>
-                    9 <sup>00</sup> - 18 <sup>00</sup>
-                  </span>
-                </li>
-                <li className={`${styles.footer__item} ${styles["footer__work-time"]}`}>
-                  <span className={`${styles["footer__work-time__circle"]}`}></span>
-                  <span>
-                    9 <sup>00</sup> - 18 <sup>00</sup>
-                  </span>
-                </li>
-                <li className={`${styles.footer__item} ${styles["footer__work-time"]}`}>
-                  <span className={`${styles["footer__work-time__circle"]}`}></span>
-                  <span>
-                    10 <sup>00</sup> - 17 <sup>00</sup>
-                  </span>
-                </li>
-                <li className={`${styles.footer__item} ${styles["footer__work-time"]}`}>
-                  <span className={`${styles["footer__work-time__circle"]}`}></span>
-                  <span>
-                    9 <sup>00</sup> - 18 <sup>00</sup>
-                  </span>
-                </li> */}
               </ul>
             </div>
 
