@@ -23,7 +23,13 @@ const Services = () => {
         <div className={`container ${styles.container}`}>
           {service && (
             <div className={styles.service__inner}>
-              <img className={styles.service__poster} src={service.poster} alt={service.text} />
+              <img
+                className={styles.service__poster}
+                src={service.poster}
+                alt={service.text}
+                width={850}
+                height={600}
+              />
 
               <div>
                 <h3 className={styles.service__title}>{service.title}</h3>
