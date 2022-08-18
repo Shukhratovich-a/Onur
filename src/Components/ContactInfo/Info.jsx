@@ -2,11 +2,11 @@ import React from "react";
 
 import useLocalization from "../../Hooks/useLocalization";
 
-import Telegram from "../../Assets/Images/telegram.png";
-import Facebook from "../../Assets/Images/facebook.png";
-import Instagram from "../../Assets/Images/instagram.png";
-import Gmail from "../../Assets/Images/gmail.png";
-import Telephone from "../../Assets/Images/telephone.png";
+import Telegram from "../../Assets/Images/Contact/Telegram.png";
+import Facebook from "../../Assets/Images/Contact/Facebook.png";
+import Instagram from "../../Assets/Images/Contact/Instagram.png";
+import Gmail from "../../Assets/Images/Contact/Gmail.png";
+import Telephone from "../../Assets/Images/Contact/Telephone.png";
 
 import styles from "./Info.module.scss";
 

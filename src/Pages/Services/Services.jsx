@@ -22,11 +22,12 @@ const Services = () => {
       <section className={styles.services}>
         <div className={`container ${styles.container}`}>
           {service && (
-            <div className={styles.servise__inner}>
-              <img className={styles.servise__poster} src={service.poster} alt={service.text} />
+            <div className={styles.service__inner}>
+              <img className={styles.service__poster} src={service.poster} alt={service.text} />
+
               <div>
-                <h3 className={styles.servise__title}>{service.title}</h3>
-              <p className={styles.servise__text}>{service.text}</p>
+                <h3 className={styles.service__title}>{service.title}</h3>
+                <p className={styles.service__text}>{service.text}</p>
               </div>
             </div>
           )}
