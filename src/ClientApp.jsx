@@ -11,12 +11,16 @@ import Products from "./Pages/Products/Products";
 import About from "./Pages/About/About";
 import Services from "./Pages/Services/Services";
 
+import Phone from "./Components/Lib/Phone/Phone";
+
 import "./App.scss";
 
 function ClientApp() {
   return (
     <div className="app">
       <Header />
+
+      <Phone />
 
       <ScrollToTop>
         <Routes>

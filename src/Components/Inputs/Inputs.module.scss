@@ -1,24 +1,24 @@
-@import '../../Sass/Variables.scss';
+@import "../../Sass/Variables.scss";
 
-.inputs{
+.inputs {
   padding: 30px 0 60px 0;
   background-color: $bgGray;
 }
 
-.input__flex{  
+.input__flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.title{
+.title {
   color: $darkBlue;
   text-align: center;
   font-size: 46px;
   font-weight: 700;
 }
 
-.inputs__inner{
+.inputs__inner {
   padding: 16px 24px;
   margin-bottom: 20px;
   max-width: 550px;
@@ -29,34 +29,38 @@
   align-items: center;
   justify-content: space-between;
   background-color: $white;
+  color: #838d98;
 }
-.input{
+
+.input {
   border: none;
   outline: none;
 }
-.input::placeholder{
+
+.input::placeholder {
   color: $darkBlue;
- font-size: 18px;
- line-height: 24px; 
+  font-size: 18px;
+  line-height: 24px;
 }
-.inputs__flex__inner{
+
+.inputs__flex__inner {
   max-width: 500px;
   width: 100%;
   display: flex;
   flex-direction: column;
-
 }
-.button{
+
+.button {
   padding: 16px 24px;
   max-width: 550px;
   width: 100%;
   border-radius: 10px;
   border: none;
-  background-color:$darkBlue;
+  background-color: $darkBlue;
   color: $white;
 }
-@media screen and (max-width:567px){
-  .title{
+@media screen and (max-width: 567px) {
+  .title {
     font-size: 32px;
   }
 }

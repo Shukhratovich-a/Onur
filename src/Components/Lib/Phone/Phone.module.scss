@@ -1,0 +1,62 @@
+@import "../../../Sass/Variables.scss";
+
+.phone {
+  position: fixed;
+  bottom: 50px;
+  z-index: 999;
+  right: 50px;
+}
+
+.phone__link {
+  position: relative;
+}
+
+.phone__icon {
+  position: relative;
+  z-index: 9;
+  display: block;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: $accent;
+  color: $white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  svg {
+    position: relative;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease;
+  }
+}
+
+.phone__number {
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+  bottom: 50%;
+  right: 0;
+  transform: translate(-5px, 50%);
+  display: block;
+  padding: 10px;
+  padding-right: 30px;
+  font-size: 16px;
+  line-height: 18px;
+  white-space: nowrap;
+  color: $white;
+  border-radius: 5px;
+  background-color: $accent;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: width 0.5s ease, transform 0.5s ease;
+}
+
+.phone:hover {
+  .phone__icon {
+    svg {
+      transform: rotate(360deg);
+    }
+  }
+
+  .phone__number {
+    transform: translate(-40px, 50%);
+    width: 180px;
+  }
+}
