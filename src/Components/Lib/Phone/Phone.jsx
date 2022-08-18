@@ -1,10 +1,33 @@
+import React from "react";
+
 import PhoneIcon from "../Icons/Phone";
 
 import styles from "./Phone.module.scss";
 
 const Phone = () => {
+  const [isHover, setIsHover] = React.useState(false);
+
+  const handleClick = (evt) => {
+    if (!isHover) evt.preventDefault();
+  };
+
+  console.log(isHover);
+
+  React.useEffect(() => {
+    if (isHover) {
+      setTimeout(() => {
+        setIsHover(false);
+      }, 5000);
+    }
+  }, [isHover]);
+
   return (
-    <div className={styles.phone}>
+    <div
+      className={`${styles.phone} ${isHover ? styles["phone--hover"] : ""}`}
+      onMouseEnter={() => setIsHover(true)}
+      onMouseLeave={() => setIsHover(false)}
+      onClick={handleClick}
+    >
       <a className={styles.phone__link} href="tel:+998555001222">
         <span className={styles.phone__number}>+99855 500 12 22</span>
 
