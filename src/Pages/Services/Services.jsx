@@ -24,7 +24,10 @@ const Services = () => {
           {service && (
             <div className={styles.servise__inner}>
               <img className={styles.servise__poster} src={service.poster} alt={service.text} />
+              <div>
+                <h3 className={styles.servise__title}>{service.title}</h3>
               <p className={styles.servise__text}>{service.text}</p>
+              </div>
             </div>
           )}
         </div>
