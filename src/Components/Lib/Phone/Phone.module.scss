@@ -3,8 +3,8 @@
 .phone {
   position: fixed;
   bottom: 50px;
-  z-index: 999;
   right: 50px;
+  z-index: 999;
 }
 
 .phone__link {
@@ -58,5 +58,19 @@
   .phone__number {
     transform: translate(-40px, 50%);
     width: 180px;
+  }
+}
+
+@media only screen and(max-width: 1024px) {
+  .phone {
+    bottom: 30px;
+    right: 30px;
+  }
+}
+
+@media only screen and(max-width: 768px) {
+  .phone {
+    bottom: 20px;
+    right: 20px;
   }
 }
