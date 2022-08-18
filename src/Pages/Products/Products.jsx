@@ -6,7 +6,7 @@ import { HOST } from "../../config";
 import Partners from "../../Components/Partners/Partners";
 
 import Loading from "../../Components/Lib/Loading/Loading";
-import Refresh from "../../Components/Lib/Refresh/Refresh";
+import Refresh from "../../Components/Lib/Icons/Refresh";
 
 import styles from "./Product.module.scss";
 

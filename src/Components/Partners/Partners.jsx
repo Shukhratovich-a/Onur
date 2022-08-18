@@ -6,7 +6,7 @@ import { HOST } from "../../config";
 import useLocalization from "../../Hooks/useLocalization";
 
 import Loading from "../Lib/Loading/Loading";
-import Refresh from "../Lib/Refresh/Refresh";
+import Refresh from "../Lib/Icons/Refresh";
 
 import styles from "./Partners.module.scss";
 
