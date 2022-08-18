@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 
 import Service from "../../Data/Services";
 
+import Partners from "../../Components/Partners/Partners";
 import ServicesList from "../../Components/Services/Services";
 
 import styles from "./Services.module.scss";
@@ -39,6 +40,8 @@ const Services = () => {
           )}
         </div>
       </section>
+
+      {serviceName === "plumbing" ? <Partners /> : null}
 
       <ServicesList />
     </main>
