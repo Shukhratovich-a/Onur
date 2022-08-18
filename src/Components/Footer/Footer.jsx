@@ -163,8 +163,11 @@ const Footer = () => {
 
       <div className={styles.footer__bottom}>
         <div className={`${styles.container} container`}>
-          <span>&copy; ONUR</span>
-          <span>+998 97 422 17 77</span>
+          <span className={styles.footer__bottom__copyright}>&copy; ONUR</span>
+
+          <a className={styles.footer__bottom__phone} href="tel:+998555001222">
+            +99855 500 12 22
+          </a>
         </div>
       </div>
     </footer>
