@@ -29,7 +29,7 @@ const Services = () => {
                 src={service.poster}
                 alt={service.text}
                 width={850}
-                height={600}
+                height={425}
               />
 
               <div>
