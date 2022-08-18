@@ -1,8 +1,8 @@
-import It from "../Assets/Images/ServicePage/It.png";
-import Logistic from "../Assets/Images/ServicePage/Logistic.png";
-import Plumbing from "../Assets/Images/ServicePage/Plumbing.png";
-import Distribution from "../Assets/Images/ServicePage/Distribution.png";
-import Accouting from "../Assets/Images/ServicePage/Accouting.png";
+import It from "../Assets/Images/ServicePage/It.webp";
+import Logistic from "../Assets/Images/ServicePage/Logistic.webp";
+import Plumbing from "../Assets/Images/ServicePage/Plumbing.webp";
+import Distribution from "../Assets/Images/ServicePage/Distribution.webp";
+import Accouting from "../Assets/Images/ServicePage/Accouting.webp";
 
 const servicesProducts = {
   it: {
