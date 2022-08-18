@@ -8,17 +8,24 @@ const Phone = () => {
   const [isHover, setIsHover] = React.useState(false);
 
   const handleClick = (evt) => {
-    if (!isHover) evt.preventDefault();
+    if (!isHover) {
+      evt.preventDefault();
+      setIsHover(true);
+    }
   };
 
-  console.log(isHover);
-
   React.useEffect(() => {
+    let timeout;
+
     if (isHover) {
-      setTimeout(() => {
+      timeout = setTimeout(() => {
         setIsHover(false);
       }, 5000);
     }
+
+    return () => {
+      clearTimeout(timeout);
+    };
   }, [isHover]);
 
   return (
