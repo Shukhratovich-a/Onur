@@ -5,14 +5,11 @@ import { Navigation, Pagination, Autoplay } from "swiper";
 
 import useLocalization from "../../Hooks/useLocalization";
 
-// import SliderVideo1 from "../../Assets/Videos/SliderVideo1.mp4";
-// import SliderVideo2 from "../../Assets/Videos/SliderVideo2.mp4";
-
-import It from "../../Assets/Images/Hero/It.jpg";
-import Logistic from "../../Assets/Images/Hero/Logistic.jpg";
-import Plumbing from "../../Assets/Images/Hero/Plumbing.jpg";
-import Accounting from "../../Assets/Images/Hero/Accounting.jpg";
-import Distribution from "../../Assets/Images/Hero/Distribution.jpg";
+import It from "../../Assets/Images/Services/It.webp";
+import Logistic from "../../Assets/Images/Services/Logistic.webp";
+import Plumbing from "../../Assets/Images/Services/Plumbing.webp";
+import Accounting from "../../Assets/Images/Services/Accounting.webp";
+import Distribution from "../../Assets/Images/Services/Distribution.webp";
 
 import "swiper/scss";
 import "swiper/scss/pagination";

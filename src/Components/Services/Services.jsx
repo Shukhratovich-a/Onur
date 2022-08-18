@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 import useLocalization from "../../Hooks/useLocalization";
 
-import It from "../../Assets/Images/Hero/It.jpg";
-import Logistic from "../../Assets/Images/Hero/Logistic.jpg";
-import Plumbing from "../../Assets/Images/Hero/Plumbing.jpg";
-import Accounting from "../../Assets/Images/Hero/Accounting.jpg";
-import Distribution from "../../Assets/Images/Hero/Distribution.jpg";
+import It from "../../Assets/Images/Services/It.webp";
+import Logistic from "../../Assets/Images/Services/Logistic.webp";
+import Plumbing from "../../Assets/Images/Services/Plumbing.webp";
+import Accounting from "../../Assets/Images/Services/Accounting.webp";
+import Distribution from "../../Assets/Images/Services/Distribution.webp";
 
 import styles from "./Services.module.scss";
 
