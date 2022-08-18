@@ -33,15 +33,6 @@
     opacity: 0.8;
   }
 
-  // &__video {
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
-  //   overflow: hidden;
-  //   width: 100%;
-  // }
-
   .container {
     position: relative;
     z-index: 9;
@@ -71,12 +62,18 @@
   text-align: center;
 }
 
-.hero__description {
-  max-width: 1000px;
-  margin: 0 auto;
-  font-size: 18px;
-  line-height: 24px;
+.hero__link{
+  display: block;
   text-align: center;
+  font-size: 24px;
+  line-height: 32px;
+  color: $white;
+  font-weight: 500;
+  text-decoration: none;
+
+  &::first-letter{
+    text-transform: uppercase;
+  }
 }
 
 @media only screen and(max-width: 1200px) {

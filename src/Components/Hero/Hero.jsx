@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper";
@@ -69,6 +70,8 @@ const Hero = () => {
             >
               <div className={`container ${styles.container}`}>
                 <h1 className={`${styles.hero__heading}`}>{localization.hero[service.name]}</h1>
+
+                {/* <Link className={styles.hero__link} to={"/services/" + service.name}>show service</Link> */}
               </div>
             </SwiperSlide>
           ))}
