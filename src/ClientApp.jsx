@@ -4,12 +4,12 @@ import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
-import Contact from "./Pages/Contact/Contact";
 
-import Home from "./Pages/Home/Home";
-import Products from "./Pages/Products/Products";
-import About from "./Pages/About/About";
-import Services from "./Pages/Services/Services";
+import Home from "./Pages/Client/Home/Home";
+import Products from "./Pages/Client/Products/Products";
+import About from "./Pages/Client/About/About";
+import Services from "./Pages/Client/Services/Services";
+import Contact from "./Pages/Client/Contact/Contact";
 
 import Phone from "./Components/Lib/Phone/Phone";
 

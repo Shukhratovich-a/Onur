@@ -3,10 +3,10 @@ import { useParams } from "react-router-dom";
 
 // import useLocalization from "../../Hooks/useLocalization";
 
-import Service from "../../Data/Services";
+import Service from "../../../Data/Services";
 
-import Partners from "../../Components/Partners/Partners";
-import ServicesList from "../../Components/Services/Services";
+import Partners from "../../../Components/Partners/Partners";
+import ServicesList from "../../../Components/Services/Services";
 
 import styles from "./Services.module.scss";
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-import useLocalization from "../../Hooks/useLocalization";
+import useLocalization from "../../../Hooks/useLocalization";
 
 import styles from "./About.module.scss";
 

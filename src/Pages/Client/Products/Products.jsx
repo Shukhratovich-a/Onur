@@ -1,12 +1,12 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-import { HOST } from "../../config";
+import { HOST } from "../../../config";
 
-import Partners from "../../Components/Partners/Partners";
+import Partners from "../../../Components/Partners/Partners";
 
-import Loading from "../../Components/Lib/Loading/Loading";
-import Refresh from "../../Components/Lib/Icons/Refresh";
+import Loading from "../../../Components/Lib/Loading/Loading";
+import Refresh from "../../../Components/Lib/Icons/Refresh";
 
 import styles from "./Product.module.scss";
 
