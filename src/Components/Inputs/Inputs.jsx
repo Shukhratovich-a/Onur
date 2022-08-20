@@ -7,12 +7,13 @@ import useContactModal from "../../Hooks/useContactModal";
 
 import Profile from "../Lib/Icons/Profile";
 import Phone from "../Lib/Icons/Phone";
+import ContactModal from "../../Components/ContactModal/ContactModal";
 
 import styles from "./Inputs.module.scss";
 
 function Inputs() {
   const localiztion = useLocalization();
-  const [, setIsOpen] = useContactModal();
+  const [isOpen, setIsOpen] = useContactModal();
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
@@ -43,6 +44,14 @@ function Inputs() {
 
   return (
     <div className={styles.inputs}>
+      {isOpen ? (
+        <ContactModal>
+          <h4>Sizning xabaringiz yuborildi</h4>
+
+          <p>Tez orada ichda siz bilan bog'lanamiz</p>
+        </ContactModal>
+      ) : null}
+
       <div className="container">
         <h3 className={styles.title}>{localiztion.contact.inputTitle}</h3>
 

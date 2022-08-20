@@ -1,11 +1,9 @@
 import React from "react";
 
 import useLocalization from "../../Hooks/useLocalization";
-import useContactModal from "../../Hooks/useContactModal";
 
 import ContactInfo from "../../Components/ContactInfo/Info";
 import Inputs from "../../Components/Inputs/Inputs";
-import ContactModal from "../../Components/ContactModal/ContactModal";
 
 import Phone from "../../Assets/Images/Contact/Contact.png";
 
@@ -13,18 +11,9 @@ import styles from "./Contact.module.scss";
 
 function Contact() {
   const localization = useLocalization();
-  const [isOpen] = useContactModal();
 
   return (
     <main>
-      {isOpen ? (
-        <ContactModal>
-          <h4>Sizning xabaringiz yuborildi</h4>
-
-          <p>Tez orada ichda siz bilan bog'lanamiz</p>
-        </ContactModal>
-      ) : null}
-
       <div className="container">
         <div className={styles.contact}>
           <div className={styles.contact__left}>
