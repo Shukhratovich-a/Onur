@@ -48,7 +48,7 @@ function Inputs() {
         <ContactModal>
           <h4>Sizning xabaringiz yuborildi</h4>
 
-          <p>Tez orada ichda siz bilan bog'lanamiz</p>
+          <p>Tez orada siz bilan bog'lanamiz</p>
         </ContactModal>
       ) : null}
 
