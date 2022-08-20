@@ -1,38 +1,42 @@
 import React from "react";
 
+import { HOST } from "../../config";
+
 import useLocalization from "../../Hooks/useLocalization";
+import useContactModal from "../../Hooks/useContactModal";
 
 import Profile from "../Lib/Icons/Profile";
-import Person from "../Lib/Icons/Person";
 import Phone from "../Lib/Icons/Phone";
 
 import styles from "./Inputs.module.scss";
 
 function Inputs() {
   const localiztion = useLocalization();
+  const [, setIsOpen] = useContactModal();
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
 
-    const { firstname, lastname, contact } = evt.target.elements;
+    const { name, contact, message } = evt.target.elements;
 
     (async () => {
-      const responce = await fetch("http://localhost:5500/messages", {
+      const responce = await fetch(HOST + "/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          firstname: firstname.value.trim(),
-          lastname: lastname.value.trim(),
-          contact: contact.value.trim(),
+          username: name.value.trim(),
+          userContact: contact.value.trim(),
+          userMessage: message.value.trim(),
         }),
       });
 
       const data = await responce.json();
 
-      if (data.status === 200) {
+      if (data.status === 201) {
         evt.target.reset();
+        setIsOpen(true);
       }
     })();
   };
@@ -49,7 +53,7 @@ function Inputs() {
                 className={styles.input}
                 type="text"
                 placeholder={localiztion.contact.input1}
-                name={"firstname"}
+                name={"name"}
               />
 
               <Profile />
@@ -58,23 +62,22 @@ function Inputs() {
             <label className={styles.inputs__inner}>
               <input
                 className={styles.input}
-                type="text"
-                placeholder={localiztion.contact.input2}
-                name={"lastname"}
-              />
-
-              <Person />
-            </label>
-
-            <label className={styles.inputs__inner}>
-              <input
-                className={styles.input}
                 type="tel"
-                placeholder={localiztion.contact.input3}
+                placeholder={localiztion.contact.input2}
                 name={"contact"}
               />
 
               <Phone />
+            </label>
+
+            <label className={styles.inputs__inner}>
+              <textarea
+                className={styles.input}
+                name={"message"}
+                cols="30"
+                rows="10"
+                placeholder={localiztion.contact.input3}
+              ></textarea>
             </label>
 
             <button className={styles.button}>{localiztion.contact.button}</button>

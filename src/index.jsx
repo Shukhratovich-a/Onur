@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import { Provider as LocalizationProvider } from "./Context/Localization";
 import { Provider as BurgerProvider } from "./Context/Burger";
+import { Provider as ContactModalProvider } from "./Context/ContactModal";
 
 import App from "./App";
 
@@ -12,7 +13,9 @@ root.render(
     <BrowserRouter>
       <LocalizationProvider>
         <BurgerProvider>
-          <App />
+          <ContactModalProvider>
+            <App />
+          </ContactModalProvider>
         </BurgerProvider>
       </LocalizationProvider>
     </BrowserRouter>
