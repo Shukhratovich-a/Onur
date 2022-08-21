@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-// import useLocalization from "../../Hooks/useLocalization";
+import useLocalization from "../../../Hooks/useLocalization";
 
 import Service from "../../../Data/Services";
 
@@ -13,10 +13,11 @@ import styles from "./Services.module.scss";
 const Services = () => {
   const { serviceName } = useParams();
   const [service, setService] = React.useState({});
+  const [lang] = useLocalization(true);
 
   React.useEffect(() => {
-    setService(Service[serviceName]);
-  }, [serviceName]);
+    setService(() => Service[lang][serviceName]);
+  }, [serviceName, lang]);
 
   return (
     <main>

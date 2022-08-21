@@ -30,7 +30,7 @@ const servicesProducts = {
     accounting: {
       id: 4,
       poster: Accouting,
-      title: "Accouting",
+      title: "Buga",
       text: "Kichik va o'rta turdagi tadbirkorlarning asosiy muammolari bo'lgan xujjar ishlarini osonlashtirish maqsadida ushbu bo'limni ochishni maqsad qildik. Tez orada bu bo'limimiz ham o'z faoliyatini boshlaydi",
     },
 
