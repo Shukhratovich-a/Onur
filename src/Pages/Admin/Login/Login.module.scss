@@ -1,0 +1,22 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .login__alert{
+    margin-bottom: 30px;
+  }
+
+  .login__form {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .login__form__input {
+    margin-bottom: 30px;
+  }
+
+  .login__form__button {
+    height: 56px;
+  }
+}

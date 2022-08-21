@@ -43,6 +43,13 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+
+  &--admin {
+    main {
+      margin-top: 0;
+      flex-grow: 1;
+    }
+  }
 }
 
 img,
