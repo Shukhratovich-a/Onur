@@ -1,0 +1,26 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav__link {
+  height: 56px;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

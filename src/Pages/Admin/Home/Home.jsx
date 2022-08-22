@@ -1,5 +1,11 @@
+import AdminNavigate from "../../../Components/AdminNavigation/AdminNavigation";
+
 const Home = () => {
-  return <main>Admin Home</main>;
+  return (
+    <main className="main">
+      <AdminNavigate />
+    </main>
+  );
 };
 
 export default Home;

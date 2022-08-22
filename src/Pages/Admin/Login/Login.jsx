@@ -11,12 +11,12 @@ import styles from "./Login.module.scss";
 const Login = () => {
   const [errored, setErrored] = React.useState(false);
 
-  const [setToken] = useToken(true);
+  const [token, setToken] = useToken();
   const navigate = useNavigate();
 
   React.useEffect(() => {
-    setToken("");
-  });
+    if (token) navigate("/admin");
+  }, [token, navigate]);
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
