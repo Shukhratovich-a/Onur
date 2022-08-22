@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 
 import AdminPartners from "../../../Components/AdminPartners/AdminPartners";
 import PartnerEdit from "../PartnerEdit/PartnerEdit";
-import Products from "../Products/Products";
+import Products from '../Products/Products'
 
 const Partners = () => {
   return (
