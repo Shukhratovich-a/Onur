@@ -7,6 +7,7 @@ import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
 import Home from "./Pages/Admin/Home/Home";
 import Partners from "./Pages/Admin/Partners/Partners";
+import Users from "./Pages/Admin/Users/Users";
 import Login from "./Pages/Admin/Login/Login";
 
 import "./App.scss";
@@ -25,6 +26,7 @@ function AdminApp() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/partners/*" element={<Partners />} />
+          <Route path="/users/*" element={<Users />} />
           <Route path="/login" element={<Login />} />
         </Routes>
       </ScrollToTop>
