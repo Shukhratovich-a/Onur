@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Provider as LocalizationProvider } from "./Context/Localization";
 import { Provider as BurgerProvider } from "./Context/Burger";
 import { Provider as ContactModalProvider } from "./Context/ContactModal";
+import { Provider as TokenProvider } from "./Context/Token";
 
 import App from "./App";
 
@@ -14,7 +15,9 @@ root.render(
       <LocalizationProvider>
         <BurgerProvider>
           <ContactModalProvider>
-            <App />
+            <TokenProvider>
+              <App />
+            </TokenProvider>
           </ContactModalProvider>
         </BurgerProvider>
       </LocalizationProvider>
