@@ -112,7 +112,7 @@ const servicesProducts = {
       title: "Tarqatish",
       text: "Butun Toshken shahri va qisman Toshkent viloyatini O'z ichiga olgan ushbu bo'limda, 5000 dan ortiq qurilish soxasiga oid maxsulotlarni yetkazib beish bilan shug'ullanadi. Kelajakda bu rejalarni butun O'zbekiston bo'ylab amalga oshrish.",
     },
-  }
+  },
 };
 
 export default servicesProducts;

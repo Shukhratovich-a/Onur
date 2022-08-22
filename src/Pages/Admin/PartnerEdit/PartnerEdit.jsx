@@ -77,8 +77,6 @@ const PartnerEdit = () => {
 
       const data = await responce.json();
 
-      console.log(data);
-
       if (data.status === 202) {
         navigate("/admin/partners");
       }
