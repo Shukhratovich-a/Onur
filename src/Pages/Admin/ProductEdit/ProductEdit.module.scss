@@ -1,18 +1,19 @@
-.partner {
+.product {
   padding: 80px 0;
 }
 
-.partner__form {
+.product__form {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
-.partner__form__label {
+.product__form__label {
   margin-right: 30px;
 }
 
-.partner__form__inner {
+.product__form__inner {
   position: relative;
   width: 540px;
   height: 540px;
@@ -23,7 +24,7 @@
   overflow: hidden;
 
   &--image {
-    .partner__form__wrapper {
+    .product__form__wrapper {
       opacity: 0;
 
       &:hover {
@@ -33,11 +34,11 @@
   }
 }
 
-.partner__form__image {
+.product__form__image {
   object-fit: contain;
 }
 
-.partner__form__wrapper {
+.product__form__wrapper {
   position: absolute;
   top: 0;
   right: 0;
@@ -66,20 +67,88 @@
   }
 }
 
-.partner__form__aside {
+.product__form__aside {
   max-width: 550px;
   width: 100%;
 
-  .partner__form__button {
+  .product__form__button {
     height: 56px;
     margin-top: 100px;
   }
 }
 
-.partner__form__input {
+.product__form__input {
   text-transform: capitalize;
 
   & + & {
     margin-top: 30px;
+  }
+}
+
+.product__params {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.product__param {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & + & {
+    margin-top: 30px;
+  }
+}
+
+.product {
+  .product__param__input {
+    max-width: 300px;
+    width: 100%;
+    margin-right: 30px;
+
+    &:nth-child(2) {
+      max-width: 600px;
+    }
+  }
+
+  .products__bottom__button {
+    display: flex;
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.product__modal__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  span {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .product__modal__button {
+    display: block;
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
