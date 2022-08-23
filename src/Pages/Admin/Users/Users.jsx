@@ -24,6 +24,17 @@ const PartnerEdit = () => {
     return `${day}/${month}/${year} ${hour}:${minute}`;
   };
 
+  const normalizeNumber = (number) => {
+    const array = number.split("");
+
+    array.splice(3, 0, " ");
+    array.splice(6, 0, " ");
+    array.splice(10, 0, " ");
+    array.splice(13, 0, " ");
+
+    return "+" + array.join("");
+  };
+
   const [token] = useToken();
 
   const [users, setUsers] = React.useState([]);
@@ -38,6 +49,8 @@ const PartnerEdit = () => {
 
       const data = await responce.json();
 
+      console.log(data);
+
       if (data.status === 200) {
         setUsers(() => data.data);
       } else {
@@ -51,8 +64,6 @@ const PartnerEdit = () => {
   };
 
   const putMessage = (evt, id) => {
-    const status = evt.target.name;
-
     (async () => {
       const responce = await fetch(HOST + "/users/" + id, {
         method: "PUT",
@@ -61,19 +72,21 @@ const PartnerEdit = () => {
           token,
         },
         body: JSON.stringify({
-          status: status,
+          status: evt.target.name,
         }),
       });
 
       const data = await responce.json();
 
       if (data.status === 202) {
-        const array = [...users];
+        if (data.data.status !== status) {
+          const array = [...users];
 
-        const index = users.findIndex((user) => user.userId === id);
+          const index = users.findIndex((user) => user.userId === id);
 
-        array.splice(index, 1);
-        setUsers(() => array);
+          array.splice(index, 1);
+          setUsers(() => array);
+        }
       }
     })();
   };
@@ -116,33 +129,37 @@ const PartnerEdit = () => {
             {users.length > 0 &&
               users.map((user) => (
                 <li className={`${styles.user}`} key={user.userId}>
-                  <div>
+                  <div className={`${styles.user__left}`}>
                     <span>{user.username}</span>
                     <p>{user.userMessage}</p>
-                    <span>{user.userNumber}</span>
+                    <a href={"tel:+" + user.userNumber}>{normalizeNumber(user.userNumber)}</a>
                   </div>
 
-                  <div className="">
+                  <div className={`${styles.user__right}`}>
                     <div className="">
-                      <Button
-                        className={`${styles.users__top__button}`}
-                        name={"enabled"}
-                        variant={"contained"}
-                        type={"button"}
-                        onClick={(evt) => putMessage(evt, user.userId)}
-                      >
-                        Enabled
-                      </Button>
+                      {status !== "enabled" && (
+                        <Button
+                          className={`${styles.users__top__button}`}
+                          name={"enabled"}
+                          variant={"contained"}
+                          type={"button"}
+                          onClick={(evt) => putMessage(evt, user.userId)}
+                        >
+                          Enabled
+                        </Button>
+                      )}
 
-                      <Button
-                        className={`${styles.users__top__button}`}
-                        name={"disabled"}
-                        variant={"contained"}
-                        type={"button"}
-                        onClick={(evt) => putMessage(evt, user.userId)}
-                      >
-                        Disabled
-                      </Button>
+                      {status !== "disabled" && (
+                        <Button
+                          className={`${styles.users__top__button}`}
+                          name={"disabled"}
+                          variant={"contained"}
+                          type={"button"}
+                          onClick={(evt) => putMessage(evt, user.userId)}
+                        >
+                          Disabled
+                        </Button>
+                      )}
                     </div>
                     <time>{normalizeTime(user.createAt)}</time>
                   </div>

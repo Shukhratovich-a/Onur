@@ -20,7 +20,7 @@
 
 .user {
   display: flex;
-  align-items: flex-end;
+  align-items: stretch;
   justify-content: space-between;
   padding: 16px;
   border-radius: 10px;
@@ -30,4 +30,11 @@
   & + & {
     margin-top: 20px;
   }
+}
+
+.user__right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
 }
