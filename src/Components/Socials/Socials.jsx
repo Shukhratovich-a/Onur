@@ -1,8 +1,7 @@
 import Instagram from "../Lib/Socials/Instagram";
 import YouTube from "../Lib/Socials/YouTube";
 import Facebook from "../Lib/Socials/Facebook";
-import Twitter from "../Lib/Socials/Twitter";
-import TikTok from "../Lib/Socials/TikTok";
+import Telegram from "../Lib/Socials/Telegram";
 
 import styles from "./Socials.module.scss";
 
@@ -22,7 +21,7 @@ const Socials = ({ className }) => {
       <li className={styles.social}>
         <a
           className={styles.social__link}
-          href="#youtube"
+          href="https://www.youtube.com/channel/UClUjG0xAxkDxvay7NwEJZmg"
           rel="noreferrer noopener"
           target={"_blank"}
         >
@@ -42,21 +41,11 @@ const Socials = ({ className }) => {
       <li className={styles.social}>
         <a
           className={styles.social__link}
-          href="#twitter"
+          href="https://t.me/onurgroup_uz"
           rel="noreferrer noopener"
           target={"_blank"}
         >
-          <Twitter />
-        </a>
-      </li>
-      <li className={styles.social}>
-        <a
-          className={styles.social__link}
-          href="#tiktok"
-          rel="noreferrer noopener"
-          target={"_blank"}
-        >
-          <TikTok />
+          <Telegram />
         </a>
       </li>
     </ul>
