@@ -30,7 +30,7 @@ const servicesProducts = {
     accounting: {
       id: 4,
       poster: Accouting,
-      title: "Buga",
+      title: "Accouting",
       text: "We aimed to open this department in order to facilitate the work of khujjar, which is the main problem of small and medium-sized entrepreneurs. Soon this department will also start its activities",
     },
 
