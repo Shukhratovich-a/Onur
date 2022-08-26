@@ -9,7 +9,7 @@ const servicesProducts = {
     it: {
       id: 1,
       poster: It,
-      title: "It",
+      title: "IT",
       text: "Our life in the 21st century is unimaginable without IT technologies. With this in mind, this section of ours is a separate platform, the main task of which is digitization. Work is underway on the Android platform and the Web platform. These programs will be put into use in the near future",
     },
 
@@ -17,7 +17,7 @@ const servicesProducts = {
       id: 2,
       poster: Logistic,
       title: "Logistic",
-      text: "In 2019, the Onur logistics department was opened under the Onur company. This department brings and delivers various goods from Turkey to Uzbekistan through Fura (Tir). It also completes the document work that occurs in this process.",
+      text: "In 2019, the ONUR&#174; logistics department was opened under the ONUR&#174; company. This department brings and delivers various goods from Turkey to Uzbekistan through Fura (Tir). It also completes the document work that occurs in this process.",
     },
 
     plumbing: {
@@ -46,14 +46,14 @@ const servicesProducts = {
       id: 1,
       poster: It,
       title: "Информационные технологии",
-      text: "Наша жизнь в 21 веке немыслима без IT-технологий. В связи с этим наш отдел аутсорсинга представляет собой отдельную платформу, основной задачей которой является цифровизация. Ведутся работы на платформе Android и веб-платформе. Эти программы пригодятся в ближайшем будущем",
+      text: "Наша жизнь в 21 веке немыслима без IT-технологий. В связи с этим наш отдел аутсорсинга представляет собой отдельную платформу, основной задачей которой является цифровизация. Ведутся работы на платформе Android и веб-платформе. Эти программы пригодятся в ближайшем будущем.",
     },
 
     logistic: {
       id: 2,
       poster: Logistic,
       title: "Логистика",
-      text: "В 2019 году был открыт отдел логистики Onur при компании Onur. Этот отдел привозит и доставляет различные товары из Турции в Узбекистан через Фуру (Тир). Он также завершает работу с документами, которая происходит в этом процессе..",
+      text: "В 2019 году был открыт отдел логистики ONUR&#174; при компании ONUR&#174;. Этот отдел привозит и доставляет различные товары из Турции в Узбекистан через Фуру (Тир). Он также завершает работу с документами, которая происходит в этом процессе.",
     },
 
     plumbing: {
@@ -67,7 +67,7 @@ const servicesProducts = {
       id: 4,
       poster: Accouting,
       title: "Бухгалтерский учет",
-      text: "Мы стремились открыть этот отдел, чтобы облегчить работу худжар, которая является основной проблемой мелких и средних предпринимателей. Вскоре этот отдел также начнет свою деятельность",
+      text: "Мы стремились открыть этот отдел, чтобы облегчить работу худжар, которая является основной проблемой мелких и средних предпринимателей. Вскоре этот отдел также начнет свою деятельность.",
     },
 
     distribution: {
@@ -82,14 +82,14 @@ const servicesProducts = {
       id: 1,
       poster: It,
       title: "Axborot texnologiyalari",
-      text: "XXI asrda hayotimizni IT texnalogiyalarsiz tasavvur qilib bo'lmaydi. Shuni hisobga olgan holda, bizning bu bo'lim alohida platforma bo'lib, asosiy vazifasi raqamlashtirishdan iborat. Android platformasi va Web platformasida ish olib borilmoqda. Yaqin kunlarda ushbu dasturlarimiz foydalanishga topshiriladi",
+      text: "XXI asrda hayotimizni IT texnalogiyalarsiz tasavvur qilib bo'lmaydi. Shuni hisobga olgan holda, bizning bu bo'lim alohida platforma bo'lib, asosiy vazifasi raqamlashtirishdan iborat. Android platformasi va Web platformasida ish olib borilmoqda. Yaqin kunlarda ushbu dasturlarimiz foydalanishga topshiriladi.",
     },
 
     logistic: {
       id: 2,
       poster: Logistic,
       title: "Logistika",
-      text: "2019 yilda Onur kompaniyasini qoshida Onur logistika bo'limi ochildi. Bu bo'lim Turkiyadan O'zbekistonga turli hildagi tovarlarni Fura(Tir) orqali olib keladi va yetkazib beradi. Ushbu jarayonda yuzaga keladigan dokument ishlarini ham bitkazib beradi.",
+      text: "2019 yilda ONUR&#174; kompaniyasini qoshida ONUR&#174; logistika bo'limi ochildi. Bu bo'lim Turkiyadan O'zbekistonga turli hildagi tovarlarni Fura(Tir) orqali olib keladi va yetkazib beradi. Ushbu jarayonda yuzaga keladigan dokument ishlarini ham bitkazib beradi.",
     },
 
     plumbing: {
@@ -103,7 +103,7 @@ const servicesProducts = {
       id: 4,
       poster: Accouting,
       title: "Buxgalteriya hisobi",
-      text: "Kichik va o'rta turdagi tadbirkorlarning asosiy muammolari bo'lgan xujjar ishlarini osonlashtirish maqsadida ushbu bo'limni ochishni maqsad qildik. Tez orada bu bo'limimiz ham o'z faoliyatini boshlaydi",
+      text: "Kichik va o'rta turdagi tadbirkorlarning asosiy muammolari bo'lgan xujjar ishlarini osonlashtirish maqsadida ushbu bo'limni ochishni maqsad qildik. Tez orada bu bo'limimiz ham o'z faoliyatini boshlaydi.",
     },
 
     distribution: {

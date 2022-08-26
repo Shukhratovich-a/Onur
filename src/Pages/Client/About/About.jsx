@@ -1,4 +1,5 @@
 import React from "react";
+import parse from "html-react-parser";
 
 import useLocalization from "../../../Hooks/useLocalization";
 
@@ -13,10 +14,10 @@ const About = () => {
           <h1 className={styles.about__heading}>{localization.about.company}</h1>
 
           <div className={styles.about__inner}>
-            <p className={styles.about__description}>{localization.about.text1}</p>
-            <p className={styles.about__description}>{localization.about.text2}</p>
-            <p className={styles.about__description}>{localization.about.text3}</p>
-            <p className={styles.about__description}>{localization.about.text4}</p>
+            <p className={styles.about__description}>{parse(String(localization.about.text1))}</p>
+            <p className={styles.about__description}>{parse(String(localization.about.text2))}</p>
+            <p className={styles.about__description}>{parse(String(localization.about.text3))}</p>
+            <p className={styles.about__description}>{parse(String(localization.about.text4))}</p>
           </div>
         </div>
       </section>

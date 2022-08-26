@@ -153,7 +153,9 @@ const Footer = () => {
             </div>
 
             <div className={styles.footer__inner}>
-              <span className={styles.footer__inner__heading}>{localization.footer.socials}</span>
+              <span className={styles.footer__inner__heading}>
+                {parse(String(localization.footer.socials))}
+              </span>
 
               <Socials className={styles.footer__socials} />
             </div>
@@ -163,7 +165,7 @@ const Footer = () => {
 
       <div className={styles.footer__bottom}>
         <div className={`${styles.container} container`}>
-          <span className={styles.footer__bottom__copyright}>&copy; ONUR</span>
+          <span className={styles.footer__bottom__copyright}>&copy; Onur&#174; 2021</span>
 
           <a className={styles.footer__bottom__phone} href="tel:+998555001222">
             +99855 500 12 22

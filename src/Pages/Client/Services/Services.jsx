@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import parse from "html-react-parser";
 
 import useLocalization from "../../../Hooks/useLocalization";
 
@@ -35,7 +36,8 @@ const Services = () => {
 
               <div>
                 <h3 className={styles.service__title}>{service.title}</h3>
-                <p className={styles.service__text}>{service.text}</p>
+
+                <p className={styles.service__text}>{parse(String(service.text))}</p>
               </div>
             </div>
           )}

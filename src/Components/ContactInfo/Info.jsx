@@ -46,7 +46,8 @@ function Info() {
               href="https://t.me/onurgroup_uz"
               target={"_blank"}
               rel="noreferrer"
-            noopener >
+              noopener
+            >
               <img src={Telegram} alt="email logo" width="40" height="40" />
 
               <p className={styles.info__text}>Telegram</p>
@@ -59,7 +60,8 @@ function Info() {
               href="mailto:onurgroup.uz@gmail.com"
               target={"_blank"}
               rel="noreferrer"
-            noopener >
+              noopener
+            >
               <img src={Gmail} alt="email logo" width="40" height="40" />
 
               <p className={styles.info__text}>Gmail</p>
@@ -70,7 +72,8 @@ function Info() {
               href="tel:+998555001222"
               target={"_blank"}
               rel="noreferrer"
-            noopener >
+              noopener
+            >
               <img src={Telephone} alt="email logo" width="40" height="40" />
 
               <p className={styles.info__text}>Telephone</p>
