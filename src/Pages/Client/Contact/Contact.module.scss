@@ -50,7 +50,6 @@
   }
 
   .contact__img {
-    
     max-width: 500px;
     width: 100%;
     height: auto;
@@ -63,10 +62,16 @@
 
 @media only screen and(max-width:550px) {
   .contact {
-    height: calc(100vh - 50px);
+    height: unset;
   }
+
   .contact__img {
-    
     margin-top: 50px;
+  }
+}
+
+@media only screen and (max-height: 850px) {
+  .contact {
+    height: unset;
   }
 }

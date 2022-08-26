@@ -27,7 +27,7 @@ function Contact() {
       </div>
 
       <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3A3e374e593c6826de74e554060ab9ce3457e2d5da1dda9f3a6e23d111b0078992&amp;source=constructor"
+        src="https://yandex.uz/map-widget/v1/-/CCUVEAR29A"
         width="100%"
         height="575"
         title="map"

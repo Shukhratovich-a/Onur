@@ -45,8 +45,7 @@ function Info() {
               className={styles.flex__link}
               href="https://t.me/onurgroup_uz"
               target={"_blank"}
-              rel="noreferrer"
-              noopener
+              rel="noreferrer noopener"
             >
               <img src={Telegram} alt="email logo" width="40" height="40" />
 
@@ -59,8 +58,7 @@ function Info() {
               className={styles.flex__link}
               href="mailto:onurgroup.uz@gmail.com"
               target={"_blank"}
-              rel="noreferrer"
-              noopener
+              rel="noreferrer noopener"
             >
               <img src={Gmail} alt="email logo" width="40" height="40" />
 
@@ -71,8 +69,7 @@ function Info() {
               className={styles.flex__link}
               href="tel:+998555001222"
               target={"_blank"}
-              rel="noreferrer"
-              noopener
+              rel="noreferrer noopener"
             >
               <img src={Telephone} alt="email logo" width="40" height="40" />
 

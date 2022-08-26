@@ -65,11 +65,13 @@
   align-items: center;
   justify-content: center;
   height: 400px;
+  overflow: hidden;
 }
 
 .product__image {
   max-width: 100%;
   width: 100%;
+  max-height: 400px;
   height: auto;
   object-fit: contain;
   margin: 0 auto;
