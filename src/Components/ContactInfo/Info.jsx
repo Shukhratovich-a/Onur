@@ -19,35 +19,62 @@ function Info() {
 
         <div className={styles.info__inner}>
           <div className={styles.info__flex}>
-            <div className={styles.flex__inner}>
+            <a
+              className={styles.flex__link}
+              href="https://www.facebook.com/onurgroupuz/"
+              target={"_blank"}
+              rel="noreferrer noopener"
+            >
               <img src={Facebook} alt="email logo" width="40" height="40" />
-              <p className={styles.info__text}>onur_uz</p>
-            </div>
 
-            <div className={styles.flex__inner}>
+              <p className={styles.info__text}>Facebook</p>
+            </a>
+
+            <a
+              className={styles.flex__link}
+              href="https://www.instagram.com/onurgroup_uz/"
+              target={"_blank"}
+              rel="noreferrer noopener"
+            >
               <img src={Instagram} alt="email logo" width="40" height="40" />
-              <p className={styles.info__text}> Basmala2022</p>
-            </div>
 
-            <div className={styles.flex__inner}>
-              <a href="#LINK">
-                <img src={Telegram} alt="email logo" width="40" height="40" />
-              </a>
+              <p className={styles.info__text}>Instagram</p>
+            </a>
+
+            <a
+              className={styles.flex__link}
+              href="https://t.me/onurgroup_uz"
+              target={"_blank"}
+              rel="noreferrer"
+            noopener >
+              <img src={Telegram} alt="email logo" width="40" height="40" />
+
               <p className={styles.info__text}>Telegram</p>
-            </div>
+            </a>
           </div>
-          <div className={styles.info__flex}>
-            <div className={styles.flex__inner}>
-              <img src={Gmail} alt="email logo" width="40" height="40" />
-              <p className={styles.info__text}>onurgroup.uz@gmail.com</p>
-            </div>
-            <div>
-              <a className={styles.flex__link} href="tel:+998 97 422 17 77">
-                <img src={Telephone} alt="email logo" width="40" height="40" />
 
-                <p className={styles.info__text}>+998 97 422 17 77</p>
-              </a>
-            </div>
+          <div className={styles.info__flex}>
+            <a
+              className={styles.flex__link}
+              href="mailto:onurgroup.uz@gmail.com"
+              target={"_blank"}
+              rel="noreferrer"
+            noopener >
+              <img src={Gmail} alt="email logo" width="40" height="40" />
+
+              <p className={styles.info__text}>Gmail</p>
+            </a>
+
+            <a
+              className={styles.flex__link}
+              href="tel:+998555001222"
+              target={"_blank"}
+              rel="noreferrer"
+            noopener >
+              <img src={Telephone} alt="email logo" width="40" height="40" />
+
+              <p className={styles.info__text}>Telephone</p>
+            </a>
           </div>
         </div>
       </div>
