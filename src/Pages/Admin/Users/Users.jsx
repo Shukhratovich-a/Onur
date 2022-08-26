@@ -1,3 +1,30 @@
+<<<<<<< HEAD
+import React from 'react'
+import styles from "./Users.module.scss"
+import {useParams} from "useParams"
+import {navigate} from "useNavigate"
+
+const Users = () => {
+  const { partnerId } = useParams();
+  const navigate = useNavigate();
+
+  const [partner, setPartner] = React.useState({});
+  const [products, setProducts] = React.useState([]);
+
+  React.useEffect(() => {
+    (async () => {
+      const responce = await fetch(HOST + "/partners/" + partnerId);
+
+      const data = await responce.json();
+
+      if (data.status === 200) {
+        setPartner(() => data.data);
+        setProducts(() => data.data.products);
+      }
+    })();
+  }, [partnerId]);
+  console.log(partner);
+=======
 import React from "react";
 // import { useParams, useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
@@ -91,6 +118,7 @@ const PartnerEdit = () => {
     })();
   };
 
+>>>>>>> 3ec8db460913ef4bd0b0e56f521bcd018914e486
   return (
     <main className="main">
       <section className={`${styles.users}`}>
