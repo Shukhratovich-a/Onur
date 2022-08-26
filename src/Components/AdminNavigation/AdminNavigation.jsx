@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
 
-import styles from "./AdminNavigate.module.scss";
+import styles from "./AdminNavigation.module.scss";
 
 const AdminNavigate = () => {
   const navigate = useNavigate();
@@ -34,7 +34,7 @@ const AdminNavigate = () => {
             </Button>
           </li>
           
-          <li className={`${styles.nav__item}`}>
+          {/* <li className={`${styles.nav__item}`}>
             <Button
               className={`${styles.nav__link}`}
               variant={"contained"}
@@ -44,7 +44,7 @@ const AdminNavigate = () => {
             >
               Admins
             </Button>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>

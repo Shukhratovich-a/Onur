@@ -82,20 +82,10 @@ const AdminPartners = () => {
                     className={`${styles.product__button}`}
                     variant={"contained"}
                     type={"button"}
-                    onClick={() => navigate("/admin/partners/edit/" + partner.partnerId)}
+                    onClick={() => navigate("/admin/partners/product/edit/" + product.productId)}
                     fullWidth
                   >
-                    Edit Partner
-                  </Button>
-
-                  <Button
-                    className={`${styles.product__button}`}
-                    variant={"contained"}
-                    type={"button"}
-                    onClick={() => navigate("/admin/partners/edit/" + partner.partnerId)}
-                    fullWidth
-                  >
-                    Delete
+                    Edit Product
                   </Button>
                 </div>
               </li>
@@ -106,7 +96,7 @@ const AdminPartners = () => {
           className={`${styles.partner__bottom__button}`}
           variant={"contained"}
           type={"button"}
-          onClick={() => navigate("/admin/partners/edit/" + partner.partnerId)}
+          onClick={() => navigate("/admin/partners/product/create/" + partnerId)}
         >
           Add Product
         </Button>

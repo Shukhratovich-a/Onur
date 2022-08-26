@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
@@ -29,6 +29,7 @@ function ClientApp() {
           <Route path="/partners/:partnerId" element={<Products />} />
           <Route path="/services/:serviceName" element={<Services />} />
           <Route path="/about" element={<About />} />
+          <Route path="*" element={<Navigate to={"/"} />} />
         </Routes>
       </ScrollToTop>
 

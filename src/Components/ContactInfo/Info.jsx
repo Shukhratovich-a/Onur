@@ -13,9 +13,10 @@ import styles from "./Info.module.scss";
 function Info() {
   const localization = useLocalization();
   return (
-    <div className={styles.info}>
+    <section className={styles.info}>
       <div className={styles.container}>
         <h2 className={styles.info__title}>{localization.contact.title2}</h2>
+
         <div className={styles.info__inner}>
           <div className={styles.info__flex}>
             <div className={styles.flex__inner}>
@@ -50,7 +51,7 @@ function Info() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

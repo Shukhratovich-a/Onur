@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
 
 import useToken from "./Hooks/useToken";
 
@@ -9,6 +9,7 @@ import Home from "./Pages/Admin/Home/Home";
 import Partners from "./Pages/Admin/Partners/Partners";
 import Users from "./Pages/Admin/Users/Users";
 import Login from "./Pages/Admin/Login/Login";
+// import Admins from "./Pages/Admin/Admins/Admins";
 
 import "./App.scss";
 
@@ -28,6 +29,8 @@ function AdminApp() {
           <Route path="/partners/*" element={<Partners />} />
           <Route path="/users/" element={<Users />} />
           <Route path="/login" element={<Login />} />
+          <Route path="*" element={<Navigate to={"/admin"} />} />
+          {/* <Route path="/admins/*" element={<Admins />} /> */}
         </Routes>
       </ScrollToTop>
     </div>
