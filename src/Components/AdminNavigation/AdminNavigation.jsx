@@ -21,7 +21,7 @@ const AdminNavigate = () => {
               Partners
             </Button>
           </li>
-          
+
           <li className={`${styles.nav__item}`}>
             <Button
               className={`${styles.nav__link}`}
@@ -33,18 +33,18 @@ const AdminNavigate = () => {
               Users
             </Button>
           </li>
-          
-          {/* <li className={`${styles.nav__item}`}>
+
+          <li className={`${styles.nav__item}`}>
             <Button
               className={`${styles.nav__link}`}
               variant={"contained"}
               type={"button"}
               fullWidth
-              onClick={() => navigate("/admin/admins")}
+              onClick={() => navigate("/admin/about/en")}
             >
-              Admins
+              About
             </Button>
-          </li> */}
+          </li>
         </ul>
       </div>
     </nav>

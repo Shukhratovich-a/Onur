@@ -9,7 +9,7 @@ import Home from "./Pages/Admin/Home/Home";
 import Partners from "./Pages/Admin/Partners/Partners";
 import Users from "./Pages/Admin/Users/Users";
 import Login from "./Pages/Admin/Login/Login";
-// import Admins from "./Pages/Admin/Admins/Admins";
+import About from "./Pages/Admin/About/About";
 
 import "./App.scss";
 
@@ -29,8 +29,8 @@ function AdminApp() {
           <Route path="/partners/*" element={<Partners />} />
           <Route path="/users/" element={<Users />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/about/:aboutLanguage" element={<About />} />
           <Route path="*" element={<Navigate to={"/admin"} />} />
-          {/* <Route path="/admins/*" element={<Admins />} /> */}
         </Routes>
       </ScrollToTop>
     </div>
