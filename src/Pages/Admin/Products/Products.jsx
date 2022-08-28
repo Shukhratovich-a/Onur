@@ -33,6 +33,15 @@ const AdminPartners = () => {
           className={`${styles.partner__button}`}
           variant={"contained"}
           type={"button"}
+          onClick={() => navigate("/admin/partners")}
+        >
+          back
+        </Button>
+
+        <Button
+          className={`${styles.partner__button}`}
+          variant={"contained"}
+          type={"button"}
           onClick={() => navigate("/admin/partners/edit/" + partner.partnerId)}
         >
           Edit Partner

@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate, useParams } from "react-router-dom";
 
 import { Button } from "@mui/material";
 
@@ -9,7 +10,9 @@ import { HOST } from "../../../config";
 import styles from "./Users.module.scss";
 
 const PartnerEdit = () => {
-  const [status, setStatus] = React.useState("waiting");
+  const navigate = useNavigate();
+
+  const { userStatus } = useParams();
 
   const normalizeTime = (time) => {
     const date = new Date(Date.parse(time));
@@ -41,7 +44,7 @@ const PartnerEdit = () => {
 
   React.useEffect(() => {
     (async () => {
-      const responce = await fetch(HOST + "/users?status=" + status, {
+      const responce = await fetch(HOST + "/users?status=" + userStatus, {
         headers: {
           token,
         },
@@ -49,19 +52,13 @@ const PartnerEdit = () => {
 
       const data = await responce.json();
 
-      console.log(data);
-
       if (data.status === 200) {
         setUsers(() => data.data);
       } else {
         setUsers(() => []);
       }
     })();
-  }, [token, status]);
-
-  const handleEditStatus = (evt) => {
-    setStatus(evt.target.name);
-  };
+  }, [token, userStatus]);
 
   const putMessage = (evt, id) => {
     (async () => {
@@ -79,7 +76,7 @@ const PartnerEdit = () => {
       const data = await responce.json();
 
       if (data.status === 202) {
-        if (data.data.status !== status) {
+        if (data.data.status !== userStatus) {
           const array = [...users];
 
           const index = users.findIndex((user) => user.userId === id);
@@ -95,13 +92,22 @@ const PartnerEdit = () => {
     <main className="main">
       <section className={`${styles.users}`}>
         <div className={`${styles.container} container`}>
+          <Button
+            className={`${styles.users__button}`}
+            variant={"contained"}
+            type={"button"}
+            onClick={() => navigate("/admin")}
+          >
+            back
+          </Button>
+
           <div className={`${styles.users__top}`}>
             <Button
               className={`${styles.users__top__button}`}
               name={"waiting"}
               variant={"contained"}
               type={"button"}
-              onClick={handleEditStatus}
+              onClick={() => navigate("/admin/users/waiting")}
             >
               Waiting
             </Button>
@@ -110,7 +116,7 @@ const PartnerEdit = () => {
               name={"enabled"}
               variant={"contained"}
               type={"button"}
-              onClick={handleEditStatus}
+              onClick={() => navigate("/admin/users/enabled")}
             >
               Enabled
             </Button>
@@ -119,7 +125,7 @@ const PartnerEdit = () => {
               name={"disabled"}
               variant={"contained"}
               type={"button"}
-              onClick={handleEditStatus}
+              onClick={() => navigate("/admin/users/disabled")}
             >
               Disabled
             </Button>
@@ -137,7 +143,7 @@ const PartnerEdit = () => {
 
                   <div className={`${styles.user__right}`}>
                     <div className="">
-                      {status !== "enabled" && (
+                      {userStatus !== "enabled" && (
                         <Button
                           className={`${styles.users__top__button}`}
                           name={"enabled"}
@@ -149,7 +155,7 @@ const PartnerEdit = () => {
                         </Button>
                       )}
 
-                      {status !== "disabled" && (
+                      {userStatus !== "disabled" && (
                         <Button
                           className={`${styles.users__top__button}`}
                           name={"disabled"}

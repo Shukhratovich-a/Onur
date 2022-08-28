@@ -28,7 +28,7 @@ const AdminNavigate = () => {
               variant={"contained"}
               type={"button"}
               fullWidth
-              onClick={() => navigate("/admin/users")}
+              onClick={() => navigate("/admin/users/waiting")}
             >
               Users
             </Button>

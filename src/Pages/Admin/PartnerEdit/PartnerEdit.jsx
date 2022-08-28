@@ -87,6 +87,15 @@ const PartnerEdit = () => {
     <main className="main">
       <section className={`${styles.partner}`}>
         <div className={`${styles.container} container`}>
+          <Button
+            className={`${styles.partner__button}`}
+            variant={"contained"}
+            type={"button"}
+            onClick={() => navigate("/admin/partners")}
+          >
+            back
+          </Button>
+
           <form className={`${styles.partner__form}`} onSubmit={handleSubmit}>
             <label className={`${styles.partner__form__label}`}>
               <div

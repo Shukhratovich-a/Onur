@@ -27,7 +27,7 @@ function AdminApp() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/partners/*" element={<Partners />} />
-          <Route path="/users/" element={<Users />} />
+          <Route path="/users/:userStatus" element={<Users />} />
           <Route path="/login" element={<Login />} />
           <Route path="/about/:aboutLanguage" element={<About />} />
           <Route path="*" element={<Navigate to={"/admin"} />} />

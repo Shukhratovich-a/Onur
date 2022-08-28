@@ -29,6 +29,15 @@ const AdminPartners = () => {
           className={`${styles.partners__button}`}
           variant={"contained"}
           type={"button"}
+          onClick={() => navigate("/admin/")}
+        >
+          back
+        </Button>
+
+        <Button
+          className={`${styles.partners__button}`}
+          variant={"contained"}
+          type={"button"}
           onClick={() => navigate("/admin/partners/create")}
         >
           Create

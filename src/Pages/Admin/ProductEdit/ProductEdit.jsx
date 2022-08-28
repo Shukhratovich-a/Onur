@@ -129,6 +129,8 @@ const ProductEdit = () => {
     })();
   };
 
+  console.log(partnerId);
+
   return (
     <main className="main">
       <section className={`${styles.product}`}>
@@ -154,6 +156,17 @@ const ProductEdit = () => {
         </Modal>
 
         <div className={`${styles.container} container`}>
+          {partnerId && (
+            <Button
+              className={`${styles.partner__button}`}
+              variant={"contained"}
+              type={"button"}
+              onClick={() => navigate("/admin/partners/" + partnerId)}
+            >
+              back
+            </Button>
+          )}
+
           <form className={`${styles.product__form}`} onSubmit={handleSubmit}>
             <label className={`${styles.product__form__label}`}>
               <div

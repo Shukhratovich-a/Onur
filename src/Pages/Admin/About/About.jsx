@@ -78,6 +78,15 @@ const Home = () => {
 
       <section className={`${styles.about}`}>
         <div className={`${styles.container} container`}>
+          <Button
+            className={`${styles.about__back}`}
+            variant={"contained"}
+            type={"button"}
+            onClick={() => navigate("/admin/")}
+          >
+            back
+          </Button>
+
           <ul className={`${styles.about__list}`}>
             <li className={`${styles.about__item}`}>
               <Button

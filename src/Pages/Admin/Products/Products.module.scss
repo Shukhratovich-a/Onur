@@ -1,9 +1,15 @@
 .partner {
-  padding: 50px;
-}
+  padding: 100px 0;
 
-.partner__button {
-  margin-bottom: 30px;
+  .partner__button {
+    display: block;
+    margin-bottom: 30px;
+
+    &:first-child {
+      max-width: 100px;
+      width: 100%;
+    }
+  }
 }
 
 .partner__top {
