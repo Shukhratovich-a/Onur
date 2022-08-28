@@ -72,6 +72,10 @@ const ProductEdit = () => {
 
       if (data.status === 201) {
         navigate("/admin/partners/product/edit/" + data.data.productId);
+        setIsOpen(true);
+      }
+      if (data.status === 202) {
+        setIsOpen(true);
       }
     })();
   };
@@ -128,8 +132,6 @@ const ProductEdit = () => {
       }
     })();
   };
-
-  console.log(partnerId);
 
   return (
     <main className="main">
