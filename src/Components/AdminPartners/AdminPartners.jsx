@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Button } from "@mui/material";
 
 import { HOST } from "../../config";
@@ -10,6 +10,8 @@ const AdminPartners = () => {
   const [partners, setPartners] = React.useState([]);
   const navigate = useNavigate();
 
+  const { serviceId } = useParams();
+
   React.useEffect(() => {
     (async () => {
       const responce = await fetch(HOST + "/partners");
@@ -17,10 +19,14 @@ const AdminPartners = () => {
       const data = await responce.json();
 
       if (data.status === 200) {
-        setPartners(() => data.data);
+        setPartners(() =>
+          serviceId
+            ? data.data.filter((partner) => Number(partner.serviceId) === Number(serviceId))
+            : data.data
+        );
       }
     })();
-  }, []);
+  }, [serviceId]);
 
   return (
     <section className={`${styles.partners}`}>
@@ -29,7 +35,7 @@ const AdminPartners = () => {
           className={`${styles.partners__button}`}
           variant={"contained"}
           type={"button"}
-          onClick={() => navigate("/admin/")}
+          onClick={() => navigate(serviceId ? "/admin/services" : "/admin/")}
         >
           back
         </Button>

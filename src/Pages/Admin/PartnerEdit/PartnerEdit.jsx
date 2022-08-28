@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { TextField, Button } from "@mui/material";
+import { TextField, Button, Select, MenuItem,Modal,Box } from "@mui/material";
 
 import useToken from "../../../Hooks/useToken";
 
@@ -19,6 +19,23 @@ const PartnerEdit = () => {
   const [name, setName] = React.useState("");
   const [site, setSite] = React.useState("");
   const [image, setImage] = React.useState("");
+  const [services, setServices] = React.useState([]);
+  const [serviceId, setServiceId] = React.useState("");
+
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  React.useEffect(() => {
+    (async () => {
+      const responce = await fetch(HOST + "/services");
+
+      const data = await responce.json();
+
+      if (data.status === 200) {
+        setServices(() => data.data);
+        if (!partnerId) setServiceId(() => data.data[0].serviceId);
+      }
+    })();
+  }, [partnerId]);
 
   React.useEffect(() => {
     if (partnerId) {
@@ -31,6 +48,7 @@ const PartnerEdit = () => {
           setImage(() => data.data.partnerImage);
           setName(() => data.data.partnerName);
           setSite(() => data.data.partnerSite);
+          setServiceId(() => data.data.serviceId);
         }
       })();
     }
@@ -44,8 +62,11 @@ const PartnerEdit = () => {
     const file = evt.target.file.files[0];
 
     formData.append("partnerName", name);
+    formData.append("serviceId", serviceId);
     formData.append("partnerSite", site);
     if (file) formData.append("image", evt.target.file.files[0]);
+
+    console.log(name, serviceId, site, partnerId);
 
     (async () => {
       const responce = await fetch(HOST + "/partners/" + (partnerId ? partnerId : ""), {
@@ -58,8 +79,11 @@ const PartnerEdit = () => {
 
       const data = await responce.json();
 
+      console.log(data);
+
       if (data.status === partnerId ? 202 : 201) {
         navigate("/admin/partners/edit/" + data.data.partnerId);
+        setIsOpen(true);
       }
     })();
   };
@@ -85,6 +109,27 @@ const PartnerEdit = () => {
 
   return (
     <main className="main">
+      <Modal
+        className={`${styles.partner__modal}`}
+        open={isOpen}
+        onClose={() => setIsOpen(false)}
+        aria-labelledby="parent-modal-title"
+        aria-describedby="parent-modal-description"
+      >
+        <Box className={`${styles.partner__modal__inner}`}>
+          <span>Saved</span>
+
+          <Button
+            className={`${styles.partner__modal__button}`}
+            variant={"contained"}
+            type={"submit"}
+            onClick={() => setIsOpen(false)}
+          >
+            ok
+          </Button>
+        </Box>
+      </Modal>
+
       <section className={`${styles.partner}`}>
         <div className={`${styles.container} container`}>
           <Button
@@ -152,6 +197,21 @@ const PartnerEdit = () => {
                 fullWidth
                 onChange={(newValue) => setSite(newValue.target.value)}
               />
+
+              {services.length > 0 && (
+                <Select
+                  className={`${styles.partner__form__input}`}
+                  value={serviceId}
+                  fullWidth
+                  onChange={(evt) => setServiceId(evt.target.value)}
+                >
+                  {services.map((service) => (
+                    <MenuItem key={service.serviceId} value={service.serviceId} label="Age">
+                      {service.serviceSlug}
+                    </MenuItem>
+                  ))}
+                </Select>
+              )}
 
               <Button
                 className={`${styles.partner__form__button}`}

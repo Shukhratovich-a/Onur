@@ -57,15 +57,6 @@ const AdminServices = () => {
                   >
                     Edit
                   </Button>
-
-                  <Button
-                    className={`${styles.service__button}`}
-                    variant={"contained"}
-                    type={"button"}
-                    onClick={() => navigate("/admin/services/" + service.serviceId + "/en")}
-                  >
-                    Products
-                  </Button>
                 </div>
               </li>
             ))}
