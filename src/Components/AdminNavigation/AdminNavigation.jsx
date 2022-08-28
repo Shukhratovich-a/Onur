@@ -45,6 +45,18 @@ const AdminNavigate = () => {
               About
             </Button>
           </li>
+
+          <li className={`${styles.nav__item}`}>
+            <Button
+              className={`${styles.nav__link}`}
+              variant={"contained"}
+              type={"button"}
+              fullWidth
+              onClick={() => navigate("/admin/services")}
+            >
+              services
+            </Button>
+          </li>
         </ul>
       </div>
     </nav>

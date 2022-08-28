@@ -6,6 +6,7 @@ import useToken from "./Hooks/useToken";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
 import Home from "./Pages/Admin/Home/Home";
+import Services from "./Pages/Admin/Services/Services";
 import Partners from "./Pages/Admin/Partners/Partners";
 import Users from "./Pages/Admin/Users/Users";
 import Login from "./Pages/Admin/Login/Login";
@@ -26,6 +27,7 @@ function AdminApp() {
       <ScrollToTop>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/services/*" element={<Services />} />
           <Route path="/partners/*" element={<Partners />} />
           <Route path="/users/:userStatus" element={<Users />} />
           <Route path="/login" element={<Login />} />

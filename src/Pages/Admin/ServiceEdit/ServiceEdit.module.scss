@@ -1,0 +1,149 @@
+.service {
+  padding: 100px 0;
+
+  .service__button {
+    max-width: 100px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.service__modal__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  span {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .service__modal__button {
+    display: block;
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.service__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.service__item {
+  max-width: 100px;
+  width: 100%;
+
+  & + & {
+    margin-left: 20px;
+  }
+}
+
+.service__link {
+  max-width: 100px;
+  width: 100%;
+}
+
+.service__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service__form__label {
+  margin-right: 30px;
+}
+
+.service__form__inner {
+  position: relative;
+  width: 540px;
+  height: 540px;
+  padding: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+
+  &--image {
+    .service__form__wrapper {
+      opacity: 0;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.service__form__image {
+  object-fit: contain;
+}
+
+.service__form__wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  cursor: pointer;
+  transition: opacity 0.25s ease;
+
+  svg {
+    margin-bottom: 20px;
+  }
+
+  span {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.service__form__aside {
+  max-width: 550px;
+  width: 100%;
+
+  .service__form__button {
+    height: 56px;
+    margin-top: 50px;
+  }
+}
+
+.service {
+  .service__form__input {
+    margin-bottom: 30px;
+    text-transform: capitalize;
+  }
+}
+
+.service__form__area {
+  max-width: 100%;
+  width: 100%;
+  min-height: 200px;
+  max-height: 250px;
+  resize: none;
+}

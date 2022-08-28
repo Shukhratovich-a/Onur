@@ -10,14 +10,14 @@ import Refresh from "../Lib/Icons/Refresh";
 
 import styles from "./Partners.module.scss";
 
-const Partners = () => {
+const Partners = ({ serviceId }) => {
   const localization = useLocalization();
 
   const [partners, setPartners] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
   const [buttonLoading, setButtonLoading] = React.useState(false);
 
-  const getPartners = async () => {
+  const getPartners = async (id) => {
     setLoading(true);
     setButtonLoading(false);
 
@@ -27,13 +27,25 @@ const Partners = () => {
       const data = await response.json();
 
       if (data.status === 200 && data.data && data.data.length > 0) {
-        setPartners(
-          data.data.map((partner) => {
-            partner.isHover = false;
+        if (id) {
+          setPartners(
+            data.data
+              .filter((partner) => partner.serviceId === id)
+              .map((partner) => {
+                partner.isHover = false;
 
-            return partner;
-          })
-        );
+                return partner;
+              })
+          );
+        } else {
+          setPartners(
+            data.data.map((partner) => {
+              partner.isHover = false;
+
+              return partner;
+            })
+          );
+        }
 
         setLoading(false);
         setButtonLoading(false);
@@ -48,8 +60,8 @@ const Partners = () => {
   };
 
   React.useEffect(() => {
-    getPartners();
-  }, []);
+    getPartners(serviceId);
+  }, [serviceId]);
 
   const cardHoverEnter = (index) => {
     const array = [...partners];
