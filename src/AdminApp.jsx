@@ -11,6 +11,7 @@ import Partners from "./Pages/Admin/Partners/Partners";
 import Users from "./Pages/Admin/Users/Users";
 import Login from "./Pages/Admin/Login/Login";
 import About from "./Pages/Admin/About/About";
+import Posts from "./Pages/Admin/Posts/Posts";
 
 import "./App.scss";
 
@@ -32,6 +33,7 @@ function AdminApp() {
           <Route path="/users/:userStatus" element={<Users />} />
           <Route path="/login" element={<Login />} />
           <Route path="/about/:aboutLanguage" element={<About />} />
+          <Route path="/posts/*" element={<Posts />} />
           <Route path="*" element={<Navigate to={"/admin"} />} />
         </Routes>
       </ScrollToTop>
