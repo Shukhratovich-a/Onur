@@ -26,7 +26,8 @@
 
 .partner {
   position: relative;
-  padding: 60px 30px;
+  height: 220px;
+  padding: 30px;
   box-shadow: rgba($color: $darkBlue, $alpha: 0.2) 0px 2px 8px 0px;
   border-radius: 5px;
   background-color: $white;
@@ -56,6 +57,13 @@
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.4s ease, bottom 0.4s ease;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
   }
 
   &--hover {
@@ -126,6 +134,7 @@
 
 @media only screen and(max-width: 1550px) {
   .partner {
+    height: 160px;
     padding: 30px;
   }
 }
@@ -136,7 +145,7 @@
   }
 
   .partner {
-    padding: 30px 10px;
+    padding: 10px;
   }
 }
 
