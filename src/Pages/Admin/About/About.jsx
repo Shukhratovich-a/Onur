@@ -24,8 +24,8 @@ const Home = () => {
       const data = await response.json();
 
       if (data.status === 200 && data.data) {
-        setAbout(data.data.aboutDesctiption.split(`\n`).join("\n\n"));
-        setResult(data.data.aboutDesctiption.split(`\n`).join("\n\n"));
+        setAbout(data.data.aboutDescription.split(`\n`).join("\n\n"));
+        setResult(data.data.aboutDescription.split(`\n`).join("\n\n"));
       }
     })();
   }, [aboutLanguage]);
