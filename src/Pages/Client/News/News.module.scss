@@ -77,8 +77,8 @@
 
   .news__heading {
     margin-bottom: 16px;
-    font-size: 42px;
-    line-height: 48px;
+    font-size: 40px;
+    line-height: 46px;
   }
 
   .news__description {
@@ -90,21 +90,25 @@
 
 @media only screen and(max-width: 900px) {
   .news__heading {
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 32px;
+    line-height: 38px;
   }
 }
 
 @media only screen and(max-width: 768px) {
   .news__heading {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 26px;
+    line-height: 32px;
   }
 
   .news__description {
     margin-bottom: 12px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .news__image {
+    height: auto;
   }
 }
 
@@ -117,11 +121,20 @@
     margin-bottom: 8px;
     font-size: 24px;
     line-height: 28px;
-    text-align: center;
   }
+}
 
-  .news__description {
-    text-align: center;
+@media only screen and(max-width: 475px) {
+  .news__heading {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and(max-width: 400px) {
+  .news__heading {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 

@@ -124,6 +124,12 @@
   }
 }
 
+@media only screen and (max-width: 1500px) {
+  .news__item__title {
+    font-size: 18px;
+  }
+}
+
 @media only screen and(max-width: 1350px) {
   .news__list {
     grid-template-columns: repeat(3, 1fr);

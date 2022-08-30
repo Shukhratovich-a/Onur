@@ -11,7 +11,7 @@ import ContactModal from "../../Components/ContactModal/ContactModal";
 
 import styles from "./Inputs.module.scss";
 
-function Inputs() {
+const Inputs = () => {
   const localiztion = useLocalization();
   const [isOpen, setIsOpen] = useContactModal();
 
@@ -62,9 +62,9 @@ function Inputs() {
     <div className={styles.inputs}>
       {isOpen ? (
         <ContactModal>
-          <h4>Sizning xabaringiz yuborildi</h4>
+          <h4>{localiztion.contact.modal.title}</h4>
 
-          <p>Tez orada siz bilan bog'lanamiz</p>
+          <p>{localiztion.contact.modal.text}</p>
         </ContactModal>
       ) : null}
 
@@ -174,6 +174,6 @@ function Inputs() {
       </div>
     </div>
   );
-}
+};
 
 export default Inputs;

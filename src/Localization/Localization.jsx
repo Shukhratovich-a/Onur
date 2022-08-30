@@ -16,6 +16,10 @@ const Localization = {
       input2: "Enter number",
       input3: "Enter message",
       button: "Connect",
+      modal: {
+        title: "Your message has been sent",
+        text: "We will contact you soon",
+      },
     },
 
     hero: {
@@ -41,6 +45,10 @@ const Localization = {
       heading: "our partners",
       showProducts: "show products",
       officialSite: "official site",
+    },
+
+    news: {
+      title: "news",
     },
 
     about: {
@@ -134,6 +142,10 @@ const Localization = {
       officialSite: "официальный сайт",
     },
 
+    news: {
+      title: "новости",
+    },
+
     contact: {
       title: "давай поговорим",
       text: "Чтобы запросить цитату или хотите встретиться за чашкой кофе, свяжитесь с нами напрямую или заполните форму, и мы свяжемся с вами в кратчайшие сроки. Если у вас есть какие-либо вопросы, вы можете позвонить по нашему телефону.",
@@ -143,6 +155,10 @@ const Localization = {
       input2: "Введите номер",
       input3: "Введите сообщение",
       button: "Подключиться",
+      modal: {
+        title: "Ваше сообщение было отправлено",
+        text: "Мы свяжемся с вами в ближайшее время",
+      },
     },
 
     about: {
@@ -236,6 +252,10 @@ const Localization = {
       officialSite: "rasmiy sahifa",
     },
 
+    news: {
+      title: "yangiliklar",
+    },
+
     contact: {
       title: "keling gaplashamiz",
       text: "Narx so'rash yoki kofe ichishni xohlash uchun biz bilan bevosita bog'laning yoki shaklni to'ldiring va biz sizga tezda javob beramiz. Agar sizda biron bir savol bo'lsa, bizning telefonimizga qo'ng'iroq qilishingiz mumkin.",
@@ -245,6 +265,10 @@ const Localization = {
       input2: "Raqamingizni kiriting",
       input3: "Xabarirngizni kititing",
       button: "Ulanish",
+      modal: {
+        title: "Sizning xabaringiz yuborildi",
+        text: "Tez orada siz bilan bog'lanamiz",
+      },
     },
 
     about: {

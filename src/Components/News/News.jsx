@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Parse from "html-react-parser";
 
+import useLocalization from "../../Hooks/useLocalization";
+
 import { HOST } from "../../config";
 
 import Loading from "../Lib/Loading/Loading";
@@ -10,6 +12,8 @@ import Refresh from "../Lib/Icons/Refresh";
 import styles from "./News.module.scss";
 
 const News = ({ serviceId }) => {
+  const localization = useLocalization();
+
   const [news, setNews] = React.useState([]);
   const [isVisible, setIsVisible] = React.useState(true);
 
@@ -81,7 +85,7 @@ const News = ({ serviceId }) => {
     isVisible && (
       <section className={`${styles.news}`}>
         <div className={`${styles.news} container`}>
-          <h2 className={`${styles.news__heading}`}>News</h2>
+          <h2 className={`${styles.news__heading}`}>{localization.news.title}</h2>
 
           <ul className={`${styles.news__list}`}>
             {news.length > 0 &&

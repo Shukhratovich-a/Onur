@@ -8,14 +8,7 @@ const ContactModal = ({ children }) => {
   const [, setIsOpen] = useContactModal();
 
   return (
-    <div
-      className={`${styles.modal}`}
-      onClick={(evt) => {
-        if (evt.target.className.includes(styles.modal)) {
-          setIsOpen(false);
-        }
-      }}
-    >
+    <div className={`${styles.modal}`}>
       <div className={`${styles.modal__inner}`}>
         <button className={`${styles.modal__close}`} onClick={() => setIsOpen(false)}>
           <Close />
