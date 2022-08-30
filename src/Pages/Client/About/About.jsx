@@ -29,7 +29,7 @@ const About = () => {
       const data = await response.json();
 
       if (data.status === 200 && data.data) {
-        setAbout(data.data.aboutDesctiption.split("\n").map((desctiption) => desctiption));
+        setAbout(data.data.aboutDescription.split("\n").map((description) => description));
 
         setLoading(false);
         setButtonLoading(false);
