@@ -1,7 +1,7 @@
 import Hero from "../../../Components/Hero/Hero";
 import Services from "../../../Components/Services/Services";
 import Partners from "../../../Components/Partners/Partners";
-import News from "../News/News";
+import News from "../../../Components/News/News";
 
 const Home = () => {
   return (

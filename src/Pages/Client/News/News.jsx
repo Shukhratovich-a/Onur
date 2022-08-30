@@ -1,72 +1,110 @@
 import React from "react";
-import Parse from "html-react-parser";
+import { useParams } from "react-router-dom";
+import parse from "html-react-parser";
 
 import { HOST } from "../../../config";
+
+import NewsSect from "../../../Components/News/News";
+
+import Loading from "../../../Components/Lib/Loading/Loading";
+import Refresh from "../../../Components/Lib/Icons/Refresh";
 
 import styles from "./News.module.scss";
 
 const News = () => {
+  const { newsId } = useParams();
+
   const [news, setNews] = React.useState([]);
+  const [newsDescription, setNewsDescription] = React.useState([]);
+  const [loading, setLoading] = React.useState(true);
+  const [buttonLoading, setButtonLoading] = React.useState(false);
 
-  const normalizeTime = (time) => {
-    const date = new Date(Date.parse(time));
+  const getNews = async (id) => {
+    setLoading(true);
+    setButtonLoading(false);
+    setNews([]);
 
-    const day = String(date.getDate()).padStart(2, 0);
-    let month = date.toLocaleString('en-us', { month: 'short' }); /* June */
-    const year = String(date.getFullYear()).padStart(4, 0);
+    try {
+      const response = await fetch(HOST + "/news/" + id);
 
-    return `${day} ${month} ${year}`;
+      const data = await response.json();
+
+      if (data.status === 200 && data.data) {
+        setNewsDescription(
+          data.data.newsDescription.split("\n").filter((description) => description.length > 1)
+        );
+        setNews(data.data);
+
+        setLoading(false);
+        setButtonLoading(false);
+      } else {
+        setLoading(false);
+        setButtonLoading(true);
+      }
+    } catch (error) {
+      setLoading(false);
+      setButtonLoading(true);
+    }
   };
 
   React.useEffect(() => {
-    (async () => {
-      const responce = await fetch(HOST + "/news");
-
-      const data = await responce.json();
-
-      if (data.status === 200) {
-        setNews(() => data.data);
-      }
-    })();
-  }, []);
+    getNews(newsId);
+  }, [newsId]);
 
   return (
-    <section className={`${styles.news}`}>
-      <div className={`${styles.news} container`}>
-        <h2 className={`${styles.news__heading}`}>News</h2>
+    <main>
+      <section className={styles.news}>
+        <div className={`container ${styles.container}`}>
+          {news.newsId && (
+            <div className={`${styles.news__inner}`}>
+              <h2 className={styles.news__heading}>{news.newsTitle}</h2>
 
-        <ul className={`${styles.news__list}`}>
-          {news.length > 0 &&
-            news.map((item) => (
-              <li className={`${styles.news__item}`} key={item.newsId}>
-                <img
-                  className={`${styles.news__item__image}`}
-                  src={item.newsImage}
-                  alt=""
-                  width={400}
-                  height={300}
-                />
+              <img
+                className={`${styles.news__image}`}
+                src={news.newsImage}
+                alt=""
+                width={1000}
+                height={500}
+              />
 
-                <div className={`${styles.news__item__inner}`}>
-                  <h3 className={`${styles.news__item__title}`} title={item.newsTitle}>
-                    {item.newsTitle}
-                  </h3>
-
-                  <p className={`${styles.news__item__text}`}>{Parse(item.newsDescription)}</p>
-
-                  <div className={`${styles.news__item__bottom}`}>
-                    <a className={`${styles.news__item__link}`} href="#l">
-                      read more
-                    </a>
-
-                    <time>{normalizeTime(item.createAt)}</time>
-                  </div>
+              {newsDescription.length > 0 && (
+                <div className={styles.news__inner}>
+                  {newsDescription.map((text, index) => (
+                    <p className={styles.news__description} key={index}>
+                      {parse(String(text))}
+                    </p>
+                  ))}
                 </div>
-              </li>
-            ))}
-        </ul>
-      </div>
-    </section>
+              )}
+            </div>
+          )}
+
+          {loading && (
+            <div className={styles.news__loading}>
+              <div className={styles.news__loading__load}>
+                <Loading />
+              </div>
+            </div>
+          )}
+
+          {buttonLoading && (
+            <div className={styles.news__loading}>
+              <button
+                className={styles.news__loading__refresh}
+                onClick={() => {
+                  getNews(newsId);
+                }}
+              >
+                <Refresh />
+              </button>
+            </div>
+          )}
+        </div>
+      </section>
+
+      <NewsSect />
+    </main>
   );
 };
+
 export default News;

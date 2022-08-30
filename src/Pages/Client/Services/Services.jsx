@@ -8,6 +8,7 @@ import useLocalization from "../../../Hooks/useLocalization";
 
 import Partners from "../../../Components/Partners/Partners";
 import ServicesList from "../../../Components/Services/Services";
+import News from "../../../Components/News/News";
 
 import Loading from "../../../Components/Lib/Loading/Loading";
 import Refresh from "../../../Components/Lib/Icons/Refresh";
@@ -100,6 +101,8 @@ const Services = () => {
       {service.partners?.length > 0 && <Partners serviceId={service.serviceId} />}
 
       <ServicesList />
+
+      {service.serviceId && <News serviceId={service.serviceId} />}
     </main>
   );
 };

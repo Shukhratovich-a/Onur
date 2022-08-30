@@ -51,7 +51,7 @@ const About = () => {
     <main>
       <section className={styles.about}>
         <div className={`container ${styles.container}`}>
-          <h1 className={styles.about__heading}>{localization.about.company}</h1>
+          <h2 className={styles.about__heading}>{localization.about.company}</h2>
 
           {about.length > 0 && (
             <div className={styles.about__inner}>
