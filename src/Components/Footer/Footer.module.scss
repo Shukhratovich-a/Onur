@@ -273,6 +273,18 @@
   }
 }
 
+@media only screen and (max-width: 650px) {
+  .footer__inner:nth-child(3){
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .footer__item{
+    margin: 0 auto;
+  }
+}
+
 @media only screen and(max-width: 550px) {
   .footer__link {
     svg {
