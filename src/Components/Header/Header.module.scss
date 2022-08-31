@@ -13,13 +13,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
     transition: padding 0.25s ease;
   }
 
   &--small {
     .container {
-      padding: 10px 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
   }
 }
@@ -31,6 +33,7 @@
   background-color: $accent;
   padding: 2px 0;
   font-size: 12px;
+  line-height: 14px;
 
   &__inner {
     width: 100%;
@@ -136,7 +139,10 @@
 
 @media only screen and(max-width: 1000px) {
   .header {
-    padding: 15px 0;
+    .container {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
   }
 
   .header__languages {
@@ -250,7 +256,10 @@
 
 @media only screen and(max-width: 550px) {
   .header {
-    padding: 5px 0;
+    .container {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
   }
 
   .header__link {

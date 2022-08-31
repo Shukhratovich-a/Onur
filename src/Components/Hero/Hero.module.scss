@@ -3,7 +3,7 @@
 .hero {
   box-sizing: content-box;
   position: relative;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 118px);
   margin-top: -50px;
   padding-top: 50px;
   color: $white;
@@ -62,7 +62,7 @@
   text-align: center;
 }
 
-.hero__link{
+.hero__link {
   display: block;
   text-align: center;
   font-size: 24px;
@@ -71,7 +71,7 @@
   font-weight: 500;
   text-decoration: none;
 
-  &::first-letter{
+  &::first-letter {
     text-transform: uppercase;
   }
 }
@@ -84,7 +84,7 @@
 
 @media only screen and(max-width: 1000px) {
   .hero {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 88px);
   }
 
   .hero__heading {
@@ -135,7 +135,7 @@
 
 @media only screen and(max-width: 550px) {
   .hero {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 68px);
   }
 
   .hero__heading {
