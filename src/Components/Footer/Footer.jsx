@@ -168,7 +168,7 @@ const Footer = () => {
           <span className={styles.footer__bottom__copyright}>&copy; Onur&#174; 2021</span>
 
           <a className={styles.footer__bottom__phone} href="tel:+998555001222">
-            +99855 500 12 22
+            +998 55 500 1222
           </a>
         </div>
       </div>

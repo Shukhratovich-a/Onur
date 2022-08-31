@@ -20,6 +20,7 @@ function Contact() {
             <h1 className={styles.contact__title}>{localization.contact.title}</h1>
             <p className={styles.contact__text}>{localization.contact.text}</p>
           </div>
+
           <div className={styles.contact__right}>
             <img className={styles.contact__img} src={Phone} alt="contact img" />
           </div>
@@ -27,7 +28,8 @@ function Contact() {
       </div>
 
       <iframe
-        src="https://yandex.uz/map-widget/v1/-/CCUVEAR29A"
+        className={styles.contact__map}
+        src="https://yandex.uz/map-widget/v1/-/CCUVUMcDDC"
         width="100%"
         height="575"
         title="map"

@@ -36,7 +36,7 @@ const Phone = () => {
       onClick={handleClick}
     >
       <a className={styles.phone__link} href="tel:+998555001222">
-        <span className={styles.phone__number}>+99855 500 12 22</span>
+        <span className={styles.phone__number}>+998 55 500 1222</span>
 
         <span className={styles.phone__icon}>
           <PhoneIcon />

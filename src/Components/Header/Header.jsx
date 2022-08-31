@@ -48,6 +48,24 @@ const Header = () => {
       {langIsOpen && screenWidth <= 1000 ? (
         <div className={styles.header__lang__curtain} onClick={() => setLangIsOpen(false)}></div>
       ) : null}
+
+      <div className={`${styles.header__test}`}>
+        <div className={`${styles.header__test__inner}`}>
+          <span>наш сайт работает в тестовом режиме</span>
+          <span>наш сайт работает в тестовом режиме</span>
+          <span>наш сайт работает в тестовом режиме</span>
+          <span>наш сайт работает в тестовом режиме</span>
+          <span>наш сайт работает в тестовом режиме</span>
+        </div>
+        <div className={`${styles.header__test__inner}`}>
+          <span>наш сайт работает в тестовом режиме</span>
+          <span>наш сайт работает в тестовом режиме</span>
+          <span>наш сайт работает в тестовом режиме</span>
+          <span>наш сайт работает в тестовом режиме</span>
+          <span>наш сайт работает в тестовом режиме</span>
+        </div>
+      </div>
+
       <div className={`${styles.container} container`}>
         <Link className={styles.header__link} to={"/"}>
           <Logo color="#fff" />
