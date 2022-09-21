@@ -31,6 +31,8 @@ const Hero = () => {
 
   return (
     <section className={styles.hero}>
+      <h1 className={`visually-hidden`}>Onur</h1>
+
       <Swiper
         className={styles.hero__slider}
         slidesPerView={1}
@@ -69,7 +71,7 @@ const Hero = () => {
               key={index}
             >
               <div className={`container ${styles.container}`}>
-                <h1 className={`${styles.hero__heading}`}>{localization.hero[service.name]}</h1>
+                <h2 className={`${styles.hero__heading}`}>{localization.hero[service.name]}</h2>
 
                 {/* <Link className={styles.hero__link} to={"/services/" + service.name}>show service</Link> */}
               </div>
