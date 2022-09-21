@@ -43,5 +43,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://onurcompany.com/"
+  "homepage": "https://onurcompany.com/",
+  "devDependencies": {
+    "react-snap": "^1.23.0"
+  }
 }
