@@ -10,7 +10,7 @@ import Products from "./Pages/Client/Products/Products";
 import About from "./Pages/Client/About/About";
 import Services from "./Pages/Client/Services/Services";
 import Contact from "./Pages/Client/Contact/Contact";
-// import News from "./Pages/Client/News/News";
+import News from "./Pages/Client/News/News";
 
 import Phone from "./Components/Lib/Phone/Phone";
 
@@ -30,7 +30,7 @@ function ClientApp() {
           <Route path="/partners/:partnerId" element={<Products />} />
           <Route path="/services/:serviceName" element={<Services />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/news/:newsId" element={<News />} /> */}
+          <Route path="/news/:newsId" element={<News />} />
           <Route path="*" element={<Navigate to={"/"} />} />
         </Routes>
       </ScrollToTop>

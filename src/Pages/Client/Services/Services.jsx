@@ -8,7 +8,7 @@ import useLocalization from "../../../Hooks/useLocalization";
 
 import Partners from "../../../Components/Partners/Partners";
 import ServicesList from "../../../Components/Services/Services";
-// import News from "../../../Components/News/News";
+import News from "../../../Components/News/News";
 
 import Loading from "../../../Components/Lib/Loading/Loading";
 import Refresh from "../../../Components/Lib/Icons/Refresh";
@@ -102,7 +102,7 @@ const Services = () => {
 
       <ServicesList />
 
-      {/* {service.serviceId && <News serviceId={service.serviceId} />} */}
+      {service.serviceId && <News serviceId={service.serviceId} />}
     </main>
   );
 };
