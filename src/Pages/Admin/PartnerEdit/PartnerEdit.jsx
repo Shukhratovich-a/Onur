@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { TextField, Button, Select, MenuItem,Modal,Box } from "@mui/material";
+import { TextField, Button, Select, MenuItem, Modal, Box } from "@mui/material";
 
 import useToken from "../../../Hooks/useToken";
 
@@ -66,8 +66,6 @@ const PartnerEdit = () => {
     formData.append("partnerSite", site);
     if (file) formData.append("image", evt.target.file.files[0]);
 
-    console.log(name, serviceId, site, partnerId);
-
     (async () => {
       const responce = await fetch(HOST + "/partners/" + (partnerId ? partnerId : ""), {
         method: partnerId ? "PUT" : "POST",
@@ -78,8 +76,6 @@ const PartnerEdit = () => {
       });
 
       const data = await responce.json();
-
-      console.log(data);
 
       if (data.status === partnerId ? 202 : 201) {
         navigate("/admin/partners/edit/" + data.data.partnerId);

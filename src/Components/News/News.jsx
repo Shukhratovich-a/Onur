@@ -11,11 +11,11 @@ import Refresh from "../Lib/Icons/Refresh";
 
 import styles from "./News.module.scss";
 
-const News = ({ serviceId }) => {
+const News = ({ serviceId = 0 }) => {
   const localization = useLocalization();
 
   const [news, setNews] = React.useState([]);
-  const [isVisible, setIsVisible] = React.useState(true);
+  const [isVisible, setIsVisible] = React.useState(false);
 
   const [loading, setLoading] = React.useState(true);
   const [buttonLoading, setButtonLoading] = React.useState(false);
@@ -47,11 +47,12 @@ const News = ({ serviceId }) => {
 
         if (data.status === 200 && data.data.length > 0) {
           setNews(() => data.data);
-
+          setIsVisible(true);
           setLoading(false);
           setButtonLoading(false);
         } else {
           setNews([]);
+          setIsVisible(false);
           setLoading(false);
           setButtonLoading(true);
         }
@@ -62,11 +63,12 @@ const News = ({ serviceId }) => {
 
         if (data.status === 200 && data.data.length > 0) {
           setNews(() => data.data);
-
+          setIsVisible(true);
           setLoading(false);
           setButtonLoading(false);
         } else {
           setNews([]);
+          setIsVisible(false);
           setLoading(false);
           setButtonLoading(true);
         }
