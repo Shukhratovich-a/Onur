@@ -59,7 +59,8 @@ svg {
 }
 
 main {
-  margin-top: 118px;
+  // margin-top: 118px; // header with test
+  margin-top: 100px; // header no test
   flex-grow: 1;
 }
 
@@ -79,13 +80,15 @@ main {
 
 @media only screen and(max-width: 1000px) {
   main {
-    margin-top: 88px;
+    margin-top: 88px; // header with test
+    margin-top: 70px; // header no test
   }
 }
 
 @media only screen and(max-width: 550px) {
   main {
-    margin-top: 68px;
+    margin-top: 68px; // header with test
+    margin-top: 50px; // header no test
   }
 }
 

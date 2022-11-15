@@ -49,7 +49,7 @@ const Header = () => {
         <div className={styles.header__lang__curtain} onClick={() => setLangIsOpen(false)}></div>
       ) : null}
 
-      <div className={`${styles.header__test}`}>
+      {/* <div className={`${styles.header__test}`}>
         <div className={`${styles.header__test__inner}`}>
           <span>наш сайт работает в тестовом режиме</span>
           {screenWidth > 500 && <span>наш сайт работает в тестовом режиме</span>}
@@ -64,7 +64,7 @@ const Header = () => {
           {screenWidth > 1020 && <span>наш сайт работает в тестовом режиме</span>}
           {screenWidth > 1300 && <span>наш сайт работает в тестовом режиме</span>}
         </div>
-      </div>
+      </div> */}
 
       <div className={`${styles.container} container`}>
         <Link className={styles.header__link} to={"/"}>

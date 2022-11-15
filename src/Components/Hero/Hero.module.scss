@@ -3,7 +3,8 @@
 .hero {
   box-sizing: content-box;
   position: relative;
-  height: calc(100vh - 118px);
+  // height: calc(100vh - 118px) // header with test;
+  height: calc(100vh - 100px); // header no test;
   margin-top: -50px;
   padding-top: 50px;
   color: $white;
@@ -84,7 +85,8 @@
 
 @media only screen and(max-width: 1000px) {
   .hero {
-    height: calc(100vh - 88px);
+    // height: calc(100vh - 88px); // header with test
+    height: calc(100vh - 70px); // header no test
   }
 
   .hero__heading {
@@ -135,7 +137,8 @@
 
 @media only screen and(max-width: 550px) {
   .hero {
-    height: calc(100vh - 68px);
+    // height: calc(100vh - 68px); // header with test
+    height: calc(100vh - 50px); // header no test
   }
 
   .hero__heading {

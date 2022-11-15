@@ -79,7 +79,8 @@
   .nav {
     position: absolute;
     z-index: 9;
-    top: 88px;
+    // top: 88px; // header with test
+    top: 70px; // header no test
     right: 0;
     bottom: 0;
     left: 0;
@@ -153,7 +154,8 @@
 
 @media only screen and(max-width: 550px) {
   .nav {
-    top: 68px;
+    top: 68px; // header with test
+    top: 50px; // header no test
   }
 }
 
