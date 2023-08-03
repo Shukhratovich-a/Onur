@@ -147,8 +147,8 @@ const Localization = {
     },
 
     contact: {
-      title: "давай поговорим",
-      text: "Чтобы запросить цитату или хотите встретиться за чашкой кофе, свяжитесь с нами напрямую или заполните форму, и мы свяжемся с вами в кратчайшие сроки. Если у вас есть какие-либо вопросы, вы можете позвонить по нашему телефону.",
+      title: "давайте поговорим",
+      text: "Чтобы запросить цены или встретиться за чашкой кофе, свяжитесь с нами напрямую или заполните форму, и мы свяжемся с вами в кратчайшие сроки. Если у вас есть какие-либо вопросы, вы можете позвонить по нашему номеру телефона.",
       title2: "Свяжись снами",
       inputTitle: "Заполните данные",
       input1: "Введите имя",
@@ -214,7 +214,7 @@ const Localization = {
     footer: {
       siteMenu: "меню сайта",
       services: "услуги",
-      socials: "следуйте за ONUR",
+      socials: "Будьте вместе с ONUR",
       workTime: "рабочее время",
     },
   },
@@ -258,7 +258,7 @@ const Localization = {
 
     contact: {
       title: "keling gaplashamiz",
-      text: "Narx so'rash yoki kofe ichishni xohlash uchun biz bilan bevosita bog'laning yoki shaklni to'ldiring va biz sizga tezda javob beramiz. Agar sizda biron bir savol bo'lsa, bizning telefonimizga qo'ng'iroq qilishingiz mumkin.",
+      text: "Narx so'rash yoki kofe ichish uchun biz bilan bevosita bog'laning yoki shaklni to'ldiring va biz sizga tezda javob beramiz. Agar sizda biron bir savol bo'lsa, bizning telefonimizga qo'ng'iroq qilishingiz mumkin.",
       title2: "Biz bilan bog'laning",
       inputTitle: "Ma'lumotlarni to'ldiring",
       input1: "Ismingizni kiriting",
