@@ -165,7 +165,11 @@ const Footer = () => {
 
       <div className={styles.footer__bottom}>
         <div className={`${styles.container} container`}>
-          <span className={styles.footer__bottom__copyright}>&copy; Onur&#174; 2021</span>
+          <span className={styles.footer__bottom__copyright}>
+            <span>&copy; Onur&#174; {new Date().getFullYear()} | </span>
+
+            <Link to="/privacy-policy">Privacy policy</Link>
+          </span>
 
           <a className={styles.footer__bottom__phone} href="tel:+998555001222">
             +998 55 500 1222

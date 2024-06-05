@@ -148,19 +148,27 @@
   }
 }
 
-.footer__bottom__copyright{
+.footer__bottom__copyright {
   font-size: 16px;
   line-height: 18px;
   color: $white;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
-.footer__bottom__phone{
+.footer__bottom__phone {
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
   color: $white;
 }
-
 
 .footer__work-time__short {
   max-width: 35px;
@@ -274,13 +282,13 @@
 }
 
 @media only screen and (max-width: 650px) {
-  .footer__inner:nth-child(3){
+  .footer__inner:nth-child(3) {
     width: 100%;
     text-align: center;
     margin-top: 30px;
   }
 
-  .footer__item{
+  .footer__item {
     margin: 0 auto;
   }
 }

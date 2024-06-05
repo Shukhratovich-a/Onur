@@ -11,6 +11,7 @@ import About from "./Pages/Client/About/About";
 import Services from "./Pages/Client/Services/Services";
 import Contact from "./Pages/Client/Contact/Contact";
 import News from "./Pages/Client/News/News";
+import PrivacyPolicy from "./Pages/Client/PrivacyPolicy/PrivacyPolicy";
 
 import Phone from "./Components/Lib/Phone/Phone";
 
@@ -27,6 +28,7 @@ function ClientApp() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contacts" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/partners/:partnerId" element={<Products />} />
           <Route path="/services/:serviceName" element={<Services />} />
           <Route path="/about" element={<About />} />
